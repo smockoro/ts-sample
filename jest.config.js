@@ -6,4 +6,7 @@ module.exports = {
     transform: {
         '^.+\\.tsx?$': ['@swc/jest'],
     },
+    testMatch: [
+        "**/tests/**/*.test.(ts|tsx)"
+    ],
 };
