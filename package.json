@@ -3,7 +3,7 @@
     "prebuild": "npm run lint",
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "node dist/index.js",
+    "start": "node dist/server.js",
     "lint": "eslint --ext .ts",
     "lint:fix": "eslint --fix  --ext .ts",
     "test": "jest"
