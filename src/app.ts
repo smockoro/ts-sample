@@ -2,19 +2,13 @@ import express, { Express, Request, Response } from 'express'
 import logger from './logging/logger';
 import accessLog from './http/middleware/accessLog';
 import compressFilter from './http/middleware/compress';
-import {Registry, collectDefaultMetrics} from 'prom-client';
+import metricsHandler from './http/actuator/metrics';
 
-const register: Registry = new Registry()
-collectDefaultMetrics({register})
 const app: Express = express()
 
 // アクセスログフィルタに引っかから内容に手前に持っていく。
 // readiness/livenessもここと同様にする。
-app.get("/metrics", async (req: Request, res: Response) => {
-  res.set("Content-Type", register.contentType);
-  let metrics = await register.metrics();
-  res.send(metrics);
-});
+app.get("/metrics", metricsHandler)
 
 app.use(accessLog)
 app.use(compressFilter)
