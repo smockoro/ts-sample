@@ -10,14 +10,14 @@
       "type": "file",
       "path": "fastify-docker/src/server.ts",
       "language": "JavaScript",
-      "line": 37,
+      "line": 14,
       "offset": 1,
       "length": 5,
       "code": {
-        "startLine": 35,
+        "startLine": 12,
         "length": 5,
-        "offset": 8,
-        "surroundingCode": "  }\r\n}\r\nstart()\r\n"
+        "offset": 5,
+        "surroundingCode": "}\r\n\r\nstart()\r\n"
       }
     }
   ],
@@ -25,7 +25,7 @@
     "module": "project",
     "inspectionName": "JSIgnoredPromiseFromCall"
   },
-  "hash": "cdff97e308311f216bb794d5169813e512918ad987e6ed1b6e1ff57816726b49"
+  "hash": "0683be089688560654ea1da424cc4ad0c5462ee1aa8f2be8ce19c71729620e17"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -36,16 +36,16 @@
   "sources": [
     {
       "type": "file",
-      "path": "fastify-docker/src/server.ts",
+      "path": "fastify-docker/src/adapter/http/route/ping.ts",
       "language": "JavaScript",
-      "line": 21,
-      "offset": 34,
+      "line": 19,
+      "offset": 38,
       "length": 7,
       "code": {
-        "startLine": 19,
+        "startLine": 17,
         "length": 7,
-        "offset": 38,
-        "surroundingCode": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
+        "offset": 42,
+        "surroundingCode": "}\r\n\r\nexport const pingController = async (request: FastifyRequest, reply: FastifyReply) => {\r\n  return { pong: \"it worked!!\" }\r\n}"
       }
     }
   ],
@@ -53,27 +53,27 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "b80c568bcd5e7aab34a06a55603cfb3cd7a65cd8187b0d08d9f7082c20c6e2cf"
+  "hash": "843ef79dc4848fdc6e582615141371436c2ab88f1efdd601aca41047c16c907f"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
   "type": "Unused local symbol",
   "severity": "High",
-  "comment": "Unused parameter response",
+  "comment": "Unused parameter reply",
   "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
   "sources": [
     {
       "type": "file",
-      "path": "fastify-docker/src/server.ts",
+      "path": "fastify-docker/src/adapter/http/route/ping.ts",
       "language": "JavaScript",
-      "line": 21,
-      "offset": 43,
-      "length": 8,
+      "line": 19,
+      "offset": 63,
+      "length": 5,
       "code": {
-        "startLine": 19,
-        "length": 8,
-        "offset": 47,
-        "surroundingCode": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
+        "startLine": 17,
+        "length": 5,
+        "offset": 67,
+        "surroundingCode": "}\r\n\r\nexport const pingController = async (request: FastifyRequest, reply: FastifyReply) => {\r\n  return { pong: \"it worked!!\" }\r\n}"
       }
     }
   ],
@@ -81,7 +81,35 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "d0b62ef390d4775ae5f7979d93f64e4d0169aef376e6bd24389ec6adc78ff745"
+  "hash": "8a0e4273a11b3d9a8e6a3d045174f5589264afbc47fdb85d298f1f310916e1e5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "fastify-docker/jest.config.js",
+      "language": "JavaScript",
+      "line": 2,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 66,
+        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -166,32 +194,4 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "fastify-docker/jest.config.js",
-      "language": "JavaScript",
-      "line": 2,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 66,
-        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
-  },
-  "hash": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
 }]}
