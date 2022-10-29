@@ -41,6 +41,7 @@ jobs:
     - uses: ArtiomTr/jest-coverage-report-action@v2
       id: coverage
       with:
+        working-directory: 'express-docker'
         output: report-markdown
         test-script: npm run test:coverage
     - uses: marocchino/sticky-pull-request-comment@v2
