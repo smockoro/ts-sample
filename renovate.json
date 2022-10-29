@@ -6,5 +6,15 @@
   "timezone": "Asia/Tokyo",
   "automerge": true,
   "branchConcurrentLimit": 0,
-  "dependencyDashboard": false
+  "dependencyDashboard": false,
+  "packageRules": [
+    {
+      "groupName": "express-docker",
+      "matchPaths": ["express-docker/"]
+    },
+    {
+      "groupName": "fastify-docker",
+      "matchPaths": ["fastify-docker/"]
+    }
+  ]
 }
