@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "c70ba8e77d6ae8381e8175533f7090dc29dd207d",
-        "branch": "feature/fastify-route-logging"
+        "revisionId": "8aa5547f413bce2fd98d416f985763d881f1f7e4",
+        "branch": "main"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3352512014",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3352516927",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
