@@ -3,8 +3,8 @@ on:
   push:
     branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
   pull_request:
-    types: [opened, reopened]
     branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
+    types: [opened, reopened]
 
 jobs:
   qodana:
@@ -15,3 +15,12 @@ jobs:
           fetch-depth: 0
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2022.2.2
+      - uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{ runner.temp }}/qodana/results/qodana.sarif.json
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ runner.temp }}/qodana/results/report
+          destination_dir: ./

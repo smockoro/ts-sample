@@ -6,14 +6,22 @@ name: Node.js CI
 on:
   push:
     branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
+    paths:
+      - "express-docker/**"
+      - ".github/workflows/express-docker-node.js.yml"
   pull_request:
     types: [opened, reopened]
-    branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
+    paths:
+      - "express-docker/**"
+      - ".github/workflows/express-docker-node.js.yml"
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: './express-docker'
 
     strategy:
       matrix:
@@ -27,13 +35,16 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
     - run: npm ci
     - run: npm run build --if-present
     - uses: ArtiomTr/jest-coverage-report-action@v2
       id: coverage
       with:
+        working-directory: 'express-docker'
         output: report-markdown
         test-script: npm run test:coverage
     - uses: marocchino/sticky-pull-request-comment@v2
       with:
+        number: ${{ steps.finder.outputs.pr }}
         message: ${{ steps.coverage.outputs.report }}
