@@ -219,10 +219,6 @@
               "name": "HTML"
             },
             {
-              "id": "Cucumber",
-              "name": "Cucumber"
-            },
-            {
               "id": "JavaScript and TypeScript/Unused symbols",
               "name": "Unused symbols",
               "relationships": [
@@ -239,6 +235,10 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "Cucumber",
+              "name": "Cucumber"
             },
             {
               "id": "JavaScript and TypeScript/Data flow",
@@ -1790,40 +1790,6 @@
                 ]
               },
               {
-                "id": "NonBlockStatementBodyJS",
-                "shortDescription": {
-                  "text": "Statement body without braces"
-                },
-                "fullDescription": {
-                  "text": "Reports a 'if', 'while', 'for', or 'with' statements whose body is not a block statement. Using code block in statement bodies is usually safer for downstream maintenance.",
-                  "markdown": "Reports a `if`, `while`, `for`, or `with` statements whose body is not a block statement. Using code block in statement bodies is usually safer for downstream maintenance."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Code style issues",
-                      "index": 11,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "IfStatementWithTooManyBranchesJS",
                 "shortDescription": {
                   "text": "'if' statement with too many branches"
@@ -1847,6 +1813,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "NonBlockStatementBodyJS",
+                "shortDescription": {
+                  "text": "Statement body without braces"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'if', 'while', 'for', or 'with' statements whose body is not a block statement. Using code block in statement bodies is usually safer for downstream maintenance.",
+                  "markdown": "Reports a `if`, `while`, `for`, or `with` statements whose body is not a block statement. Using code block in statement bodies is usually safer for downstream maintenance."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Code style issues",
+                      "index": 11,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2016,7 +2016,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2572,40 +2572,6 @@
                 ]
               },
               {
-                "id": "JSObjectNullOrUndefined",
-                "shortDescription": {
-                  "text": "Object is 'null' or 'undefined'"
-                },
-                "fullDescription": {
-                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
-                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptMissingConfigOption",
                 "shortDescription": {
                   "text": "Missing tsconfig.json option "
@@ -2640,16 +2606,16 @@
                 ]
               },
               {
-                "id": "UnnecessaryLabelOnBreakStatementJS",
+                "id": "JSObjectNullOrUndefined",
                 "shortDescription": {
-                  "text": "Unnecessary label on 'break' statement"
+                  "text": "Object is 'null' or 'undefined'"
                 },
                 "fullDescription": {
-                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
-                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
+                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
+                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
                 },
                 "defaultConfiguration": {
-                  "enabled": false,
+                  "enabled": true,
                   "level": "warning",
                   "parameters": {
                     "ideaSeverity": "WARNING",
@@ -2697,6 +2663,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnnecessaryLabelOnBreakStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary label on 'break' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
+                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3184,40 +3184,6 @@
                 ]
               },
               {
-                "id": "JSReferencingMutableVariableFromClosure",
-                "shortDescription": {
-                  "text": "Referencing mutable variable from closure"
-                },
-                "fullDescription": {
-                  "text": "Reports access to outer mutable variables from functions. Example: 'for (var i = 1; i <= 3; i++) {\n    setTimeout(function() {\n        console.log(i); // bad\n    }, 0);\n  }'",
-                  "markdown": "Reports access to outer mutable variables from functions.\n\nExample:\n\n\n      for (var i = 1; i <= 3; i++) {\n        setTimeout(function() {\n            console.log(i); // bad\n        }, 0);\n      }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 10,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "PointlessBooleanExpressionJS",
                 "shortDescription": {
                   "text": "Pointless statement or boolean expression"
@@ -3241,6 +3207,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSReferencingMutableVariableFromClosure",
+                "shortDescription": {
+                  "text": "Referencing mutable variable from closure"
+                },
+                "fullDescription": {
+                  "text": "Reports access to outer mutable variables from functions. Example: 'for (var i = 1; i <= 3; i++) {\n    setTimeout(function() {\n        console.log(i); // bad\n    }, 0);\n  }'",
+                  "markdown": "Reports access to outer mutable variables from functions.\n\nExample:\n\n\n      for (var i = 1; i <= 3; i++) {\n        setTimeout(function() {\n            console.log(i); // bad\n        }, 0);\n      }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 10,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3728,40 +3728,6 @@
                 ]
               },
               {
-                "id": "JSConstantReassignment",
-                "shortDescription": {
-                  "text": "Attempt to assign to const or readonly variable"
-                },
-                "fullDescription": {
-                  "text": "Reports reassigning a value to a constant or a readonly variable.",
-                  "markdown": "Reports reassigning a value to a constant or a readonly variable."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Validity issues",
-                      "index": 24,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptCheckImport",
                 "shortDescription": {
                   "text": "Unresolved imported name"
@@ -3785,6 +3751,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/TypeScript",
                       "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSConstantReassignment",
+                "shortDescription": {
+                  "text": "Attempt to assign to const or readonly variable"
+                },
+                "fullDescription": {
+                  "text": "Reports reassigning a value to a constant or a readonly variable.",
+                  "markdown": "Reports reassigning a value to a constant or a readonly variable."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Validity issues",
+                      "index": 24,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4056,7 +4056,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4136,40 +4136,6 @@
                 ]
               },
               {
-                "id": "BlockStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary block statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a block statement that is not used as the body of 'if', 'for', 'while', 'do', 'with', or 'try' statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for 'let' and 'const' variables, but still free-standing block statements may be confusing and result in subtle bugs when used with 'var' variables.",
-                  "markdown": "Reports a block statement that is not used as the body of `if`, `for`, `while`, `do`, `with`, or `try` statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for `let` and `const` variables, but still free-standing block statements may be confusing and result in subtle bugs when used with `var` variables."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
-                      "index": 25,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "AnonymousFunctionJS",
                 "shortDescription": {
                   "text": "Anonymous function"
@@ -4193,6 +4159,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
                       "index": 13,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "BlockStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary block statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a block statement that is not used as the body of 'if', 'for', 'while', 'do', 'with', or 'try' statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for 'let' and 'const' variables, but still free-standing block statements may be confusing and result in subtle bugs when used with 'var' variables.",
+                  "markdown": "Reports a block statement that is not used as the body of `if`, `for`, `while`, `do`, `with`, or `try` statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for `let` and `const` variables, but still free-standing block statements may be confusing and result in subtle bugs when used with `var` variables."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
+                      "index": 25,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4272,40 +4272,6 @@
                 ]
               },
               {
-                "id": "NestedConditionalExpressionJS",
-                "shortDescription": {
-                  "text": "Nested conditional expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
-                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
-                      "index": 25,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSTypeOfValues",
                 "shortDescription": {
                   "text": "'typeof' comparison with non-standard value"
@@ -4329,6 +4295,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Probable bugs",
                       "index": 15,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "NestedConditionalExpressionJS",
+                "shortDescription": {
+                  "text": "Nested conditional expression"
+                },
+                "fullDescription": {
+                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
+                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
+                      "index": 25,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -5360,40 +5360,6 @@
                 ]
               },
               {
-                "id": "ES6ClassMemberInitializationOrder",
-                "shortDescription": {
-                  "text": "Use of possibly unassigned property in a static initializer"
-                },
-                "fullDescription": {
-                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
-                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 10,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "EmptyTryBlockJS",
                 "shortDescription": {
                   "text": "Empty 'try' block"
@@ -5417,6 +5383,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 29,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6ClassMemberInitializationOrder",
+                "shortDescription": {
+                  "text": "Use of possibly unassigned property in a static initializer"
+                },
+                "fullDescription": {
+                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
+                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 10,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6006,6 +6006,40 @@
                 ]
               },
               {
+                "id": "JSUnfilteredForInLoop",
+                "shortDescription": {
+                  "text": "Unfiltered for..in loop"
+                },
+                "fullDescription": {
+                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
+                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "JSAnnotator",
                 "shortDescription": {
                   "text": "ECMAScript specification is not followed"
@@ -6063,40 +6097,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Probable bugs",
                       "index": 15,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSUnfilteredForInLoop",
-                "shortDescription": {
-                  "text": "Unfiltered for..in loop"
-                },
-                "fullDescription": {
-                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
-                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 10,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8488,6 +8488,40 @@
                 ]
               },
               {
+                "id": "ES6UnusedImports",
+                "shortDescription": {
+                  "text": "Unused import"
+                },
+                "fullDescription": {
+                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
+                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Imports and dependencies",
+                      "index": 43,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "InnerHTMLJS",
                 "shortDescription": {
                   "text": "Use of 'innerHTML' property"
@@ -8545,40 +8579,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Switch statement issues",
                       "index": 48,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "ES6UnusedImports",
-                "shortDescription": {
-                  "text": "Unused import"
-                },
-                "fullDescription": {
-                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
-                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Imports and dependencies",
-                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8952,7 +8952,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11846,7 +11846,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11880,7 +11880,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11914,7 +11914,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11948,7 +11948,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11982,7 +11982,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -12016,7 +12016,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -12050,7 +12050,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -15142,8 +15142,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "6b5bdd26b62fcacd2303f1f961f974f6c8909964",
-          "branch": "feature/containized-docker",
+          "revisionId": "af8a8b98a9a14d60b65faf10d2393e614c52dbf2",
+          "branch": "feature/fastify-hello-word",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "takahiro oshima",
@@ -15159,6 +15159,165 @@
         }
       ],
       "results": [
+        {
+          "ruleId": "JSIgnoredPromiseFromCall",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Promise returned from start is ignored",
+            "markdown": "Promise returned from start is ignored"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/server.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 1,
+                  "charOffset": 848,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "start"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "charOffset": 840,
+                  "charLength": 17,
+                  "snippet": {
+                    "text": "  }\r\n}\r\nstart()\r\n"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "cdff97e308311f216bb794d5169813e512918ad987e6ed1b6e1ff57816726b49"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnusedLocalSymbols",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Unused parameter request",
+            "markdown": "Unused parameter request"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/server.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "charOffset": 450,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "request"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 19,
+                  "startColumn": 1,
+                  "charOffset": 412,
+                  "charLength": 100,
+                  "snippet": {
+                    "text": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "b80c568bcd5e7aab34a06a55603cfb3cd7a65cd8187b0d08d9f7082c20c6e2cf"
+          },
+          "properties": {
+            "ideaSeverity": "WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnusedLocalSymbols",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Unused parameter response",
+            "markdown": "Unused parameter response"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/server.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 43,
+                  "charOffset": 459,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "response"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 19,
+                  "startColumn": 1,
+                  "charOffset": 412,
+                  "charLength": 100,
+                  "snippet": {
+                    "text": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "d0b62ef390d4775ae5f7979d93f64e4d0169aef376e6bd24389ec6adc78ff745"
+          },
+          "properties": {
+            "ideaSeverity": "WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
         {
           "ruleId": "JSUnresolvedVariable",
           "kind": "fail",
@@ -15264,13 +15423,119 @@
               "ideaSeverity"
             ]
           }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/.prettierrc.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 45,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 134,
+                  "snippet": {
+                    "text": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/jest.config.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 66,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 139,
+                  "snippet": {
+                    "text": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
         }
       ],
       "automationDetails": {
         "id": "project/qodana/2022-10-29",
-        "guid": "84e1401f-154c-494a-975b-ddc43c20fb0b",
+        "guid": "23481a1f-f1d4-4dbc-a6cb-f551fd1dfd00",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3351050576",
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3351108788",
           "tags": [
             "jobUrl"
           ]
