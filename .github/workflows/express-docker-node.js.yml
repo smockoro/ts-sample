@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./express-docker
+        working-directory: './express-docker'
 
     strategy:
       matrix:
@@ -46,4 +46,5 @@ jobs:
         test-script: npm run test:coverage
     - uses: marocchino/sticky-pull-request-comment@v2
       with:
+        number: ${{ steps.finder.outputs.pr }}
         message: ${{ steps.coverage.outputs.report }}
