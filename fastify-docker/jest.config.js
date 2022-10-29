@@ -1,0 +1,12 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+    roots: ['<rootDir>/tests/'],
+    transform: {
+        '^.+\\.tsx?$': ['@swc/jest'],
+    },
+    testMatch: [
+        "**/tests/**/*.test.(ts|tsx)"
+    ],
+};
