@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "4b1ee8e9c5087e7789c2257d24956bd776b8b67a",
-        "branch": "main"
+        "revisionId": "6b5bdd26b62fcacd2303f1f961f974f6c8909964",
+        "branch": "feature/containized-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3351031956",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3351050576",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
