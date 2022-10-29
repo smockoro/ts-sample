@@ -16,8 +16,8 @@
       "code": {
         "startLine": 35,
         "length": 5,
-        "offset": 6,
-        "surroundingCode": "  }\n}\nstart()\n"
+        "offset": 8,
+        "surroundingCode": "  }\r\n}\r\nstart()\r\n"
       }
     }
   ],
@@ -25,7 +25,7 @@
     "module": "project",
     "inspectionName": "JSIgnoredPromiseFromCall"
   },
-  "hash": "500c591e422d0547cd869c63e527c8b28a2c3772d43e96f2d6ed19b4e3ebaf33"
+  "hash": "cdff97e308311f216bb794d5169813e512918ad987e6ed1b6e1ff57816726b49"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -44,8 +44,8 @@
       "code": {
         "startLine": 19,
         "length": 7,
-        "offset": 36,
-        "surroundingCode": "}\n\nserver.get('/ping', opts, async (request, response) => {\n  return { pong: \"it worked!!\" }\n})"
+        "offset": 38,
+        "surroundingCode": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
       }
     }
   ],
@@ -53,7 +53,7 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "1dff6c122050a571a49eec0232006174a55db5569312bd4f8d1c579d35de507e"
+  "hash": "b80c568bcd5e7aab34a06a55603cfb3cd7a65cd8187b0d08d9f7082c20c6e2cf"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -72,8 +72,8 @@
       "code": {
         "startLine": 19,
         "length": 8,
-        "offset": 45,
-        "surroundingCode": "}\n\nserver.get('/ping', opts, async (request, response) => {\n  return { pong: \"it worked!!\" }\n})"
+        "offset": 47,
+        "surroundingCode": "}\r\n\r\nserver.get('/ping', opts, async (request, response) => {\r\n  return { pong: \"it worked!!\" }\r\n})\r"
       }
     }
   ],
@@ -81,7 +81,7 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "db781634e4ceb7983e69587d67fde5521e04240daf18981300f705366a658b6d"
+  "hash": "d0b62ef390d4775ae5f7979d93f64e4d0169aef376e6bd24389ec6adc78ff745"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -92,7 +92,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "fastify-docker/jest.config.js",
+      "path": "express-docker/jest.config.js",
       "language": "JavaScript",
       "line": 2,
       "offset": 1,
@@ -100,8 +100,8 @@
       "code": {
         "startLine": 1,
         "length": 6,
-        "offset": 65,
-        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\nmodule.exports = {\n    preset: 'ts-jest',\n    testEnvironment: 'node',"
+        "offset": 66,
+        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
       }
     }
   ],
@@ -109,7 +109,35 @@
     "module": "project",
     "inspectionName": "JSUnresolvedVariable"
   },
-  "hash": "00c84bcb95a62a4ef3e515f63ba365430e84cfc74941aa1b5908ff40f5f70e95"
+  "hash": "2879e739e19d46c67870e821f0646d3fcc4c2a41f950f8181c9f75b6fa1ebdb5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "express-docker/.prettierrc.js",
+      "language": "JavaScript",
+      "line": 2,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 45,
+        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -128,8 +156,8 @@
       "code": {
         "startLine": 1,
         "length": 6,
-        "offset": 44,
-        "surroundingCode": "// https://prettier.io/docs/en/options.html\nmodule.exports = {\n    tabWidth: 2, //インデントのスペース数\n    singleQuote: true, //シングルクォートに統一"
+        "offset": 45,
+        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
       }
     }
   ],
@@ -137,5 +165,33 @@
     "module": "project",
     "inspectionName": "JSUnresolvedVariable"
   },
-  "hash": "04073dcbe9f618b96229059df9340235e011f958a316a9f357e1484351522606"
+  "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "fastify-docker/jest.config.js",
+      "language": "JavaScript",
+      "line": 2,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 66,
+        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
 }]}
