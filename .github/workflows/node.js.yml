@@ -11,6 +11,7 @@ on:
       - ".github/workflow/foo.yaml"
   pull_request:
     types: [opened, reopened]
+    branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
     paths:
       - "express-docker/**"
       - ".github/workflow/foo.yaml"
