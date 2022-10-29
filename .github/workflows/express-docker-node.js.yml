@@ -8,12 +8,12 @@ on:
     branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
     paths:
       - "express-docker/**"
-      - ".github/workflow/express-docker-node.js.yml"
+      - ".github/workflows/express-docker-node.js.yml"
   pull_request:
     types: [opened, reopened]
     paths:
       - "express-docker/**"
-      - ".github/workflow/express-docker-node.js.yml"
+      - ".github/workflows/express-docker-node.js.yml"
 
 jobs:
   build:
