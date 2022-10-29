@@ -2,13 +2,21 @@ name: Qodana Code Quality CI
 on:
   push:
     branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
+    paths:
+      - "express-docker/**"
+      - ".github/workflow/foo.yaml"
   pull_request:
     types: [opened, reopened]
-    branches: [ "feature/*", "fix/*", "renovate/*", "main" ]
+    paths:
+      - "express-docker/**"
+      - ".github/workflow/foo.yaml"
 
 jobs:
   qodana:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./express-docker
     steps:
       - uses: actions/checkout@v3
         with:
