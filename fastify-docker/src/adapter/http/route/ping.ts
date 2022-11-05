@@ -18,6 +18,6 @@ export const pingOpts: RouteShorthandOptions = {
 }
 
 export const pingController = async (request: FastifyRequest, reply: FastifyReply) => {
-  throw new SystemError('E111')
+  //throw new SystemError('E111')
   return { pong: "it worked!!" }
 }
