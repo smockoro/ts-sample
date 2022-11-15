@@ -941,77 +941,6 @@
       ]
     },
     {
-      "name": "Potentially undesirable code constructs",
-      "inspections": [
-        {
-          "shortName": "BreakStatementJS",
-          "displayName": "'break' statement",
-          "enabled": false,
-          "description": "Reports a `break` statements. Ignores `break` statements that end case blocks."
-        },
-        {
-          "shortName": "DebuggerStatementJS",
-          "displayName": "'debugger' statement",
-          "enabled": false,
-          "description": "Reports a `debugger` statement used for interaction with the Javascript debuggers. Such statements should not appear in production code."
-        },
-        {
-          "shortName": "BreakStatementWithLabelJS",
-          "displayName": "'break' statement with label",
-          "enabled": false,
-          "description": "Reports a labeled `break` statement."
-        },
-        {
-          "shortName": "ContinueStatementWithLabelJS",
-          "displayName": "'continue' statement with label",
-          "enabled": false,
-          "description": "Reports a labeled `continue` statement."
-        },
-        {
-          "shortName": "ContinueStatementJS",
-          "displayName": "'continue' statement",
-          "enabled": false,
-          "description": "Reports a `continue` statement."
-        },
-        {
-          "shortName": "ConditionalExpressionJS",
-          "displayName": "Conditional expression",
-          "enabled": false,
-          "description": "Reports a ternary conditional expression. Some coding standards prohibit such expressions in favor of explicit `if` statements."
-        },
-        {
-          "shortName": "LabeledStatementJS",
-          "displayName": "Labeled statement",
-          "enabled": false,
-          "description": "Reports a labeled statement."
-        },
-        {
-          "shortName": "WithStatementJS",
-          "displayName": "'with' statement",
-          "enabled": false,
-          "description": "Reports a `with` statements. Such statements result in potentially confusing implicit bindings, and may behave strangely in setting new variables."
-        },
-        {
-          "shortName": "AnonymousFunctionJS",
-          "displayName": "Anonymous function",
-          "enabled": false,
-          "description": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
-        },
-        {
-          "shortName": "CommaExpressionJS",
-          "displayName": "Comma expression",
-          "enabled": false,
-          "description": "Reports a comma expression. Such expressions are often a sign of overly clever code, and may lead to subtle bugs. Comma expressions in the initializer or in the update section of `for` loops are ignored."
-        },
-        {
-          "shortName": "VoidExpressionJS",
-          "displayName": "'void' expression",
-          "enabled": false,
-          "description": "Reports a `void` expression."
-        }
-      ]
-    },
-    {
       "name": "Probable bugs",
       "inspections": [
         {
@@ -1179,6 +1108,77 @@
       ]
     },
     {
+      "name": "Potentially undesirable code constructs",
+      "inspections": [
+        {
+          "shortName": "BreakStatementJS",
+          "displayName": "'break' statement",
+          "enabled": false,
+          "description": "Reports a `break` statements. Ignores `break` statements that end case blocks."
+        },
+        {
+          "shortName": "DebuggerStatementJS",
+          "displayName": "'debugger' statement",
+          "enabled": false,
+          "description": "Reports a `debugger` statement used for interaction with the Javascript debuggers. Such statements should not appear in production code."
+        },
+        {
+          "shortName": "BreakStatementWithLabelJS",
+          "displayName": "'break' statement with label",
+          "enabled": false,
+          "description": "Reports a labeled `break` statement."
+        },
+        {
+          "shortName": "ContinueStatementWithLabelJS",
+          "displayName": "'continue' statement with label",
+          "enabled": false,
+          "description": "Reports a labeled `continue` statement."
+        },
+        {
+          "shortName": "ContinueStatementJS",
+          "displayName": "'continue' statement",
+          "enabled": false,
+          "description": "Reports a `continue` statement."
+        },
+        {
+          "shortName": "ConditionalExpressionJS",
+          "displayName": "Conditional expression",
+          "enabled": false,
+          "description": "Reports a ternary conditional expression. Some coding standards prohibit such expressions in favor of explicit `if` statements."
+        },
+        {
+          "shortName": "LabeledStatementJS",
+          "displayName": "Labeled statement",
+          "enabled": false,
+          "description": "Reports a labeled statement."
+        },
+        {
+          "shortName": "WithStatementJS",
+          "displayName": "'with' statement",
+          "enabled": false,
+          "description": "Reports a `with` statements. Such statements result in potentially confusing implicit bindings, and may behave strangely in setting new variables."
+        },
+        {
+          "shortName": "AnonymousFunctionJS",
+          "displayName": "Anonymous function",
+          "enabled": false,
+          "description": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
+        },
+        {
+          "shortName": "CommaExpressionJS",
+          "displayName": "Comma expression",
+          "enabled": false,
+          "description": "Reports a comma expression. Such expressions are often a sign of overly clever code, and may lead to subtle bugs. Comma expressions in the initializer or in the update section of `for` loops are ignored."
+        },
+        {
+          "shortName": "VoidExpressionJS",
+          "displayName": "'void' expression",
+          "enabled": false,
+          "description": "Reports a `void` expression."
+        }
+      ]
+    },
+    {
       "name": "Flow type checker",
       "inspections": [
         {
@@ -1303,6 +1303,29 @@
       ]
     },
     {
+      "name": "Unused symbols",
+      "inspections": [
+        {
+          "shortName": "JSUnusedAssignment",
+          "displayName": "Unused assignment",
+          "enabled": true,
+          "description": "Reports a variable whose value is never used after assignment.  \nSuggests removing the unused variable to shorten the code and to avoid redundant allocations.\n\nThe following cases are reported:\n\n* A variable is never read after assignment.\n* The value of a variable is always overwritten with another assignment before the variable is read next time.\n* The initializer of a variable is redundant (for one of the above-mentioned reasons)."
+        },
+        {
+          "shortName": "JSUnusedGlobalSymbols",
+          "displayName": "Unused global symbol",
+          "enabled": false,
+          "description": "Reports an unused globally accessible public function, variable, class, or property."
+        },
+        {
+          "shortName": "JSUnusedLocalSymbols",
+          "displayName": "Unused local symbol",
+          "enabled": true,
+          "description": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration."
+        }
+      ]
+    },
+    {
       "name": "Cucumber",
       "inspections": [
         {
@@ -1346,29 +1369,6 @@
           "displayName": "Missing ':' after examples keyword",
           "enabled": false,
           "description": "Reports `Examples` sections in Cucumber .feature files if they do not have ':' after the `Examples` keyword."
-        }
-      ]
-    },
-    {
-      "name": "Unused symbols",
-      "inspections": [
-        {
-          "shortName": "JSUnusedAssignment",
-          "displayName": "Unused assignment",
-          "enabled": true,
-          "description": "Reports a variable whose value is never used after assignment.  \nSuggests removing the unused variable to shorten the code and to avoid redundant allocations.\n\nThe following cases are reported:\n\n* A variable is never read after assignment.\n* The value of a variable is always overwritten with another assignment before the variable is read next time.\n* The initializer of a variable is redundant (for one of the above-mentioned reasons)."
-        },
-        {
-          "shortName": "JSUnusedGlobalSymbols",
-          "displayName": "Unused global symbol",
-          "enabled": false,
-          "description": "Reports an unused globally accessible public function, variable, class, or property."
-        },
-        {
-          "shortName": "JSUnusedLocalSymbols",
-          "displayName": "Unused local symbol",
-          "enabled": true,
-          "description": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration."
         }
       ]
     },
