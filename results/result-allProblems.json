@@ -148,34 +148,6 @@
   "sources": [
     {
       "type": "file",
-      "path": "express-docker/.prettierrc.js",
-      "language": "JavaScript",
-      "line": 2,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 45,
-        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
-  },
-  "hash": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
-  "sources": [
-    {
-      "type": "file",
       "path": "fastify-docker/.prettierrc.js",
       "language": "JavaScript",
       "line": 2,
@@ -194,4 +166,32 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "express-docker/.prettierrc.js",
+      "language": "JavaScript",
+      "line": 2,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 45,
+        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
 }]}
