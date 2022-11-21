@@ -7,7 +7,7 @@
         "driver": {
           "name": "QDJS",
           "fullName": "Qodana for JS",
-          "version": "222.4301.131",
+          "version": "222.4502.194",
           "rules": [],
           "taxa": [
             {
@@ -219,10 +219,6 @@
               "name": "HTML"
             },
             {
-              "id": "Cucumber",
-              "name": "Cucumber"
-            },
-            {
               "id": "JavaScript and TypeScript/Unused symbols",
               "name": "Unused symbols",
               "relationships": [
@@ -239,6 +235,10 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "Cucumber",
+              "name": "Cucumber"
             },
             {
               "id": "JavaScript and TypeScript/Data flow",
@@ -687,7 +687,7 @@
         "extensions": [
           {
             "name": "JavaScript",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "ConstantConditionalExpressionJS",
@@ -792,40 +792,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithTooManyBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with too many branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
-                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSValidateJSDoc",
                 "shortDescription": {
                   "text": "Syntax errors and unresolved references in JSDoc"
@@ -849,6 +815,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithTooManyBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with too many branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
+                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1052,7 +1052,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1608,6 +1608,40 @@
                 ]
               },
               {
+                "id": "JSObjectNullOrUndefined",
+                "shortDescription": {
+                  "text": "Object is 'null' or 'undefined'"
+                },
+                "fullDescription": {
+                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
+                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "TypeScriptMissingConfigOption",
                 "shortDescription": {
                   "text": "Missing tsconfig.json option "
@@ -1642,16 +1676,16 @@
                 ]
               },
               {
-                "id": "JSObjectNullOrUndefined",
+                "id": "UnnecessaryLabelOnBreakStatementJS",
                 "shortDescription": {
-                  "text": "Object is 'null' or 'undefined'"
+                  "text": "Unnecessary label on 'break' statement"
                 },
                 "fullDescription": {
-                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
-                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
+                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
+                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
                 },
                 "defaultConfiguration": {
-                  "enabled": true,
+                  "enabled": false,
                   "level": "warning",
                   "parameters": {
                     "ideaSeverity": "WARNING",
@@ -1699,40 +1733,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "UnnecessaryLabelOnBreakStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary label on 'break' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
-                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2220,40 +2220,6 @@
                 ]
               },
               {
-                "id": "PointlessBooleanExpressionJS",
-                "shortDescription": {
-                  "text": "Pointless statement or boolean expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a pointless or pointlessly complicated boolean expression or statement. Example: 'let a = !(false && x);\n  let b = false || x;' After the quick fix is applied the result looks like: 'let a = true;\n  let b = x;'",
-                  "markdown": "Reports a pointless or pointlessly complicated boolean expression or statement.\n\nExample:\n\n\n      let a = !(false && x);\n      let b = false || x;\n\nAfter the quick fix is applied the result looks like:\n\n\n      let a = true;\n      let b = x;\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSReferencingMutableVariableFromClosure",
                 "shortDescription": {
                   "text": "Referencing mutable variable from closure"
@@ -2277,6 +2243,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "PointlessBooleanExpressionJS",
+                "shortDescription": {
+                  "text": "Pointless statement or boolean expression"
+                },
+                "fullDescription": {
+                  "text": "Reports a pointless or pointlessly complicated boolean expression or statement. Example: 'let a = !(false && x);\n  let b = false || x;' After the quick fix is applied the result looks like: 'let a = true;\n  let b = x;'",
+                  "markdown": "Reports a pointless or pointlessly complicated boolean expression or statement.\n\nExample:\n\n\n      let a = !(false && x);\n      let b = false || x;\n\nAfter the quick fix is applied the result looks like:\n\n\n      let a = true;\n      let b = x;\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3092,7 +3092,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3172,40 +3172,6 @@
                 ]
               },
               {
-                "id": "AnonymousFunctionJS",
-                "shortDescription": {
-                  "text": "Anonymous function"
-                },
-                "fullDescription": {
-                  "text": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a 'name' property specified in the ECMAScript 6 standard. For example, 'var bar = function() {};' is not reported.",
-                  "markdown": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
-                      "index": 13,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "BlockStatementJS",
                 "shortDescription": {
                   "text": "Unnecessary block statement"
@@ -3229,6 +3195,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Potentially confusing code constructs",
                       "index": 25,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "AnonymousFunctionJS",
+                "shortDescription": {
+                  "text": "Anonymous function"
+                },
+                "fullDescription": {
+                  "text": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a 'name' property specified in the ECMAScript 6 standard. For example, 'var bar = function() {};' is not reported.",
+                  "markdown": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
+                      "index": 13,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4396,40 +4396,6 @@
                 ]
               },
               {
-                "id": "EmptyTryBlockJS",
-                "shortDescription": {
-                  "text": "Empty 'try' block"
-                },
-                "fullDescription": {
-                  "text": "Reports an empty 'try' block, which usually indicates an error.",
-                  "markdown": "Reports an empty `try` block, which usually indicates an error."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Try statement issues",
-                      "index": 29,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6ClassMemberInitializationOrder",
                 "shortDescription": {
                   "text": "Use of possibly unassigned property in a static initializer"
@@ -4453,6 +4419,40 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "EmptyTryBlockJS",
+                "shortDescription": {
+                  "text": "Empty 'try' block"
+                },
+                "fullDescription": {
+                  "text": "Reports an empty 'try' block, which usually indicates an error.",
+                  "markdown": "Reports an empty `try` block, which usually indicates an error."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Try statement issues",
+                      "index": 29,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -5042,6 +5042,40 @@
                 ]
               },
               {
+                "id": "JSIncompatibleTypesComparison",
+                "shortDescription": {
+                  "text": "Comparison of expressions having incompatible types"
+                },
+                "fullDescription": {
+                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
+                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Probable bugs",
+                      "index": 15,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "JSUnfilteredForInLoop",
                 "shortDescription": {
                   "text": "Unfiltered for..in loop"
@@ -5099,40 +5133,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 10,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSIncompatibleTypesComparison",
-                "shortDescription": {
-                  "text": "Comparison of expressions having incompatible types"
-                },
-                "fullDescription": {
-                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
-                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Probable bugs",
-                      "index": 15,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7954,7 +7954,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 18,
+                      "index": 17,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8043,7 +8043,7 @@
           },
           {
             "name": "org.editorconfig.editorconfigjetbrains",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "EditorConfigCharClassRedundancy",
@@ -9007,7 +9007,7 @@
           },
           {
             "name": "org.coffeescript",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "CoffeeScriptUnusedLocalSymbols",
@@ -9257,7 +9257,7 @@
           },
           {
             "name": "org.intellij.plugins.postcss",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "PostCssCustomSelector",
@@ -9439,7 +9439,7 @@
           },
           {
             "name": "org.jetbrains.plugins.sass",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "SassScssUnresolvedMixin",
@@ -9587,7 +9587,7 @@
           },
           {
             "name": "Karma",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "KarmaConfigFile",
@@ -9633,7 +9633,7 @@
           },
           {
             "name": "com.intellij",
-            "version": "222.4301.131",
+            "version": "222.4502.194",
             "rules": [
               {
                 "id": "JsonSchemaDeprecation",
@@ -11200,40 +11200,6 @@
                 ]
               },
               {
-                "id": "RegExpRedundantNestedCharacterClass",
-                "shortDescription": {
-                  "text": "Redundant nested character class"
-                },
-                "fullDescription": {
-                  "text": "Reports unnecessary nested character classes. Example: '[a-c[x-z]]' After the quick-fix is applied: '[a-cx-z]' New in 2020.2",
-                  "markdown": "Reports unnecessary nested character classes.\n\n**Example:**\n\n\n      [a-c[x-z]]\n\nAfter the quick-fix is applied:\n\n\n      [a-cx-z]\n\nNew in 2020.2"
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING",
-                    "tags": [
-                      "ideaSeverity"
-                    ]
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "RegExp",
-                      "index": 40,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "XmlDeprecatedElement",
                 "shortDescription": {
                   "text": "Deprecated symbol"
@@ -11257,6 +11223,40 @@
                     "target": {
                       "id": "XML",
                       "index": 35,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "RegExpRedundantNestedCharacterClass",
+                "shortDescription": {
+                  "text": "Redundant nested character class"
+                },
+                "fullDescription": {
+                  "text": "Reports unnecessary nested character classes. Example: '[a-c[x-z]]' After the quick-fix is applied: '[a-cx-z]' New in 2020.2",
+                  "markdown": "Reports unnecessary nested character classes.\n\n**Example:**\n\n\n      [a-c[x-z]]\n\nAfter the quick-fix is applied:\n\n\n      [a-cx-z]\n\nNew in 2020.2"
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING",
+                    "tags": [
+                      "ideaSeverity"
+                    ]
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "RegExp",
+                      "index": 40,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11608,13 +11608,13 @@
                 ]
               },
               {
-                "id": "RegExpRepeatedSpace",
+                "id": "RegExpDuplicateAlternationBranch",
                 "shortDescription": {
-                  "text": "Consecutive spaces"
+                  "text": "Duplicate branch in alternation"
                 },
                 "fullDescription": {
-                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
-                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
+                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
+                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -11642,13 +11642,13 @@
                 ]
               },
               {
-                "id": "RegExpDuplicateAlternationBranch",
+                "id": "RegExpRepeatedSpace",
                 "shortDescription": {
-                  "text": "Duplicate branch in alternation"
+                  "text": "Consecutive spaces"
                 },
                 "fullDescription": {
-                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
-                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
+                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
+                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -11821,7 +11821,7 @@
           },
           {
             "name": "gherkin",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "GherkinScenarioToScenarioOutline",
@@ -11846,7 +11846,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11880,7 +11880,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11914,7 +11914,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11948,7 +11948,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -11982,7 +11982,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -12016,7 +12016,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -12050,7 +12050,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 17,
+                      "index": 18,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -12071,7 +12071,7 @@
           },
           {
             "name": "HtmlTools",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "HtmlRequiredAltAttribute",
@@ -12457,7 +12457,7 @@
           },
           {
             "name": "com.intellij.css",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "CssInvalidHtmlTagReference",
@@ -13319,7 +13319,7 @@
           },
           {
             "name": "com.dmarcotte.handlebars",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "HbEmptyBlock",
@@ -13365,7 +13365,7 @@
           },
           {
             "name": "com.intellij.plugins.dependencyAnalysis",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "CheckThirdPartySoftwareList",
@@ -13513,7 +13513,7 @@
           },
           {
             "name": "AngularJS",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "AngularInvalidTemplateReferenceVariable",
@@ -14171,7 +14171,7 @@
           },
           {
             "name": "org.jetbrains.plugins.yaml",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "YAMLSchemaValidation",
@@ -14387,7 +14387,7 @@
           },
           {
             "name": "org.jetbrains.plugins.haml",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "HamlNestedTagContent",
@@ -14433,7 +14433,7 @@
           },
           {
             "name": "org.jetbrains.plugins.less",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "LessUnresolvedMixin",
@@ -14547,7 +14547,7 @@
           },
           {
             "name": "org.intellij.intelliLang",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "InjectedReferences",
@@ -14593,7 +14593,7 @@
           },
           {
             "name": "org.jetbrains.plugins.vue",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "VueDataFunction",
@@ -14673,7 +14673,7 @@
           },
           {
             "name": "W3Validators",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "W3CssValidation",
@@ -14719,7 +14719,7 @@
           },
           {
             "name": "org.intellij.plugins.staticAnalysis",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "QodanaServiceMessage",
@@ -14765,7 +14765,7 @@
           },
           {
             "name": "org.intellij.plugins.markdown",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "MarkdownIncorrectTableFormatting",
@@ -14913,7 +14913,7 @@
           },
           {
             "name": "com.jetbrains.lang.ejs",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "EjsUnresolvedInclude",
@@ -14959,7 +14959,7 @@
           },
           {
             "name": "tslint",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "TsLint",
@@ -15005,7 +15005,7 @@
           },
           {
             "name": "com.jetbrains.plugins.jade",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "JadeTabsAndSpaces",
@@ -15051,7 +15051,7 @@
           },
           {
             "name": "tanvd.grazi",
-            "version": "222.4301",
+            "version": "222.4502",
             "rules": [
               {
                 "id": "LanguageDetectionInspection",
@@ -15139,12 +15139,403 @@
         }
       ],
       "language": "en-US",
-      "results": [],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/smockoro/ts-sample",
+          "revisionId": "52096e895ef2e8204c88276cc9604a760c39497d",
+          "branch": "renovate/express-docker",
+          "properties": {
+            "repoUrl": "https://github.com/smockoro/ts-sample",
+            "lastAuthorName": "renovate[bot]",
+            "vcsType": "Git",
+            "lastAuthorEmail": "29139614+renovate[bot]@users.noreply.github.com",
+            "tags": [
+              "repoUrl",
+              "lastAuthorEmail",
+              "lastAuthorName",
+              "vcsType"
+            ]
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "JSIgnoredPromiseFromCall",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Promise returned from start is ignored",
+            "markdown": "Promise returned from start is ignored"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/server.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "charOffset": 226,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "start"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "charOffset": 221,
+                  "charLength": 14,
+                  "snippet": {
+                    "text": "}\r\n\r\nstart()\r\n"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "0683be089688560654ea1da424cc4ad0c5462ee1aa8f2be8ce19c71729620e17"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnusedLocalSymbols",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Unused parameter request",
+            "markdown": "Unused parameter request"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/adapter/http/route/ping.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 38,
+                  "charOffset": 399,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "request"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 17,
+                  "startColumn": 1,
+                  "charOffset": 357,
+                  "charLength": 129,
+                  "snippet": {
+                    "text": "}\r\n\r\nexport const pingController = async (request: FastifyRequest, reply: FastifyReply) => {\r\n  return { pong: \"it worked!!\" }\r\n}"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "843ef79dc4848fdc6e582615141371436c2ab88f1efdd601aca41047c16c907f"
+          },
+          "properties": {
+            "ideaSeverity": "WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnusedLocalSymbols",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Unused parameter reply",
+            "markdown": "Unused parameter reply"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/src/adapter/http/route/ping.ts",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 63,
+                  "charOffset": 424,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "reply"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 17,
+                  "startColumn": 1,
+                  "charOffset": 357,
+                  "charLength": 129,
+                  "snippet": {
+                    "text": "}\r\n\r\nexport const pingController = async (request: FastifyRequest, reply: FastifyReply) => {\r\n  return { pong: \"it worked!!\" }\r\n}"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "8a0e4273a11b3d9a8e6a3d045174f5589264afbc47fdb85d298f1f310916e1e5"
+          },
+          "properties": {
+            "ideaSeverity": "WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/jest.config.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 66,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 139,
+                  "snippet": {
+                    "text": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "express-docker/jest.config.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 66,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 139,
+                  "snippet": {
+                    "text": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "2879e739e19d46c67870e821f0646d3fcc4c2a41f950f8181c9f75b6fa1ebdb5"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "express-docker/.prettierrc.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 45,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 134,
+                  "snippet": {
+                    "text": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        },
+        {
+          "ruleId": "JSUnresolvedVariable",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Unresolved variable or type module",
+            "markdown": "Unresolved variable or type module"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "fastify-docker/.prettierrc.js",
+                  "uriBaseId": "SRCROOT"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "charOffset": 45,
+                  "charLength": 6,
+                  "snippet": {
+                    "text": "module"
+                  },
+                  "sourceLanguage": "JavaScript"
+                },
+                "contextRegion": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "charOffset": 0,
+                  "charLength": 134,
+                  "snippet": {
+                    "text": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
+                  }
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "project",
+                  "kind": "module"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "equalIndicator/v1": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
+          },
+          "properties": {
+            "ideaSeverity": "WEAK WARNING",
+            "tags": [
+              "ideaSeverity"
+            ]
+          }
+        }
+      ],
       "automationDetails": {
-        "id": "project/qodana/2022-11-19",
-        "guid": "f14dd909-ee85-4098-a75b-ae2d7009d06f",
+        "id": "project/qodana/2022-11-21",
+        "guid": "2097dc4a-cd27-4175-8620-cd55cf5d0106",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3501429880",
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3518231481",
           "tags": [
             "jobUrl"
           ]
