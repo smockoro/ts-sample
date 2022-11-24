@@ -941,6 +941,77 @@
       ]
     },
     {
+      "name": "Potentially undesirable code constructs",
+      "inspections": [
+        {
+          "shortName": "BreakStatementJS",
+          "displayName": "'break' statement",
+          "enabled": false,
+          "description": "Reports a `break` statements. Ignores `break` statements that end case blocks."
+        },
+        {
+          "shortName": "DebuggerStatementJS",
+          "displayName": "'debugger' statement",
+          "enabled": false,
+          "description": "Reports a `debugger` statement used for interaction with the Javascript debuggers. Such statements should not appear in production code."
+        },
+        {
+          "shortName": "BreakStatementWithLabelJS",
+          "displayName": "'break' statement with label",
+          "enabled": false,
+          "description": "Reports a labeled `break` statement."
+        },
+        {
+          "shortName": "ContinueStatementWithLabelJS",
+          "displayName": "'continue' statement with label",
+          "enabled": false,
+          "description": "Reports a labeled `continue` statement."
+        },
+        {
+          "shortName": "ContinueStatementJS",
+          "displayName": "'continue' statement",
+          "enabled": false,
+          "description": "Reports a `continue` statement."
+        },
+        {
+          "shortName": "ConditionalExpressionJS",
+          "displayName": "Conditional expression",
+          "enabled": false,
+          "description": "Reports a ternary conditional expression. Some coding standards prohibit such expressions in favor of explicit `if` statements."
+        },
+        {
+          "shortName": "LabeledStatementJS",
+          "displayName": "Labeled statement",
+          "enabled": false,
+          "description": "Reports a labeled statement."
+        },
+        {
+          "shortName": "WithStatementJS",
+          "displayName": "'with' statement",
+          "enabled": false,
+          "description": "Reports a `with` statements. Such statements result in potentially confusing implicit bindings, and may behave strangely in setting new variables."
+        },
+        {
+          "shortName": "AnonymousFunctionJS",
+          "displayName": "Anonymous function",
+          "enabled": false,
+          "description": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
+        },
+        {
+          "shortName": "CommaExpressionJS",
+          "displayName": "Comma expression",
+          "enabled": false,
+          "description": "Reports a comma expression. Such expressions are often a sign of overly clever code, and may lead to subtle bugs. Comma expressions in the initializer or in the update section of `for` loops are ignored."
+        },
+        {
+          "shortName": "VoidExpressionJS",
+          "displayName": "'void' expression",
+          "enabled": false,
+          "description": "Reports a `void` expression."
+        }
+      ]
+    },
+    {
       "name": "Probable bugs",
       "inspections": [
         {
@@ -1104,77 +1175,6 @@
           "displayName": "Missing generic font family name",
           "enabled": false,
           "description": "Verifies that the [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) property contains a generic font family name as a fallback alternative.\n\n\nGeneric font family names are: `serif`, `sans-serif`, `cursive`, `fantasy`,\nand `monospace`."
-        }
-      ]
-    },
-    {
-      "name": "Potentially undesirable code constructs",
-      "inspections": [
-        {
-          "shortName": "BreakStatementJS",
-          "displayName": "'break' statement",
-          "enabled": false,
-          "description": "Reports a `break` statements. Ignores `break` statements that end case blocks."
-        },
-        {
-          "shortName": "DebuggerStatementJS",
-          "displayName": "'debugger' statement",
-          "enabled": false,
-          "description": "Reports a `debugger` statement used for interaction with the Javascript debuggers. Such statements should not appear in production code."
-        },
-        {
-          "shortName": "BreakStatementWithLabelJS",
-          "displayName": "'break' statement with label",
-          "enabled": false,
-          "description": "Reports a labeled `break` statement."
-        },
-        {
-          "shortName": "ContinueStatementWithLabelJS",
-          "displayName": "'continue' statement with label",
-          "enabled": false,
-          "description": "Reports a labeled `continue` statement."
-        },
-        {
-          "shortName": "ContinueStatementJS",
-          "displayName": "'continue' statement",
-          "enabled": false,
-          "description": "Reports a `continue` statement."
-        },
-        {
-          "shortName": "ConditionalExpressionJS",
-          "displayName": "Conditional expression",
-          "enabled": false,
-          "description": "Reports a ternary conditional expression. Some coding standards prohibit such expressions in favor of explicit `if` statements."
-        },
-        {
-          "shortName": "LabeledStatementJS",
-          "displayName": "Labeled statement",
-          "enabled": false,
-          "description": "Reports a labeled statement."
-        },
-        {
-          "shortName": "WithStatementJS",
-          "displayName": "'with' statement",
-          "enabled": false,
-          "description": "Reports a `with` statements. Such statements result in potentially confusing implicit bindings, and may behave strangely in setting new variables."
-        },
-        {
-          "shortName": "AnonymousFunctionJS",
-          "displayName": "Anonymous function",
-          "enabled": false,
-          "description": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
-        },
-        {
-          "shortName": "CommaExpressionJS",
-          "displayName": "Comma expression",
-          "enabled": false,
-          "description": "Reports a comma expression. Such expressions are often a sign of overly clever code, and may lead to subtle bugs. Comma expressions in the initializer or in the update section of `for` loops are ignored."
-        },
-        {
-          "shortName": "VoidExpressionJS",
-          "displayName": "'void' expression",
-          "enabled": false,
-          "description": "Reports a `void` expression."
         }
       ]
     },
@@ -1849,6 +1849,17 @@
       ]
     },
     {
+      "name": "Structural search",
+      "inspections": [
+        {
+          "shortName": "SSBasedInspection",
+          "displayName": "Structural search inspection",
+          "enabled": true,
+          "description": "Allows configuring **Structural Search/Structural Replace** templates that you can apply to the file you are editing.\n\nAll matches will be highlighted and marked with the template name that you have configured.\nIf you configure the **Structural Replace** pattern as well, the corresponding replace option will be available as a quick-fix."
+        }
+      ]
+    },
+    {
       "name": "Function metrics",
       "inspections": [
         {
@@ -1892,17 +1903,6 @@
           "displayName": "Overly nested function",
           "enabled": false,
           "description": "Reports a function whose body contains statements that are too deeply nested within other statements. Such functions may be confusing and indicate that refactoring may be necessary.\n\n\nUse the field provided below to specify the maximum acceptable nesting depth allowed in a function."
-        }
-      ]
-    },
-    {
-      "name": "Structural search",
-      "inspections": [
-        {
-          "shortName": "SSBasedInspection",
-          "displayName": "Structural search inspection",
-          "enabled": true,
-          "description": "Allows configuring **Structural Search/Structural Replace** templates that you can apply to the file you are editing.\n\nAll matches will be highlighted and marked with the template name that you have configured.\nIf you configure the **Structural Replace** pattern as well, the corresponding replace option will be available as a quick-fix."
         }
       ]
     },
