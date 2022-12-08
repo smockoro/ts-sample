@@ -2,9 +2,6 @@
   "tool": "Code Inspection",
   "category": "Async code and promises",
   "type": "Result of method call returning a promise is ignored",
-  "tags": [
-    "JavaScript"
-  ],
   "severity": "Moderate",
   "comment": "Promise returned from start is ignored",
   "detailsInfo": "Reports a function call that returns a `Promise` that is not used later. Such calls are usually unintended and indicate an error.",
@@ -33,9 +30,6 @@
   "tool": "Code Inspection",
   "category": "Unused symbols",
   "type": "Unused local symbol",
-  "tags": [
-    "JavaScript"
-  ],
   "severity": "High",
   "comment": "Unused parameter request",
   "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
@@ -64,9 +58,6 @@
   "tool": "Code Inspection",
   "category": "Unused symbols",
   "type": "Unused local symbol",
-  "tags": [
-    "JavaScript"
-  ],
   "severity": "High",
   "comment": "Unused parameter reply",
   "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
@@ -95,40 +86,6 @@
   "tool": "Code Inspection",
   "category": "General",
   "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "fastify-docker/.prettierrc.js",
-      "language": "JavaScript",
-      "line": 2,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 45,
-        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
-  },
-  "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
-  ],
   "severity": "Moderate",
   "comment": "Unresolved variable or type module",
   "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
@@ -157,9 +114,34 @@
   "tool": "Code Inspection",
   "category": "General",
   "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "express-docker/jest.config.js",
+      "language": "JavaScript",
+      "line": 2,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 66,
+        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+      }
+    }
   ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "2879e739e19d46c67870e821f0646d3fcc4c2a41f950f8181c9f75b6fa1ebdb5"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
   "severity": "Moderate",
   "comment": "Unresolved variable or type module",
   "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
@@ -188,16 +170,13 @@
   "tool": "Code Inspection",
   "category": "General",
   "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
-  ],
   "severity": "Moderate",
   "comment": "Unresolved variable or type module",
   "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
   "sources": [
     {
       "type": "file",
-      "path": "express-docker/jest.config.js",
+      "path": "fastify-docker/.prettierrc.js",
       "language": "JavaScript",
       "line": 2,
       "offset": 1,
@@ -205,8 +184,8 @@
       "code": {
         "startLine": 1,
         "length": 6,
-        "offset": 66,
-        "surroundingCode": "/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */\r\nmodule.exports = {\r\n    preset: 'ts-jest',\r\n    testEnvironment: 'node',\r"
+        "offset": 45,
+        "surroundingCode": "// https://prettier.io/docs/en/options.html\r\nmodule.exports = {\r\n    tabWidth: 2, //インデントのスペース数\r\n    singleQuote: true, //シングルクォートに統一\r"
       }
     }
   ],
@@ -214,5 +193,5 @@
     "module": "project",
     "inspectionName": "JSUnresolvedVariable"
   },
-  "hash": "2879e739e19d46c67870e821f0646d3fcc4c2a41f950f8181c9f75b6fa1ebdb5"
+  "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
 }]}
