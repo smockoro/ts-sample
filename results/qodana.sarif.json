@@ -2359,37 +2359,6 @@
                 ]
               },
               {
-                "id": "JSObjectNullOrUndefined",
-                "shortDescription": {
-                  "text": "Object is 'null' or 'undefined'"
-                },
-                "fullDescription": {
-                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
-                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptMissingConfigOption",
                 "shortDescription": {
                   "text": "Missing tsconfig.json option "
@@ -2410,6 +2379,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/TypeScript",
                       "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSObjectNullOrUndefined",
+                "shortDescription": {
+                  "text": "Object is 'null' or 'undefined'"
+                },
+                "fullDescription": {
+                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
+                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2452,37 +2452,6 @@
                 ]
               },
               {
-                "id": "UnnecessaryLabelOnBreakStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary label on 'break' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
-                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6ShorthandObjectProperty",
                 "shortDescription": {
                   "text": "Property can be replaced with shorthand"
@@ -2503,6 +2472,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnnecessaryLabelOnBreakStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary label on 'break' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
+                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3444,37 +3444,6 @@
                 ]
               },
               {
-                "id": "TypeScriptCheckImport",
-                "shortDescription": {
-                  "text": "Unresolved imported name"
-                },
-                "fullDescription": {
-                  "text": "Reports an unresolved name or binding in an 'import' declaration in TypeScript code.",
-                  "markdown": "Reports an unresolved name or binding in an `import` declaration in TypeScript code."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/TypeScript",
-                      "index": 3,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSConstantReassignment",
                 "shortDescription": {
                   "text": "Attempt to assign to const or readonly variable"
@@ -3495,6 +3464,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Validity issues",
                       "index": 21,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TypeScriptCheckImport",
+                "shortDescription": {
+                  "text": "Unresolved imported name"
+                },
+                "fullDescription": {
+                  "text": "Reports an unresolved name or binding in an 'import' declaration in TypeScript code.",
+                  "markdown": "Reports an unresolved name or binding in an `import` declaration in TypeScript code."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/TypeScript",
+                      "index": 3,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4033,37 +4033,6 @@
                 ]
               },
               {
-                "id": "TextLabelInSwitchStatementJS",
-                "shortDescription": {
-                  "text": "Text label in 'switch' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
-                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6PossiblyAsyncFunction",
                 "shortDescription": {
                   "text": "'await' in non-async function"
@@ -4084,6 +4053,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Async code and promises",
                       "index": 45,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TextLabelInSwitchStatementJS",
+                "shortDescription": {
+                  "text": "Text label in 'switch' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
+                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -5521,6 +5521,37 @@
                 ]
               },
               {
+                "id": "JSAnnotator",
+                "shortDescription": {
+                  "text": "ECMAScript specification is not followed"
+                },
+                "fullDescription": {
+                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
+                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "JSIncompatibleTypesComparison",
                 "shortDescription": {
                   "text": "Comparison of expressions having incompatible types"
@@ -5565,37 +5596,6 @@
                   "level": "warning",
                   "parameters": {
                     "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSAnnotator",
-                "shortDescription": {
-                  "text": "ECMAScript specification is not followed"
-                },
-                "fullDescription": {
-                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
-                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR"
                   }
                 },
                 "relationships": [
@@ -7660,37 +7660,6 @@
                 ]
               },
               {
-                "id": "TrivialConditionalJS",
-                "shortDescription": {
-                  "text": "Redundant conditional expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a conditional expression of the form 'condition ? true : false\ncondition ? false : true' These expressions may be safely converted to 'condition\n!condition'",
-                  "markdown": "Reports a conditional expression of the form\n\n\n    condition ? true : false\n    condition ? false : true\n\n\nThese expressions may be safely converted to\n\n\n    condition\n    !condition\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptDuplicateUnionOrIntersectionType",
                 "shortDescription": {
                   "text": "Duplicate union or intersection type component"
@@ -7722,26 +7691,26 @@
                 ]
               },
               {
-                "id": "JSMissingSwitchBranches",
+                "id": "TrivialConditionalJS",
                 "shortDescription": {
-                  "text": "'switch' statement has missing branches"
+                  "text": "Redundant conditional expression"
                 },
                 "fullDescription": {
-                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
-                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                  "text": "Reports a conditional expression of the form 'condition ? true : false\ncondition ? false : true' These expressions may be safely converted to 'condition\n!condition'",
+                  "markdown": "Reports a conditional expression of the form\n\n\n    condition ? true : false\n    condition ? false : true\n\n\nThese expressions may be safely converted to\n\n\n    condition\n    !condition\n"
                 },
                 "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
+                  "enabled": false,
+                  "level": "warning",
                   "parameters": {
-                    "ideaSeverity": "INFORMATION"
+                    "ideaSeverity": "WARNING"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7773,6 +7742,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/DOM issues",
                       "index": 44,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSMissingSwitchBranches",
+                "shortDescription": {
+                  "text": "'switch' statement has missing branches"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
+                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "INFORMATION"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8094,37 +8094,6 @@
                 ]
               },
               {
-                "id": "JSUnusedLocalSymbols",
-                "shortDescription": {
-                  "text": "Unused local symbol"
-                },
-                "fullDescription": {
-                  "text": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
-                  "markdown": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 15,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ReturnFromFinallyBlockJS",
                 "shortDescription": {
                   "text": "'return' inside 'finally' block"
@@ -8145,6 +8114,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 26,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSUnusedLocalSymbols",
+                "shortDescription": {
+                  "text": "Unused local symbol"
+                },
+                "fullDescription": {
+                  "text": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+                  "markdown": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Unused symbols",
+                      "index": 15,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10374,13 +10374,13 @@
                 ]
               },
               {
-                "id": "RegExpRepeatedSpace",
+                "id": "RegExpDuplicateAlternationBranch",
                 "shortDescription": {
-                  "text": "Consecutive spaces"
+                  "text": "Duplicate branch in alternation"
                 },
                 "fullDescription": {
-                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
-                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
+                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
+                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -10405,13 +10405,13 @@
                 ]
               },
               {
-                "id": "RegExpDuplicateAlternationBranch",
+                "id": "RegExpRepeatedSpace",
                 "shortDescription": {
-                  "text": "Duplicate branch in alternation"
+                  "text": "Consecutive spaces"
                 },
                 "fullDescription": {
-                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
-                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
+                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
+                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -13593,8 +13593,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "618649b623a5a343e48de21bb1dae7d2a4023596",
-          "branch": "renovate/fastify-docker",
+          "revisionId": "a625b50a21e8c1eb58db61a6bd877df752a05729",
+          "branch": "main",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "renovate[bot]",
@@ -13977,10 +13977,10 @@
         }
       ],
       "automationDetails": {
-        "id": "project/qodana/2022-12-08",
-        "guid": "d4708343-12b6-4ec8-a251-1b6dcc4edc14",
+        "id": "project/qodana/2022-12-09",
+        "guid": "4e7739c9-82b7-4586-8bf6-79a22d16cb46",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3651751325"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3653303005"
         }
       },
       "newlineSequences": [
