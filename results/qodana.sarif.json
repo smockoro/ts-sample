@@ -179,6 +179,10 @@
               "name": "HTML"
             },
             {
+              "id": "Cucumber",
+              "name": "Cucumber"
+            },
+            {
               "id": "JavaScript and TypeScript/Unused symbols",
               "name": "Unused symbols",
               "relationships": [
@@ -195,10 +199,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "id": "Cucumber",
-              "name": "Cucumber"
             },
             {
               "id": "JavaScript and TypeScript/Data flow",
@@ -357,6 +357,10 @@
               ]
             },
             {
+              "id": "Structural search",
+              "name": "Structural search"
+            },
+            {
               "id": "JavaScript and TypeScript/Function metrics",
               "name": "Function metrics",
               "relationships": [
@@ -373,10 +377,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "id": "Structural search",
-              "name": "Structural search"
             },
             {
               "id": "Dependency analysis",
@@ -1615,37 +1615,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithTooManyBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with too many branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
-                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSValidateJSDoc",
                 "shortDescription": {
                   "text": "Syntax errors and unresolved references in JSDoc"
@@ -1666,6 +1635,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithTooManyBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with too many branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
+                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1851,7 +1851,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 14,
+                      "index": 15,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1956,37 +1956,6 @@
                 ]
               },
               {
-                "id": "JSClosureCompilerSyntax",
-                "shortDescription": {
-                  "text": "Incorrect usage of JSDoc tags"
-                },
-                "fullDescription": {
-                  "text": "Reports warnings implied by Google Closure Compiler annotations including correct use of '@abstract', '@interface', and '@implements' tags.",
-                  "markdown": "Reports warnings implied by *Google Closure Compiler* annotations including correct use of `@abstract`, `@interface`, and `@implements` tags."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "UnnecessaryContinueJS",
                 "shortDescription": {
                   "text": "Unnecessary 'continue' statement"
@@ -2007,6 +1976,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSClosureCompilerSyntax",
+                "shortDescription": {
+                  "text": "Incorrect usage of JSDoc tags"
+                },
+                "fullDescription": {
+                  "text": "Reports warnings implied by Google Closure Compiler annotations including correct use of '@abstract', '@interface', and '@implements' tags.",
+                  "markdown": "Reports warnings implied by *Google Closure Compiler* annotations including correct use of `@abstract`, `@interface`, and `@implements` tags."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2223,7 +2223,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2359,37 +2359,6 @@
                 ]
               },
               {
-                "id": "JSObjectNullOrUndefined",
-                "shortDescription": {
-                  "text": "Object is 'null' or 'undefined'"
-                },
-                "fullDescription": {
-                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
-                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptMissingConfigOption",
                 "shortDescription": {
                   "text": "Missing tsconfig.json option "
@@ -2410,6 +2379,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/TypeScript",
                       "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSObjectNullOrUndefined",
+                "shortDescription": {
+                  "text": "Object is 'null' or 'undefined'"
+                },
+                "fullDescription": {
+                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
+                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2452,37 +2452,6 @@
                 ]
               },
               {
-                "id": "ES6ShorthandObjectProperty",
-                "shortDescription": {
-                  "text": "Property can be replaced with shorthand"
-                },
-                "fullDescription": {
-                  "text": "Reports an object property that can be converted to ES6 shorthand style and provides a quick-fix to do it. Example: 'var obj = {foo:foo}' After applying the quick-fix the code looks as follows: 'var obj = {foo}'",
-                  "markdown": "Reports an object property that can be converted to ES6 shorthand style and provides a quick-fix to do it.\n\nExample:\n\n\n    var obj = {foo:foo}\n\nAfter applying the quick-fix the code looks as follows:\n\n\n    var obj = {foo}\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "INFORMATION"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "UnnecessaryLabelOnBreakStatementJS",
                 "shortDescription": {
                   "text": "Unnecessary label on 'break' statement"
@@ -2503,6 +2472,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6ShorthandObjectProperty",
+                "shortDescription": {
+                  "text": "Property can be replaced with shorthand"
+                },
+                "fullDescription": {
+                  "text": "Reports an object property that can be converted to ES6 shorthand style and provides a quick-fix to do it. Example: 'var obj = {foo:foo}' After applying the quick-fix the code looks as follows: 'var obj = {foo}'",
+                  "markdown": "Reports an object property that can be converted to ES6 shorthand style and provides a quick-fix to do it.\n\nExample:\n\n\n    var obj = {foo:foo}\n\nAfter applying the quick-fix the code looks as follows:\n\n\n    var obj = {foo}\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "INFORMATION"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3308,7 +3308,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3444,37 +3444,6 @@
                 ]
               },
               {
-                "id": "TypeScriptCheckImport",
-                "shortDescription": {
-                  "text": "Unresolved imported name"
-                },
-                "fullDescription": {
-                  "text": "Reports an unresolved name or binding in an 'import' declaration in TypeScript code.",
-                  "markdown": "Reports an unresolved name or binding in an `import` declaration in TypeScript code."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/TypeScript",
-                      "index": 3,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSConstantReassignment",
                 "shortDescription": {
                   "text": "Attempt to assign to const or readonly variable"
@@ -3495,6 +3464,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Validity issues",
                       "index": 21,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TypeScriptCheckImport",
+                "shortDescription": {
+                  "text": "Unresolved imported name"
+                },
+                "fullDescription": {
+                  "text": "Reports an unresolved name or binding in an 'import' declaration in TypeScript code.",
+                  "markdown": "Reports an unresolved name or binding in an `import` declaration in TypeScript code."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/TypeScript",
+                      "index": 3,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3742,7 +3742,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 14,
+                      "index": 15,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4033,37 +4033,6 @@
                 ]
               },
               {
-                "id": "TextLabelInSwitchStatementJS",
-                "shortDescription": {
-                  "text": "Text label in 'switch' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
-                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6PossiblyAsyncFunction",
                 "shortDescription": {
                   "text": "'await' in non-async function"
@@ -4084,6 +4053,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Async code and promises",
                       "index": 45,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TextLabelInSwitchStatementJS",
+                "shortDescription": {
+                  "text": "Text label in 'switch' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
+                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4455,7 +4455,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4932,37 +4932,6 @@
                 ]
               },
               {
-                "id": "EmptyTryBlockJS",
-                "shortDescription": {
-                  "text": "Empty 'try' block"
-                },
-                "fullDescription": {
-                  "text": "Reports an empty 'try' block, which usually indicates an error.",
-                  "markdown": "Reports an empty `try` block, which usually indicates an error."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Try statement issues",
-                      "index": 26,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6ClassMemberInitializationOrder",
                 "shortDescription": {
                   "text": "Use of possibly unassigned property in a static initializer"
@@ -4983,6 +4952,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "EmptyTryBlockJS",
+                "shortDescription": {
+                  "text": "Empty 'try' block"
+                },
+                "fullDescription": {
+                  "text": "Reports an empty 'try' block, which usually indicates an error.",
+                  "markdown": "Reports an empty `try` block, which usually indicates an error."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Try statement issues",
+                      "index": 26,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -5521,19 +5521,19 @@
                 ]
               },
               {
-                "id": "JSUnfilteredForInLoop",
+                "id": "JSAnnotator",
                 "shortDescription": {
-                  "text": "Unfiltered for..in loop"
+                  "text": "ECMAScript specification is not followed"
                 },
                 "fullDescription": {
-                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
-                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
+                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
+                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
                 },
                 "defaultConfiguration": {
                   "enabled": false,
-                  "level": "warning",
+                  "level": "error",
                   "parameters": {
-                    "ideaSeverity": "WARNING"
+                    "ideaSeverity": "ERROR"
                   }
                 },
                 "relationships": [
@@ -5583,19 +5583,19 @@
                 ]
               },
               {
-                "id": "JSAnnotator",
+                "id": "JSUnfilteredForInLoop",
                 "shortDescription": {
-                  "text": "ECMAScript specification is not followed"
+                  "text": "Unfiltered for..in loop"
                 },
                 "fullDescription": {
-                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
-                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
+                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
+                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
                 },
                 "defaultConfiguration": {
                   "enabled": false,
-                  "level": "error",
+                  "level": "warning",
                   "parameters": {
-                    "ideaSeverity": "ERROR"
+                    "ideaSeverity": "WARNING"
                   }
                 },
                 "relationships": [
@@ -5943,7 +5943,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6408,7 +6408,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6470,7 +6470,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6687,7 +6687,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Function metrics",
-                      "index": 27,
+                      "index": 28,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7381,37 +7381,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithIdenticalBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with identical branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with identical 'then' and 'else' branches. Such statements are almost certainly an error.",
-                  "markdown": "Reports an `if` statement with identical `then` and `else` branches. Such statements are almost certainly an error."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "PlatformDetectionJS",
                 "shortDescription": {
                   "text": "Inaccurate platform detection"
@@ -7432,6 +7401,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/DOM issues",
                       "index": 44,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithIdenticalBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with identical branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with identical 'then' and 'else' branches. Such statements are almost certainly an error.",
+                  "markdown": "Reports an `if` statement with identical `then` and `else` branches. Such statements are almost certainly an error."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7660,37 +7660,6 @@
                 ]
               },
               {
-                "id": "TypeScriptDuplicateUnionOrIntersectionType",
-                "shortDescription": {
-                  "text": "Duplicate union or intersection type component"
-                },
-                "fullDescription": {
-                  "text": "Reports a duplicate type inside a union or intersection.",
-                  "markdown": "Reports a duplicate type inside a union or intersection."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/TypeScript",
-                      "index": 3,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TrivialConditionalJS",
                 "shortDescription": {
                   "text": "Redundant conditional expression"
@@ -7722,26 +7691,57 @@
                 ]
               },
               {
-                "id": "JSMissingSwitchBranches",
+                "id": "TypeScriptDuplicateUnionOrIntersectionType",
                 "shortDescription": {
-                  "text": "'switch' statement has missing branches"
+                  "text": "Duplicate union or intersection type component"
                 },
                 "fullDescription": {
-                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
-                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                  "text": "Reports a duplicate type inside a union or intersection.",
+                  "markdown": "Reports a duplicate type inside a union or intersection."
                 },
                 "defaultConfiguration": {
                   "enabled": true,
-                  "level": "note",
+                  "level": "warning",
                   "parameters": {
-                    "ideaSeverity": "INFORMATION"
+                    "ideaSeverity": "WARNING"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
+                      "id": "JavaScript and TypeScript/TypeScript",
+                      "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "InnerHTMLJS",
+                "shortDescription": {
+                  "text": "Use of 'innerHTML' property"
+                },
+                "fullDescription": {
+                  "text": "Reports a JavaScript access to DOM nodes as text using the 'innerHTML' property. Most usages of 'innerHTML' are performed better with explicit DOM calls, such as 'getElementByID()' and 'createElement()'. Additionally, 'innerHTML' will not work with XML DOMs, including DOMs for XHTML if viewed as XML. This can lead to difficulties in diagnosing bugs.",
+                  "markdown": "Reports a JavaScript access to DOM nodes as text using the `innerHTML` property. Most usages of `innerHTML` are performed better with explicit DOM calls, such as `getElementByID()` and `createElement()`. Additionally, `innerHTML` will not work with XML DOMs, including DOMs for XHTML if viewed as XML. This can lead to difficulties in diagnosing bugs."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/DOM issues",
+                      "index": 44,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7784,26 +7784,26 @@
                 ]
               },
               {
-                "id": "InnerHTMLJS",
+                "id": "JSMissingSwitchBranches",
                 "shortDescription": {
-                  "text": "Use of 'innerHTML' property"
+                  "text": "'switch' statement has missing branches"
                 },
                 "fullDescription": {
-                  "text": "Reports a JavaScript access to DOM nodes as text using the 'innerHTML' property. Most usages of 'innerHTML' are performed better with explicit DOM calls, such as 'getElementByID()' and 'createElement()'. Additionally, 'innerHTML' will not work with XML DOMs, including DOMs for XHTML if viewed as XML. This can lead to difficulties in diagnosing bugs.",
-                  "markdown": "Reports a JavaScript access to DOM nodes as text using the `innerHTML` property. Most usages of `innerHTML` are performed better with explicit DOM calls, such as `getElementByID()` and `createElement()`. Additionally, `innerHTML` will not work with XML DOMs, including DOMs for XHTML if viewed as XML. This can lead to difficulties in diagnosing bugs."
+                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
+                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
                 },
                 "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
+                  "enabled": true,
+                  "level": "note",
                   "parameters": {
-                    "ideaSeverity": "WARNING"
+                    "ideaSeverity": "INFORMATION"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/DOM issues",
-                      "index": 44,
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8144,7 +8144,7 @@
                   {
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
-                      "index": 14,
+                      "index": 15,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8812,7 +8812,7 @@
                   {
                     "target": {
                       "id": "Structural search",
-                      "index": 28,
+                      "index": 27,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -9971,37 +9971,6 @@
                 ]
               },
               {
-                "id": "RegExpRedundantNestedCharacterClass",
-                "shortDescription": {
-                  "text": "Redundant nested character class"
-                },
-                "fullDescription": {
-                  "text": "Reports unnecessary nested character classes. Example: '[a-c[x-z]]' After the quick-fix is applied: '[a-cx-z]' New in 2020.2",
-                  "markdown": "Reports unnecessary nested character classes.\n\n**Example:**\n\n\n      [a-c[x-z]]\n\nAfter the quick-fix is applied:\n\n\n      [a-cx-z]\n\nNew in 2020.2"
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "RegExp",
-                      "index": 36,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "XmlDeprecatedElement",
                 "shortDescription": {
                   "text": "Deprecated symbol"
@@ -10022,6 +9991,37 @@
                     "target": {
                       "id": "XML",
                       "index": 32,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "RegExpRedundantNestedCharacterClass",
+                "shortDescription": {
+                  "text": "Redundant nested character class"
+                },
+                "fullDescription": {
+                  "text": "Reports unnecessary nested character classes. Example: '[a-c[x-z]]' After the quick-fix is applied: '[a-cx-z]' New in 2020.2",
+                  "markdown": "Reports unnecessary nested character classes.\n\n**Example:**\n\n\n      [a-c[x-z]]\n\nAfter the quick-fix is applied:\n\n\n      [a-cx-z]\n\nNew in 2020.2"
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "RegExp",
+                      "index": 36,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10374,13 +10374,13 @@
                 ]
               },
               {
-                "id": "RegExpRepeatedSpace",
+                "id": "RegExpDuplicateAlternationBranch",
                 "shortDescription": {
-                  "text": "Consecutive spaces"
+                  "text": "Duplicate branch in alternation"
                 },
                 "fullDescription": {
-                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
-                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
+                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
+                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -10405,13 +10405,13 @@
                 ]
               },
               {
-                "id": "RegExpDuplicateAlternationBranch",
+                "id": "RegExpRepeatedSpace",
                 "shortDescription": {
-                  "text": "Duplicate branch in alternation"
+                  "text": "Consecutive spaces"
                 },
                 "fullDescription": {
-                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
-                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
+                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
+                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -10591,7 +10591,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10622,7 +10622,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10653,7 +10653,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10684,7 +10684,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10715,7 +10715,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10746,7 +10746,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10777,7 +10777,7 @@
                   {
                     "target": {
                       "id": "Cucumber",
-                      "index": 15,
+                      "index": 14,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -13593,8 +13593,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "c55b661b1294b5652cd2a4a8a0d69ff00aac698c",
-          "branch": "main",
+          "revisionId": "af7807d76ee06b9db33e53f233addbbb11e3ee21",
+          "branch": "renovate/express-docker",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "renovate[bot]",
@@ -13978,9 +13978,9 @@
       ],
       "automationDetails": {
         "id": "project/qodana/2022-12-10",
-        "guid": "4c3d2b4e-69ac-4959-b524-f700e7fe1587",
+        "guid": "7792495c-f153-456a-9dd9-28c997053db2",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3662800078"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3666067734"
         }
       },
       "newlineSequences": [
