@@ -1615,37 +1615,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithTooManyBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with too many branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
-                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "NonBlockStatementBodyJS",
                 "shortDescription": {
                   "text": "Statement body without braces"
@@ -1666,6 +1635,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Code style issues",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithTooManyBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with too many branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
+                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1956,37 +1956,6 @@
                 ]
               },
               {
-                "id": "UnnecessaryContinueJS",
-                "shortDescription": {
-                  "text": "Unnecessary 'continue' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports an unnecessary 'continue' statement at the end of a loop. Suggests removing such statements.",
-                  "markdown": "Reports an unnecessary `continue` statement at the end of a loop. Suggests removing such statements."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSClosureCompilerSyntax",
                 "shortDescription": {
                   "text": "Incorrect usage of JSDoc tags"
@@ -2007,6 +1976,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnnecessaryContinueJS",
+                "shortDescription": {
+                  "text": "Unnecessary 'continue' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports an unnecessary 'continue' statement at the end of a loop. Suggests removing such statements.",
+                  "markdown": "Reports an unnecessary `continue` statement at the end of a loop. Suggests removing such statements."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2359,37 +2359,6 @@
                 ]
               },
               {
-                "id": "TypeScriptMissingConfigOption",
-                "shortDescription": {
-                  "text": "Missing tsconfig.json option "
-                },
-                "fullDescription": {
-                  "text": "Reports a usage that requires an explicit option in 'tsconfig.json'. For example, to use JSX in '.tsx' files, 'tsconfig.json' must contain '\"jsx\"' property.",
-                  "markdown": "Reports a usage that requires an explicit option in `tsconfig.json`. For example, to use JSX in `.tsx` files, `tsconfig.json` must contain `\"jsx\"` property."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/TypeScript",
-                      "index": 3,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSObjectNullOrUndefined",
                 "shortDescription": {
                   "text": "Object is 'null' or 'undefined'"
@@ -2410,6 +2379,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TypeScriptMissingConfigOption",
+                "shortDescription": {
+                  "text": "Missing tsconfig.json option "
+                },
+                "fullDescription": {
+                  "text": "Reports a usage that requires an explicit option in 'tsconfig.json'. For example, to use JSX in '.tsx' files, 'tsconfig.json' must contain '\"jsx\"' property.",
+                  "markdown": "Reports a usage that requires an explicit option in `tsconfig.json`. For example, to use JSX in `.tsx` files, `tsconfig.json` must contain `\"jsx\"` property."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/TypeScript",
+                      "index": 3,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2452,37 +2452,6 @@
                 ]
               },
               {
-                "id": "UnnecessaryLabelOnBreakStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary label on 'break' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
-                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6ShorthandObjectProperty",
                 "shortDescription": {
                   "text": "Property can be replaced with shorthand"
@@ -2503,6 +2472,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnnecessaryLabelOnBreakStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary label on 'break' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
+                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3940,37 +3940,6 @@
                 ]
               },
               {
-                "id": "NestedConditionalExpressionJS",
-                "shortDescription": {
-                  "text": "Nested conditional expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
-                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
-                      "index": 22,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSTypeOfValues",
                 "shortDescription": {
                   "text": "'typeof' comparison with non-standard value"
@@ -3991,6 +3960,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Probable bugs",
                       "index": 12,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "NestedConditionalExpressionJS",
+                "shortDescription": {
+                  "text": "Nested conditional expression"
+                },
+                "fullDescription": {
+                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
+                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
+                      "index": 22,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4932,37 +4932,6 @@
                 ]
               },
               {
-                "id": "ES6ClassMemberInitializationOrder",
-                "shortDescription": {
-                  "text": "Use of possibly unassigned property in a static initializer"
-                },
-                "fullDescription": {
-                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
-                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "EmptyTryBlockJS",
                 "shortDescription": {
                   "text": "Empty 'try' block"
@@ -4983,6 +4952,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 26,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6ClassMemberInitializationOrder",
+                "shortDescription": {
+                  "text": "Use of possibly unassigned property in a static initializer"
+                },
+                "fullDescription": {
+                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
+                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 9,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6916,37 +6916,6 @@
                 ]
               },
               {
-                "id": "JSCheckFunctionSignatures",
-                "shortDescription": {
-                  "text": "Signature mismatch"
-                },
-                "fullDescription": {
-                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
-                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ConstantOnLHSOfComparisonJS",
                 "shortDescription": {
                   "text": "Constant on left side of comparison"
@@ -6967,6 +6936,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Code style issues",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSCheckFunctionSignatures",
+                "shortDescription": {
+                  "text": "Signature mismatch"
+                },
+                "fullDescription": {
+                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
+                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 9,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7722,26 +7722,26 @@
                 ]
               },
               {
-                "id": "ES6UnusedImports",
+                "id": "JSMissingSwitchBranches",
                 "shortDescription": {
-                  "text": "Unused import"
+                  "text": "'switch' statement has missing branches"
                 },
                 "fullDescription": {
-                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
-                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
+                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
+                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
                 },
                 "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
+                  "enabled": true,
+                  "level": "note",
                   "parameters": {
-                    "ideaSeverity": "WARNING"
+                    "ideaSeverity": "INFORMATION"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Imports and dependencies",
-                      "index": 39,
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7784,26 +7784,26 @@
                 ]
               },
               {
-                "id": "JSMissingSwitchBranches",
+                "id": "ES6UnusedImports",
                 "shortDescription": {
-                  "text": "'switch' statement has missing branches"
+                  "text": "Unused import"
                 },
                 "fullDescription": {
-                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
-                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
+                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
                 },
                 "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
+                  "enabled": false,
+                  "level": "warning",
                   "parameters": {
-                    "ideaSeverity": "INFORMATION"
+                    "ideaSeverity": "WARNING"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
+                      "id": "JavaScript and TypeScript/Imports and dependencies",
+                      "index": 39,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -8094,37 +8094,6 @@
                 ]
               },
               {
-                "id": "ReturnFromFinallyBlockJS",
-                "shortDescription": {
-                  "text": "'return' inside 'finally' block"
-                },
-                "fullDescription": {
-                  "text": "Reports a 'return' statement inside a 'finally' block. Such 'return' statements may mask exceptions thrown, and complicate debugging.",
-                  "markdown": "Reports a `return` statement inside a `finally` block. Such `return` statements may mask exceptions thrown, and complicate debugging."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Try statement issues",
-                      "index": 26,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSUnusedLocalSymbols",
                 "shortDescription": {
                   "text": "Unused local symbol"
@@ -8145,6 +8114,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Unused symbols",
                       "index": 15,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ReturnFromFinallyBlockJS",
+                "shortDescription": {
+                  "text": "'return' inside 'finally' block"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'return' statement inside a 'finally' block. Such 'return' statements may mask exceptions thrown, and complicate debugging.",
+                  "markdown": "Reports a `return` statement inside a `finally` block. Such `return` statements may mask exceptions thrown, and complicate debugging."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Try statement issues",
+                      "index": 26,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10374,13 +10374,13 @@
                 ]
               },
               {
-                "id": "RegExpDuplicateAlternationBranch",
+                "id": "RegExpRepeatedSpace",
                 "shortDescription": {
-                  "text": "Duplicate branch in alternation"
+                  "text": "Consecutive spaces"
                 },
                 "fullDescription": {
-                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
-                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
+                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
+                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -10405,13 +10405,13 @@
                 ]
               },
               {
-                "id": "RegExpRepeatedSpace",
+                "id": "RegExpDuplicateAlternationBranch",
                 "shortDescription": {
-                  "text": "Consecutive spaces"
+                  "text": "Duplicate branch in alternation"
                 },
                 "fullDescription": {
-                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
-                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
+                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
+                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -13593,8 +13593,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "38e2fc24a774d50f154936bfb2d4826a6f9ce173",
-          "branch": "main",
+          "revisionId": "ffc2a48e17bdca16f4af53f6ec06efa37cd0d546",
+          "branch": "renovate/express-docker",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "renovate[bot]",
@@ -13978,9 +13978,9 @@
       ],
       "automationDetails": {
         "id": "project/qodana/2022-12-14",
-        "guid": "b13430ce-c76f-48e3-86c0-c3886382984a",
+        "guid": "26dbfe0b-79d1-49b2-a03d-35280f93a34d",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3691070955"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3691075285"
         }
       },
       "newlineSequences": [
