@@ -766,37 +766,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithTooManyBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with too many branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
-                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "NonBlockStatementBodyJS",
                 "shortDescription": {
                   "text": "Statement body without braces"
@@ -817,6 +786,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Code style issues",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithTooManyBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with too many branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction. Use the field below to specify the maximum number of branches expected.",
+                  "markdown": "Reports an `if` statement with too many branches. Such statements may be confusing, and often indicate inadequate levels of design abstraction.\n\n\nUse the field below to specify the maximum number of branches expected."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1479,37 +1479,6 @@
                 ]
               },
               {
-                "id": "TypeScriptMissingConfigOption",
-                "shortDescription": {
-                  "text": "Missing tsconfig.json option "
-                },
-                "fullDescription": {
-                  "text": "Reports a usage that requires an explicit option in 'tsconfig.json'. For example, to use JSX in '.tsx' files, 'tsconfig.json' must contain '\"jsx\"' property.",
-                  "markdown": "Reports a usage that requires an explicit option in `tsconfig.json`. For example, to use JSX in `.tsx` files, `tsconfig.json` must contain `\"jsx\"` property."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/TypeScript",
-                      "index": 3,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSObjectNullOrUndefined",
                 "shortDescription": {
                   "text": "Object is 'null' or 'undefined'"
@@ -1530,6 +1499,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 1,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TypeScriptMissingConfigOption",
+                "shortDescription": {
+                  "text": "Missing tsconfig.json option "
+                },
+                "fullDescription": {
+                  "text": "Reports a usage that requires an explicit option in 'tsconfig.json'. For example, to use JSX in '.tsx' files, 'tsconfig.json' must contain '\"jsx\"' property.",
+                  "markdown": "Reports a usage that requires an explicit option in `tsconfig.json`. For example, to use JSX in `.tsx` files, `tsconfig.json` must contain `\"jsx\"` property."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/TypeScript",
+                      "index": 3,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2068,37 +2068,6 @@
                 ]
               },
               {
-                "id": "PointlessBooleanExpressionJS",
-                "shortDescription": {
-                  "text": "Pointless statement or boolean expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a pointless or pointlessly complicated boolean expression or statement. Example: 'let a = !(false && x);\n  let b = false || x;' After the quick fix is applied the result looks like: 'let a = true;\n  let b = x;'",
-                  "markdown": "Reports a pointless or pointlessly complicated boolean expression or statement.\n\nExample:\n\n\n      let a = !(false && x);\n      let b = false || x;\n\nAfter the quick fix is applied the result looks like:\n\n\n      let a = true;\n      let b = x;\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSReferencingMutableVariableFromClosure",
                 "shortDescription": {
                   "text": "Referencing mutable variable from closure"
@@ -2119,6 +2088,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "PointlessBooleanExpressionJS",
+                "shortDescription": {
+                  "text": "Pointless statement or boolean expression"
+                },
+                "fullDescription": {
+                  "text": "Reports a pointless or pointlessly complicated boolean expression or statement. Example: 'let a = !(false && x);\n  let b = false || x;' After the quick fix is applied the result looks like: 'let a = true;\n  let b = x;'",
+                  "markdown": "Reports a pointless or pointlessly complicated boolean expression or statement.\n\nExample:\n\n\n      let a = !(false && x);\n      let b = false || x;\n\nAfter the quick fix is applied the result looks like:\n\n\n      let a = true;\n      let b = x;\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2471,37 +2471,6 @@
                 ]
               },
               {
-                "id": "NpmUsedModulesInstalled",
-                "shortDescription": {
-                  "text": "Missing module dependency"
-                },
-                "fullDescription": {
-                  "text": "Reports a module from a 'require()' call or an 'import' statement that is not installed or is not listed in package.json dependencies. Suggests installing the module and/or including it into package.json. For 'require()' calls, works only in the files from the scope of Node.js Core JavaScript library.",
-                  "markdown": "Reports a module from a `require()` call or an `import` statement that is not installed or is not listed in package.json dependencies.\n\nSuggests installing the module and/or including it into package.json.\n\nFor `require()` calls, works only in the files from the scope of *Node.js Core* JavaScript library."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Imports and dependencies",
-                      "index": 39,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "UnusedCatchParameterJS",
                 "shortDescription": {
                   "text": "Unused 'catch' parameter"
@@ -2522,6 +2491,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 26,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "NpmUsedModulesInstalled",
+                "shortDescription": {
+                  "text": "Missing module dependency"
+                },
+                "fullDescription": {
+                  "text": "Reports a module from a 'require()' call or an 'import' statement that is not installed or is not listed in package.json dependencies. Suggests installing the module and/or including it into package.json. For 'require()' calls, works only in the files from the scope of Node.js Core JavaScript library.",
+                  "markdown": "Reports a module from a `require()` call or an `import` statement that is not installed or is not listed in package.json dependencies.\n\nSuggests installing the module and/or including it into package.json.\n\nFor `require()` calls, works only in the files from the scope of *Node.js Core* JavaScript library."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Imports and dependencies",
+                      "index": 39,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2936,37 +2936,6 @@
                 ]
               },
               {
-                "id": "AnonymousFunctionJS",
-                "shortDescription": {
-                  "text": "Anonymous function"
-                },
-                "fullDescription": {
-                  "text": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a 'name' property specified in the ECMAScript 6 standard. For example, 'var bar = function() {};' is not reported.",
-                  "markdown": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
-                      "index": 10,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "BlockStatementJS",
                 "shortDescription": {
                   "text": "Unnecessary block statement"
@@ -2987,6 +2956,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Potentially confusing code constructs",
                       "index": 22,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "AnonymousFunctionJS",
+                "shortDescription": {
+                  "text": "Anonymous function"
+                },
+                "fullDescription": {
+                  "text": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a 'name' property specified in the ECMAScript 6 standard. For example, 'var bar = function() {};' is not reported.",
+                  "markdown": "Reports an anonymous function. An explicit name of a function expression may be helpful for debugging. Ignores function expressions without names if they have a `name` property specified in the ECMAScript 6 standard. For example, `var bar = function() {};` is not reported."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
+                      "index": 10,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3153,37 +3153,6 @@
                 ]
               },
               {
-                "id": "ES6PossiblyAsyncFunction",
-                "shortDescription": {
-                  "text": "'await' in non-async function"
-                },
-                "fullDescription": {
-                  "text": "Reports a usage of 'await' in a function that was possibly intended to be async but is actually missing the 'async' modifier. Although 'await' can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made 'async'.",
-                  "markdown": "Reports a usage of `await` in a function that was possibly intended to be async but is actually missing the `async` modifier. Although `await` can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made `async`."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Async code and promises",
-                      "index": 45,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TextLabelInSwitchStatementJS",
                 "shortDescription": {
                   "text": "Text label in 'switch' statement"
@@ -3204,6 +3173,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Switch statement issues",
                       "index": 43,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6PossiblyAsyncFunction",
+                "shortDescription": {
+                  "text": "'await' in non-async function"
+                },
+                "fullDescription": {
+                  "text": "Reports a usage of 'await' in a function that was possibly intended to be async but is actually missing the 'async' modifier. Although 'await' can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made 'async'.",
+                  "markdown": "Reports a usage of `await` in a function that was possibly intended to be async but is actually missing the `async` modifier. Although `await` can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made `async`."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Async code and promises",
+                      "index": 45,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4052,37 +4052,6 @@
                 ]
               },
               {
-                "id": "ES6ClassMemberInitializationOrder",
-                "shortDescription": {
-                  "text": "Use of possibly unassigned property in a static initializer"
-                },
-                "fullDescription": {
-                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
-                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "EmptyTryBlockJS",
                 "shortDescription": {
                   "text": "Empty 'try' block"
@@ -4103,6 +4072,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 26,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6ClassMemberInitializationOrder",
+                "shortDescription": {
+                  "text": "Use of possibly unassigned property in a static initializer"
+                },
+                "fullDescription": {
+                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
+                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4641,6 +4641,37 @@
                 ]
               },
               {
+                "id": "JSAnnotator",
+                "shortDescription": {
+                  "text": "ECMAScript specification is not followed"
+                },
+                "fullDescription": {
+                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
+                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "JSUnfilteredForInLoop",
                 "shortDescription": {
                   "text": "Unfiltered for..in loop"
@@ -4692,37 +4723,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Probable bugs",
                       "index": 12,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSAnnotator",
-                "shortDescription": {
-                  "text": "ECMAScript specification is not followed"
-                },
-                "fullDescription": {
-                  "text": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters. Generally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors.",
-                  "markdown": "Reports basic syntax issues and inconsistencies with language specification, such as invalid usages of keywords, usages of incompatible numeric format, or multiple parameters to getters/setters.   \nGenerally, such errors must always be reported and shouldn't be disabled. But in some cases, such as issues due to the dynamic nature of JavaScript, the use of not yet supported language features, or bugs in IDE's checker, it may be handy to disable reporting these very basic errors."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6036,37 +6036,6 @@
                 ]
               },
               {
-                "id": "JSCheckFunctionSignatures",
-                "shortDescription": {
-                  "text": "Signature mismatch"
-                },
-                "fullDescription": {
-                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
-                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ConstantOnLHSOfComparisonJS",
                 "shortDescription": {
                   "text": "Constant on left side of comparison"
@@ -6087,6 +6056,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Code style issues",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSCheckFunctionSignatures",
+                "shortDescription": {
+                  "text": "Signature mismatch"
+                },
+                "fullDescription": {
+                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
+                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6501,37 +6501,6 @@
                 ]
               },
               {
-                "id": "PlatformDetectionJS",
-                "shortDescription": {
-                  "text": "Inaccurate platform detection"
-                },
-                "fullDescription": {
-                  "text": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform. Patterns detected include: 'document.all' 'document.layers' 'navigator.userAgent' 'navigator.oscpu' 'navigator.appName' 'navigator.appCodeName' 'navigator.platform'",
-                  "markdown": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform.\n\nPatterns detected include:\n\n* `document.all`\n* `document.layers`\n* `navigator.userAgent`\n* `navigator.oscpu`\n* `navigator.appName`\n* `navigator.appCodeName`\n* `navigator.platform`"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/DOM issues",
-                      "index": 44,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "IfStatementWithIdenticalBranchesJS",
                 "shortDescription": {
                   "text": "'if' statement with identical branches"
@@ -6552,6 +6521,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 1,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "PlatformDetectionJS",
+                "shortDescription": {
+                  "text": "Inaccurate platform detection"
+                },
+                "fullDescription": {
+                  "text": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform. Patterns detected include: 'document.all' 'document.layers' 'navigator.userAgent' 'navigator.oscpu' 'navigator.appName' 'navigator.appCodeName' 'navigator.platform'",
+                  "markdown": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform.\n\nPatterns detected include:\n\n* `document.all`\n* `document.layers`\n* `navigator.userAgent`\n* `navigator.oscpu`\n* `navigator.appName`\n* `navigator.appCodeName`\n* `navigator.platform`"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/DOM issues",
+                      "index": 44,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6780,37 +6780,6 @@
                 ]
               },
               {
-                "id": "TrivialConditionalJS",
-                "shortDescription": {
-                  "text": "Redundant conditional expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a conditional expression of the form 'condition ? true : false\ncondition ? false : true' These expressions may be safely converted to 'condition\n!condition'",
-                  "markdown": "Reports a conditional expression of the form\n\n\n    condition ? true : false\n    condition ? false : true\n\n\nThese expressions may be safely converted to\n\n\n    condition\n    !condition\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptDuplicateUnionOrIntersectionType",
                 "shortDescription": {
                   "text": "Duplicate union or intersection type component"
@@ -6842,13 +6811,13 @@
                 ]
               },
               {
-                "id": "ES6UnusedImports",
+                "id": "TrivialConditionalJS",
                 "shortDescription": {
-                  "text": "Unused import"
+                  "text": "Redundant conditional expression"
                 },
                 "fullDescription": {
-                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
-                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
+                  "text": "Reports a conditional expression of the form 'condition ? true : false\ncondition ? false : true' These expressions may be safely converted to 'condition\n!condition'",
+                  "markdown": "Reports a conditional expression of the form\n\n\n    condition ? true : false\n    condition ? false : true\n\n\nThese expressions may be safely converted to\n\n\n    condition\n    !condition\n"
                 },
                 "defaultConfiguration": {
                   "enabled": false,
@@ -6860,8 +6829,8 @@
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Imports and dependencies",
-                      "index": 39,
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6924,6 +6893,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Switch statement issues",
                       "index": 43,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6UnusedImports",
+                "shortDescription": {
+                  "text": "Unused import"
+                },
+                "fullDescription": {
+                  "text": "Reports a redundant 'import' statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import 'import 'packageName'' instead of the regular one.",
+                  "markdown": "Reports a redundant `import` statement. This is usually the case if the imported symbols are not used in the source file. To avoid side-effects, consider using bare import `import 'packageName'` instead of the regular one."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Imports and dependencies",
+                      "index": 39,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -13562,8 +13562,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "8d67d7d6d9d96d1884b4aae5e83649c141f8a055",
-          "branch": "renovate/express-docker",
+          "revisionId": "f95cc14668a0280cda1afb3d672e1391bbf29cf9",
+          "branch": "main",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "renovate[bot]",
@@ -13947,9 +13947,9 @@
       ],
       "automationDetails": {
         "id": "project/qodana/2022-12-17",
-        "guid": "ebc0368c-344a-477a-a5ba-cec1de3c2d67",
+        "guid": "178080c6-0a3c-4afc-8921-1b491e1efbac",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3717954011"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3718517292"
         }
       },
       "newlineSequences": [
