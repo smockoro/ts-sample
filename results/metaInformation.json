@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "b1b740115d688c37dc292b1ef7e6082c77f1f3c5",
-        "branch": "main"
+        "revisionId": "bd2658a4b4c2e8e4f76fb31cc239f3f9eaa142e8",
+        "branch": "renovate/express-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3853705130",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3858800562",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
