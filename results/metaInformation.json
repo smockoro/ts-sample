@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "cd455f8a8e24fe8c45e577ebe6d33177e3f6bd18",
-        "branch": "main"
+        "revisionId": "3717852307f86f204e11123726065d9d08c255aa",
+        "branch": "renovate/fastify-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3859637530",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3859642625",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
