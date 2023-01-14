@@ -2948,37 +2948,6 @@
                 ]
               },
               {
-                "id": "JSReferencingMutableVariableFromClosure",
-                "shortDescription": {
-                  "text": "Referencing mutable variable from closure"
-                },
-                "fullDescription": {
-                  "text": "Reports access to outer mutable variables from functions. Example: 'for (var i = 1; i <= 3; i++) {\n    setTimeout(function() {\n        console.log(i); // bad\n    }, 0);\n  }'",
-                  "markdown": "Reports access to outer mutable variables from functions.\n\nExample:\n\n\n      for (var i = 1; i <= 3; i++) {\n        setTimeout(function() {\n            console.log(i); // bad\n        }, 0);\n      }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "PointlessBooleanExpressionJS",
                 "shortDescription": {
                   "text": "Pointless statement or boolean expression"
@@ -2999,6 +2968,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 2,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSReferencingMutableVariableFromClosure",
+                "shortDescription": {
+                  "text": "Referencing mutable variable from closure"
+                },
+                "fullDescription": {
+                  "text": "Reports access to outer mutable variables from functions. Example: 'for (var i = 1; i <= 3; i++) {\n    setTimeout(function() {\n        console.log(i); // bad\n    }, 0);\n  }'",
+                  "markdown": "Reports access to outer mutable variables from functions.\n\nExample:\n\n\n      for (var i = 1; i <= 3; i++) {\n        setTimeout(function() {\n            console.log(i); // bad\n        }, 0);\n      }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 9,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3444,37 +3444,6 @@
                 ]
               },
               {
-                "id": "JSConstantReassignment",
-                "shortDescription": {
-                  "text": "Attempt to assign to const or readonly variable"
-                },
-                "fullDescription": {
-                  "text": "Reports reassigning a value to a constant or a readonly variable.",
-                  "markdown": "Reports reassigning a value to a constant or a readonly variable."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "error",
-                  "parameters": {
-                    "ideaSeverity": "ERROR"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Validity issues",
-                      "index": 21,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptCheckImport",
                 "shortDescription": {
                   "text": "Unresolved imported name"
@@ -3495,6 +3464,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/TypeScript",
                       "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSConstantReassignment",
+                "shortDescription": {
+                  "text": "Attempt to assign to const or readonly variable"
+                },
+                "fullDescription": {
+                  "text": "Reports reassigning a value to a constant or a readonly variable.",
+                  "markdown": "Reports reassigning a value to a constant or a readonly variable."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "error",
+                  "parameters": {
+                    "ideaSeverity": "ERROR"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Validity issues",
+                      "index": 21,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4033,37 +4033,6 @@
                 ]
               },
               {
-                "id": "TextLabelInSwitchStatementJS",
-                "shortDescription": {
-                  "text": "Text label in 'switch' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
-                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6PossiblyAsyncFunction",
                 "shortDescription": {
                   "text": "'await' in non-async function"
@@ -4084,6 +4053,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Async code and promises",
                       "index": 45,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "TextLabelInSwitchStatementJS",
+                "shortDescription": {
+                  "text": "Text label in 'switch' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled statement inside a 'switch' statement, which often results from a typo. Example: 'switch(x)\n    {\n        case 1:\n        case2:   //typo!\n        case 3:\n            break;\n    }'",
+                  "markdown": "Reports a labeled statement inside a `switch` statement, which often results from a typo.\n\nExample:\n\n\n        switch(x)\n        {\n            case 1:\n            case2:   //typo!\n            case 3:\n                break;\n        }\n"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4932,37 +4932,6 @@
                 ]
               },
               {
-                "id": "ES6ClassMemberInitializationOrder",
-                "shortDescription": {
-                  "text": "Use of possibly unassigned property in a static initializer"
-                },
-                "fullDescription": {
-                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
-                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "EmptyTryBlockJS",
                 "shortDescription": {
                   "text": "Empty 'try' block"
@@ -4983,6 +4952,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Try statement issues",
                       "index": 26,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6ClassMemberInitializationOrder",
+                "shortDescription": {
+                  "text": "Use of possibly unassigned property in a static initializer"
+                },
+                "fullDescription": {
+                  "text": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet. Initialization of class members happens consequently for fields, so a field cannot reference another field that is declared later.",
+                  "markdown": "Reports a class member initializer which references another non-hoisted class member while the latter may be not initialized yet.   \n\nInitialization of class members happens consequently for fields, so a field cannot reference another field that is declared later."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 9,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -5521,6 +5521,37 @@
                 ]
               },
               {
+                "id": "JSIncompatibleTypesComparison",
+                "shortDescription": {
+                  "text": "Comparison of expressions having incompatible types"
+                },
+                "fullDescription": {
+                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
+                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Probable bugs",
+                      "index": 12,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "JSAnnotator",
                 "shortDescription": {
                   "text": "ECMAScript specification is not followed"
@@ -5572,37 +5603,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 9,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSIncompatibleTypesComparison",
-                "shortDescription": {
-                  "text": "Comparison of expressions having incompatible types"
-                },
-                "fullDescription": {
-                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
-                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Probable bugs",
-                      "index": 12,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6916,37 +6916,6 @@
                 ]
               },
               {
-                "id": "ConstantOnLHSOfComparisonJS",
-                "shortDescription": {
-                  "text": "Constant on left side of comparison"
-                },
-                "fullDescription": {
-                  "text": "Reports a comparison operation with a constant value in the left-hand side. According to coding conventions, constants should be in the right-hand side of comparisons.",
-                  "markdown": "Reports a comparison operation with a constant value in the left-hand side. According to coding conventions, constants should be in the right-hand side of comparisons."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Code style issues",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSCheckFunctionSignatures",
                 "shortDescription": {
                   "text": "Signature mismatch"
@@ -6967,6 +6936,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ConstantOnLHSOfComparisonJS",
+                "shortDescription": {
+                  "text": "Constant on left side of comparison"
+                },
+                "fullDescription": {
+                  "text": "Reports a comparison operation with a constant value in the left-hand side. According to coding conventions, constants should be in the right-hand side of comparisons.",
+                  "markdown": "Reports a comparison operation with a constant value in the left-hand side. According to coding conventions, constants should be in the right-hand side of comparisons."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Code style issues",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7381,37 +7381,6 @@
                 ]
               },
               {
-                "id": "IfStatementWithIdenticalBranchesJS",
-                "shortDescription": {
-                  "text": "'if' statement with identical branches"
-                },
-                "fullDescription": {
-                  "text": "Reports an 'if' statement with identical 'then' and 'else' branches. Such statements are almost certainly an error.",
-                  "markdown": "Reports an `if` statement with identical `then` and `else` branches. Such statements are almost certainly an error."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 2,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "PlatformDetectionJS",
                 "shortDescription": {
                   "text": "Inaccurate platform detection"
@@ -7432,6 +7401,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/DOM issues",
                       "index": 44,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "IfStatementWithIdenticalBranchesJS",
+                "shortDescription": {
+                  "text": "'if' statement with identical branches"
+                },
+                "fullDescription": {
+                  "text": "Reports an 'if' statement with identical 'then' and 'else' branches. Such statements are almost certainly an error.",
+                  "markdown": "Reports an `if` statement with identical `then` and `else` branches. Such statements are almost certainly an error."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 2,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -7722,6 +7722,37 @@
                 ]
               },
               {
+                "id": "JSMissingSwitchBranches",
+                "shortDescription": {
+                  "text": "'switch' statement has missing branches"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
+                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "INFORMATION"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
                 "id": "InnerHTMLJS",
                 "shortDescription": {
                   "text": "Use of 'innerHTML' property"
@@ -7773,37 +7804,6 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Imports and dependencies",
                       "index": 39,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "JSMissingSwitchBranches",
-                "shortDescription": {
-                  "text": "'switch' statement has missing branches"
-                },
-                "fullDescription": {
-                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
-                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "INFORMATION"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -10374,13 +10374,13 @@
                 ]
               },
               {
-                "id": "RegExpDuplicateAlternationBranch",
+                "id": "RegExpRepeatedSpace",
                 "shortDescription": {
-                  "text": "Duplicate branch in alternation"
+                  "text": "Consecutive spaces"
                 },
                 "fullDescription": {
-                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
-                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
+                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
+                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -10405,13 +10405,13 @@
                 ]
               },
               {
-                "id": "RegExpRepeatedSpace",
+                "id": "RegExpDuplicateAlternationBranch",
                 "shortDescription": {
-                  "text": "Consecutive spaces"
+                  "text": "Duplicate branch in alternation"
                 },
                 "fullDescription": {
-                  "text": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier. Example: '(     )' After the quick-fix is applied: '( {5})' New in 2017.1",
-                  "markdown": "Reports multiple consecutive spaces in a RegExp. Because spaces are not visible by default, it can be hard to see how many spaces are required. The RegExp can be made more clear by replacing the consecutive spaces with a single space and a counted quantifier.\n\n**Example:**\n\n\n      (     )\n\nAfter the quick-fix is applied:\n\n\n      ( {5})\n\n\nNew in 2017.1"
+                  "text": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression. Example: '(alpha|bravo|charlie|alpha)' After the quick-fix is applied: '(alpha|bravo|charlie)' New in 2017.1",
+                  "markdown": "Reports duplicate branches in a RegExp alternation. Duplicate branches slow down matching and obscure the intent of the expression.\n\n**Example:**\n\n\n      (alpha|bravo|charlie|alpha)\n\nAfter the quick-fix is applied:\n\n\n      (alpha|bravo|charlie)\n\nNew in 2017.1"
                 },
                 "defaultConfiguration": {
                   "enabled": true,
@@ -13562,8 +13562,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample",
-          "revisionId": "9cb33269234b0539b56868a75b7c3f8f06db6a89",
-          "branch": "main",
+          "revisionId": "65ca755ee6980e43359111f5863643213f2a2a6d",
+          "branch": "renovate/fastify-docker",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample",
             "lastAuthorName": "renovate[bot]",
@@ -13947,9 +13947,9 @@
       ],
       "automationDetails": {
         "id": "project/qodana/2023-01-14",
-        "guid": "9c500dc4-7d49-423e-8053-75ff2f97509b",
+        "guid": "94c372c3-f0b1-4bf0-9614-c59835cd7da0",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3917910209"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3917913371"
         }
       },
       "newlineSequences": [
