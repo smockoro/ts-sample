@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "5b5df9d2b5d195e1fd1ab59b868ccfed6c2c993f",
-        "branch": "feature/error-handling"
+        "revisionId": "63f4d72067acc1855eacab9f0e2769399c1d75ec",
+        "branch": "main"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3920245524",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3920257486",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
