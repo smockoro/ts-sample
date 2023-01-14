@@ -1,4 +1,5 @@
 import { FastifyReply, FastifyRequest, RouteShorthandOptions } from 'fastify';
+import { SystemError } from "../../../core/error/error";
 
 export const pingPath: string = '/ping'
 export const pingOpts: RouteShorthandOptions = {
@@ -17,5 +18,6 @@ export const pingOpts: RouteShorthandOptions = {
 }
 
 export const pingController = async (request: FastifyRequest, reply: FastifyReply) => {
+  //throw new SystemError('E111')
   return { pong: "it worked!!" }
 }
