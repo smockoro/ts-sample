@@ -5,6 +5,9 @@
     "YAML",
     "JSON",
     "TypeScript",
+    "Plain text",
+    "textmate",
+    "EditorConfig",
     "JavaScript"
   ]
 }
