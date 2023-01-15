@@ -15,6 +15,10 @@
     {
       "groupName": "fastify-docker",
       "matchPaths": ["fastify-docker/"]
+    },
+    {
+      "groupName": "aws-serverless",
+      "matchPaths": ["aws-serverless/"]
     }
   ]
 }
