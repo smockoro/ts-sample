@@ -1,6 +1,7 @@
 import type { AWS } from '@serverless/typescript';
 
 import hello from '@functions/hello';
+import createUser from '@functions/createUser';
 
 const serverlessConfiguration: AWS = {
   service: 'aws-serverless',
@@ -23,7 +24,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   // import the function via paths
-  functions: { hello },
+  functions: { hello, createUser },
   package: { individually: true },
   custom: {
     esbuild: {
