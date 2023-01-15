@@ -5,7 +5,11 @@ import hello from '@functions/hello';
 const serverlessConfiguration: AWS = {
   service: 'aws-serverless',
   frameworkVersion: '3',
-  plugins: ['serverless-esbuild'],
+  plugins: [
+    'serverless-esbuild',
+    'serverless-dynamodb-local',
+    'serverless-offline'
+  ],
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
@@ -31,6 +35,54 @@ const serverlessConfiguration: AWS = {
       define: { 'require.resolve': undefined },
       platform: 'node',
       concurrency: 10,
+    },
+    dynamodb: {
+      stages: ['dev'],
+      start: {
+        port: 8000,
+        inMemory: true,
+        migrate: true,
+        seed: true,
+        convertEmptyValues: true,
+      },
+      seed: {
+        user: {
+          sources: [
+            {
+              table: 'users',
+              sources: [
+                './.local-dynamodb/seeds/user.json',
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
+  resources: {
+    Resources: {
+      users: {
+        Type: 'AWS::DynamoDB::Table',
+        Properties: {
+          TableName: 'users',
+          AttributeDefinitions: [
+            {
+              AttributeName: 'id',
+              AttributeType: 'S',
+            },
+          ],
+          KeySchema: [
+            {
+              AttributeName: 'id',
+              KeyType: 'HASH',
+            },
+          ],
+          ProvisionedThroughput: {
+            ReadCapacityUnits: 1,
+            WriteCapacityUnits: 1,
+          },
+        },
+      },
     },
   },
 };
