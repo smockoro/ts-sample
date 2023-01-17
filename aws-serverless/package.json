@@ -4,8 +4,9 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
+    "offline": "sls offline start",
     "test": "jest",
-    "offline": "sls offline start"
+    "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
   },
   "engines": {
     "node": ">=14.15.0"
