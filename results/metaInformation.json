@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "82d0692f4bc82c96187415b3f4a0318c61f8253c",
+        "revisionId": "70e0d56f5677ae34f13253479b467296afcded90",
         "branch": "feature/aws-serverless-add-sample"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3940734829",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3942127195",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
