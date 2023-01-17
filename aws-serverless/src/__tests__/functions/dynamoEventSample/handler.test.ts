@@ -1,17 +1,14 @@
-import { DynamoDBStreamEvent } from 'aws-lambda';
-import { dynamoEventSample } from '../../../functions/dynamoEventSample/handler';
+import { debugDynamoDB } from '../../../functions/debugDynamo/handler';
 import { dummyContext } from '../__utils__/util';
 
 describe('handler test', (): void => {
   test('sample test1', async () => {
-    const e: DynamoDBStreamEvent =  {
-      Records: [
-        {
-          awsRegion: 'ap-northeast-1',
-          eventName: 'INSERT',
-        },
-      ],
+    const e =  {
+      body: {
+        name: "alice",
+        email: "a.user@example.com",
+      },
     }
-    dynamoEventSample(e, dummyContext)
+    debugDynamoDB(e, dummyContext)
   });
 });
