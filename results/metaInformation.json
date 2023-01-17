@@ -1,13 +1,18 @@
 {
-  "total": 0,
+  "total": 7,
   "tools inspection": {
-    "Code Inspection": 0
+    "Code Inspection": 7
   },
   "attributes": {
     "vcs": {
-      "sarifIdea": {}
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/smockoro/ts-sample",
+        "revisionId": "0886cce67e0a2562af23cd0fe0e621ef799db115",
+        "branch": "main"
+      }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3936812653"
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3936813347",
+    "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
