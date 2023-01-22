@@ -1,4 +1,4 @@
-import { Stack, StackProps, Duration } from 'aws-cdk-lib';
+import { Stack, StackProps, Duration, RemovalPolicy } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Function, Runtime, AssetCode } from 'aws-cdk-lib/aws-lambda';
 import { S3EventSource, S3EventSourceProps } from 'aws-cdk-lib/aws-lambda-event-sources';
@@ -17,6 +17,7 @@ export class DebugS3EventLambdaStack extends Stack {
       encryption: BucketEncryption.KMS_MANAGED,
       accessControl: BucketAccessControl.BUCKET_OWNER_FULL_CONTROL,
       blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: RemovalPolicy.DESTROY,
     });
 
     const r = new Role(this, 'role-debug-s3-event', {
