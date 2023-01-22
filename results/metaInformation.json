@@ -1,18 +1,18 @@
 {
-  "total": 7,
+  "total": 26,
   "tools inspection": {
-    "Code Inspection": 7
+    "Code Inspection": 26
   },
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "23cb5524060684231bfb804d6daf329eac309e95",
-        "branch": "main"
+        "revisionId": "b4b653e117fa162824ec5f90ab732090a877ab56",
+        "branch": "feature/cdk-infra"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3968082261",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/3979032843",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }

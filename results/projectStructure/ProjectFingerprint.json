@@ -3,11 +3,11 @@
     "XML",
     ".gitignore (GitIgnore)",
     "YAML",
-    "JSON",
     "TypeScript",
-    "Plain text",
-    "textmate",
+    "JSON",
     "EditorConfig",
+    "textmate",
+    "Plain text",
     "JavaScript"
   ]
 }
