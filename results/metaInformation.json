@@ -1,18 +1,18 @@
 {
-  "total": 7,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 7
+    "Code Inspection": 0
   },
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
-        "revisionId": "85d87b4f5d533cd50cbb4beb0350d777b3ff0340",
+        "revisionId": "7bdd9f0a92a0b2545a86d993e2f415b302b3b8e9",
         "branch": "refs/heads/renovate/jetbrains-qodana-action-2022.x"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4019666505",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4019666652",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
