@@ -4,6 +4,7 @@ import { App } from 'aws-cdk-lib';
 import { DebugSqsLambdaStack } from '../lib/sqs-stack';
 import { DebugDynamoDBStreamEventLambdaStack } from '../lib/dynamodb-stack';
 import { DebugS3EventLambdaStack } from '../lib/s3-stack';
+import { CreateUserApiLambdaStack } from '../lib/create-user-api-lambda-stack';
 
 const app = new App();
 /*
@@ -31,6 +32,9 @@ new DebugDynamoDBStreamEventLambdaStack(app, 'DebugDynamoDBStreamEventLambdaStac
 })
 
 new DebugS3EventLambdaStack(app, 'DebugS3EventLambdaStack', {
+});
+
+new CreateUserApiLambdaStack(app, 'CreateUserApiLambdaStack', {
 });
 
 app.synth()

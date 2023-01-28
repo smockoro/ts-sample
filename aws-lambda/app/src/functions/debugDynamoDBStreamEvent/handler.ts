@@ -5,8 +5,13 @@ import {
   DynamoDBBatchResponse,
   Context,
 } from 'aws-lambda';
+import { Tracer, captureLambdaHandler } from '@aws-lambda-powertools/tracer';
 
-const logger = new Logger({ serviceName: 'dynamoEventSample' });
+const serviceName = 'createUserApi'
+const logger = new Logger({ serviceName: serviceName });
+const tracer = new Tracer({
+  serviceName: serviceName,
+});
 
 export const dynamoEventSample =
     async (_event: DynamoDBStreamEvent, _context: Context): Promise<void | DynamoDBBatchResponse> => {
@@ -18,4 +23,5 @@ export const dynamoEventSample =
 };
 
 export const main = middy(dynamoEventSample)
-  .use(injectLambdaContext(logger, { logEvent: true }));
+  .use(injectLambdaContext(logger, { logEvent: true }))
+  .use(captureLambdaHandler(tracer));

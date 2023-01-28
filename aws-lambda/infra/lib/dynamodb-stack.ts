@@ -1,6 +1,6 @@
-import { Stack, StackProps, Duration } from 'aws-cdk-lib';
+import { Stack, StackProps, Duration, RemovalPolicy } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { Function, Runtime, AssetCode, StartingPosition } from 'aws-cdk-lib/aws-lambda';
+import { Function, Runtime, AssetCode, StartingPosition, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { DynamoEventSource } from 'aws-cdk-lib/aws-lambda-event-sources';
 import { Role, ServicePrincipal, ManagedPolicy } from 'aws-cdk-lib/aws-iam';
 import { Table, AttributeType, StreamViewType } from 'aws-cdk-lib/aws-dynamodb';
@@ -16,6 +16,7 @@ export class DebugDynamoDBStreamEventLambdaStack extends Stack {
         type: AttributeType.STRING,
       },
       stream: StreamViewType.NEW_AND_OLD_IMAGES,
+      removalPolicy: RemovalPolicy.DESTROY,
     });
 
     const r = new Role(this, 'role-debug-dynamodb-stream-event', {
@@ -24,6 +25,7 @@ export class DebugDynamoDBStreamEventLambdaStack extends Stack {
       managedPolicies: [
         ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'),
         ManagedPolicy.fromAwsManagedPolicyName('AmazonDynamoDBFullAccess'),
+        ManagedPolicy.fromAwsManagedPolicyName('AWSXrayFullAccess'),
       ]
     });
 
@@ -37,6 +39,7 @@ export class DebugDynamoDBStreamEventLambdaStack extends Stack {
         TZ: "Asia/Tokyo",
       },
       code: AssetCode.fromAsset('../app/src/functions/debugDynamoDBStreamEvent/dist'),
+      tracing: Tracing.ACTIVE,
     });
 
     f.addEventSource(new DynamoEventSource(t, {
