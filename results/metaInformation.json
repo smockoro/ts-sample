@@ -1,19 +1,19 @@
 {
-  "total": 0,
+  "total": 7,
   "tools inspection": {
-    "Code Inspection": 0
+    "Code Inspection": 7
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
-        "revisionId": "2a72c07bf2a3c04e1de51a2265da5db5715dd1c3",
-        "branch": "refs/heads/renovate/fastify-docker"
+        "revisionId": "7800425755a1f142018a65e02a895b15d8e5014d",
+        "branch": "refs/heads/main"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4086196995",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4088007281",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
