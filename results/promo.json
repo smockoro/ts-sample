@@ -8,7 +8,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/doc/classes/lib_dynamodb_stack.DebugDynamoDBStreamEventLambdaStack.html",
+      "path": "aws-lambda/infra/doc/classes/lib_sqs_stack.DebugSqsLambdaStack.html",
       "language": "HTML",
       "line": 30,
       "offset": 47,
@@ -25,5 +25,5 @@
     "module": "project",
     "inspectionName": "HtmlWrongAttributeValue"
   },
-  "hash": "adcecf72ae428700cd46a12a78479c971235194d43c6f2e61c04745ed4c0dc90"
+  "hash": "e1db97ff963d9a53c45dd44d56fff6fc39a07d1942fdeca187e510b43d7e716e"
 }]}
