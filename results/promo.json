@@ -1,1 +1,29 @@
-{"version":"3","listProblem":[]}
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "HTML",
+  "type": "Wrong attribute value",
+  "severity": "High",
+  "comment": "Wrong attribute value",
+  "detailsInfo": "Reports an incorrect HTML attribute value.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-lambda/infra/doc/classes/lib_dynamodb_stack.DebugDynamoDBStreamEventLambdaStack.html",
+      "language": "HTML",
+      "line": 30,
+      "offset": 47,
+      "length": 6,
+      "code": {
+        "startLine": 28,
+        "length": 6,
+        "offset": 208,
+        "surroundingCode": "<section class=\"tsd-panel tsd-index-panel\">\n<details class=\"tsd-index-content tsd-index-accordion\" open><summary class=\"tsd-accordion-summary tsd-index-summary\">\n<h5 class=\"tsd-index-heading uppercase\" role=\"button\" aria-expanded=\"false\" tabIndex=0><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z\" fill=\"var(--color-text)\"></path></svg> Index</h5></summary>\n<div class=\"tsd-accordion-details\">\n<section class=\"tsd-index-section\">"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "HtmlWrongAttributeValue"
+  },
+  "hash": "adcecf72ae428700cd46a12a78479c971235194d43c6f2e61c04745ed4c0dc90"
+}]}
