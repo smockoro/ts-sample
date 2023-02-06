@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample",
-        "revisionId": "a1a6dbeef9e9fe09b987776549f3b452236e2130",
+        "revisionId": "f978e94d6d2634fb822d1057456b4e836e3ad075",
         "branch": "feature/cdk-infra"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4104204971",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4104225252",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
