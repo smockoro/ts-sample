@@ -5,6 +5,9 @@ import { DebugSqsLambdaStack } from '../lib/sqs-stack';
 import { DebugDynamoDBStreamEventLambdaStack } from '../lib/dynamodb-stack';
 import { DebugS3EventLambdaStack } from '../lib/s3-stack';
 import { CreateUserApiLambdaStack } from '../lib/create-user-api-lambda-stack';
+import { FargateSampleStack } from '../lib/fargate-sample-stack';
+import { FargateSampleVpcStack } from '../lib/fargate-sample-vpc-stack';
+import { FargateSampleScheduledTaskStack } from '../lib/fargate-sample-scheduled-task-stack';
 
 const app = new App();
 /*
@@ -36,5 +39,24 @@ new DebugS3EventLambdaStack(app, 'DebugS3EventLambdaStack', {
 
 new CreateUserApiLambdaStack(app, 'CreateUserApiLambdaStack', {
 });
+
+new FargateSampleVpcStack(app, 'FargateSampleVpcStack', {
+});
+
+new FargateSampleStack(app, 'FargateSampleStack', {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+  }
+});
+
+/*
+new FargateSampleScheduledTaskStack(app, 'FargateSampleScheduledStack', {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+  }
+})
+*/
 
 app.synth()
