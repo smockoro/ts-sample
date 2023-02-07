@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
-        "revisionId": "defe7e63c99d00d765b9ab1dc59e53ea32a95933",
-        "branch": "refs/heads/main"
+        "revisionId": "130a6ab9f5ef47a867222f28a72d9a2eb704e983",
+        "branch": "refs/heads/renovate/node-18.x"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4109315395",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4114146540",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
