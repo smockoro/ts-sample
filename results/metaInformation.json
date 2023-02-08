@@ -7,13 +7,13 @@
   "attributes": {
     "vcs": {
       "sarifIdea": {
-        "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
-        "revisionId": "df66b9a4269ed6635790feb84601e36256a72d64",
-        "branch": "refs/heads/renovate/express-docker"
+        "repositoryUri": "https://github.com/smockoro/ts-sample.git",
+        "revisionId": "bdfb7b7977bfbf745de7e2f4791f958d07d3c15a",
+        "branch": "renovate/jetbrains-qodana-action-2022.x"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4123817541",
-    "repoUrl": "https://github.com/smockoro/ts-sample"
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4123822008",
+    "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
