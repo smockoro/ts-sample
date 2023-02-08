@@ -8,7 +8,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/doc/classes/lib_fargate_sample_vpc_stack.FargateSampleVpcStack.html",
+      "path": "aws-lambda/infra/doc/classes/lib_create_user_api_lambda_stack.CreateUserApiLambdaStack.html",
       "language": "HTML",
       "line": 30,
       "offset": 47,
@@ -25,5 +25,5 @@
     "module": "project",
     "inspectionName": "HtmlWrongAttributeValue"
   },
-  "hash": "ffa9820c596b0e5f41536af2f4a95f6a0e855eda310476e1d116916cf572e6d2"
+  "hash": "1a740eddb7c783089fb1aeed02e9ab6fba6620c59099ac072228266a3a4369de"
 }]}
