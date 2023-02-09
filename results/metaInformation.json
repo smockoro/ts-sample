@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
-        "revisionId": "16148d41d727b6118a551ff8d2cb7f447efe61a1",
-        "branch": "refs/heads/renovate/aws-cdk-monorepo"
+        "revisionId": "de82b7b2bd33d90d7b54ed0b897014a5cbe261c8",
+        "branch": "refs/heads/main"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4133305679",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4136677011",
     "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
