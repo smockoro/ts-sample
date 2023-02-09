@@ -8,7 +8,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/doc/classes/lib_create_user_api_lambda_stack.CreateUserApiLambdaStack.html",
+      "path": "aws-lambda/infra/doc/classes/lib_infra_stack.InfraStack.html",
       "language": "HTML",
       "line": 30,
       "offset": 47,
@@ -25,5 +25,5 @@
     "module": "project",
     "inspectionName": "HtmlWrongAttributeValue"
   },
-  "hash": "1a740eddb7c783089fb1aeed02e9ab6fba6620c59099ac072228266a3a4369de"
+  "hash": "043a4e148c7fe7f8f9a9fc8545529e584f025b70a8728b3ffb2dc409422e4656"
 }]}
