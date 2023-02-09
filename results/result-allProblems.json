@@ -68,68 +68,6 @@
     "JavaScript"
   ],
   "severity": "High",
-  "comment": "Unused constant sft",
-  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
-      "language": "JavaScript",
-      "line": 70,
-      "offset": 11,
-      "length": 3,
-      "code": {
-        "startLine": 68,
-        "length": 3,
-        "offset": 19,
-        "surroundingCode": "    });\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnusedLocalSymbols"
-  },
-  "hash": "a271ab02772fd71a28d9e7f08b94242f5a3334ec5ebf6d8ec331f21510bcc598"
-},{
-  "tool": "Code Inspection",
-  "category": "Unused symbols",
-  "type": "Unused local symbol",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "High",
-  "comment": "Unused constant rule",
-  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
-      "language": "JavaScript",
-      "line": 99,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 97,
-        "length": 4,
-        "offset": 19,
-        "surroundingCode": "    });\n\n    const rule = new Rule(this, 'ecs-sample-scheduled-event-bridge-task', {\n      ruleName: 'RULE-EVENT-BRIDGE-EX-TASK',\n      schedule: Schedule.rate(Duration.minutes(1)),"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnusedLocalSymbols"
-  },
-  "hash": "195a84257068283aa31ecc73d75be1e2edaec14070e49a76d61a3e6641fd0563"
-},{
-  "tool": "Code Inspection",
-  "category": "Unused symbols",
-  "type": "Unused local symbol",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "High",
   "comment": "Unused parameter request",
   "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
   "sources": [
@@ -186,35 +124,66 @@
   "hash": "de1732ade8745c8238e7df3d5c8442ae789bbcafb56a41b777b7291f397f5ab5"
 },{
   "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
+  "category": "Unused symbols",
+  "type": "Unused local symbol",
   "tags": [
     "JavaScript"
   ],
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "severity": "High",
+  "comment": "Unused constant sft",
+  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/jest.config.js",
+      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
       "language": "JavaScript",
-      "line": 1,
-      "offset": 1,
-      "length": 6,
+      "line": 70,
+      "offset": 11,
+      "length": 3,
       "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 0,
-        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
+        "startLine": 68,
+        "length": 3,
+        "offset": 19,
+        "surroundingCode": "    });\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
       }
     }
   ],
   "attributes": {
     "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
+    "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "6645b90091aafbc48b1d259cc61453a71cdc3ec5e258cdcaa9c2283d96afaeb9"
+  "hash": "a271ab02772fd71a28d9e7f08b94242f5a3334ec5ebf6d8ec331f21510bcc598"
+},{
+  "tool": "Code Inspection",
+  "category": "Unused symbols",
+  "type": "Unused local symbol",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "High",
+  "comment": "Unused constant rule",
+  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
+      "language": "JavaScript",
+      "line": 99,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 97,
+        "length": 4,
+        "offset": 19,
+        "surroundingCode": "    });\n\n    const rule = new Rule(this, 'ecs-sample-scheduled-event-bridge-task', {\n      ruleName: 'RULE-EVENT-BRIDGE-EX-TASK',\n      schedule: Schedule.rate(Duration.minutes(1)),"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnusedLocalSymbols"
+  },
+  "hash": "195a84257068283aa31ecc73d75be1e2edaec14070e49a76d61a3e6641fd0563"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -277,6 +246,37 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-lambda/infra/jest.config.js",
+      "language": "JavaScript",
+      "line": 1,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 0,
+        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "6645b90091aafbc48b1d259cc61453a71cdc3ec5e258cdcaa9c2283d96afaeb9"
 },{
   "tool": "Code Inspection",
   "category": "General",
