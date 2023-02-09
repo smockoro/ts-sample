@@ -1,19 +1,19 @@
 {
-  "total": 11,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 11
+    "Code Inspection": 0
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
-        "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "61b957a86f13b39c226355611f4c30eac90dc719",
-        "branch": "renovate/jetbrains-qodana-action-2022.x"
+        "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
+        "revisionId": "9969e09e119d546cd774b5fb7914c0b004713e8b",
+        "branch": "refs/heads/renovate/aws-cdk-monorepo"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4127109673",
-    "repoUrl": "https://github.com/smockoro/ts-sample.git"
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4133306649",
+    "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
