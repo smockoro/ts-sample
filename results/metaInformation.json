@@ -1,19 +1,19 @@
 {
-  "total": 11,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 11
+    "Code Inspection": 0
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
-        "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "90eb6a0e9d2e89e0db46b99a0316989fc744596d",
-        "branch": "renovate/jetbrains-qodana-action-2022.x"
+        "repositoryUri": "ssh://git@github.com/smockoro/ts-sample.git",
+        "revisionId": "0ab04ed30d790548e32dc25240a9fbf52e8ed502",
+        "branch": "refs/heads/renovate/express-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4136689075",
-    "repoUrl": "https://github.com/smockoro/ts-sample.git"
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4136693972",
+    "repoUrl": "https://github.com/smockoro/ts-sample"
   }
 }
