@@ -8,7 +8,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/doc/classes/lib_s3_stack.DebugS3EventLambdaStack.html",
+      "path": "aws-lambda/infra/doc/classes/lib_infra_stack.InfraStack.html",
       "language": "HTML",
       "line": 30,
       "offset": 47,
@@ -25,5 +25,5 @@
     "module": "project",
     "inspectionName": "HtmlWrongAttributeValue"
   },
-  "hash": "d6e590ed735917019791f0515ac3f0d2bafb72077da97ab5deef70efb897b66b"
+  "hash": "043a4e148c7fe7f8f9a9fc8545529e584f025b70a8728b3ffb2dc409422e4656"
 }]}
