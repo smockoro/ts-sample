@@ -1,19 +1,19 @@
 {
-  "total": 11,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 11
+    "Code Inspection": 0
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "55176deab7db0fa0125ea6909f98c0dc5629b8ea",
-        "branch": "main"
+        "revisionId": "77129e1245df7c86b836311a3030271b8470bcbf",
+        "branch": "renovate/express-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4147017141",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4148925982",
     "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
