@@ -1,19 +1,19 @@
 {
-  "total": 11,
+  "total": 4,
   "tools inspection": {
-    "Code Inspection": 11
+    "Code Inspection": 4
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "72de75cf46dc1573d6594970f50696237ba57538",
+        "revisionId": "0d5c3bc8b10fb17bb061fe18976a02034bdc5c44",
         "branch": "feature/shared-configurations"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4152841162",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4152842968",
     "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
