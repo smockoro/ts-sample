@@ -8,7 +8,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/doc/classes/lib_infra_stack.InfraStack.html",
+      "path": "aws-lambda/infra/doc/classes/lib_sqs_stack.DebugSqsLambdaStack.html",
       "language": "HTML",
       "line": 30,
       "offset": 47,
@@ -25,5 +25,5 @@
     "module": "project",
     "inspectionName": "HtmlWrongAttributeValue"
   },
-  "hash": "043a4e148c7fe7f8f9a9fc8545529e584f025b70a8728b3ffb2dc409422e4656"
+  "hash": "e1db97ff963d9a53c45dd44d56fff6fc39a07d1942fdeca187e510b43d7e716e"
 }]}
