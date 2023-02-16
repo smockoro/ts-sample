@@ -1,19 +1,19 @@
 {
-  "total": 11,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 11
+    "Code Inspection": 0
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "e379bf9096086f832a01cd998b2cc319eb729841",
-        "branch": "main"
+        "revisionId": "1f5008f8fa25db7ff02f002e5e8ac1970fc8923f",
+        "branch": "renovate/aws-cdk-monorepo"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4190044121",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4190051339",
     "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
