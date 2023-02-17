@@ -1,7 +1,8 @@
 {
   "languages": [
-    "YAML",
+    "XML",
     ".gitignore (GitIgnore)",
+    "YAML",
     "JSON",
     "TypeScript",
     "JavaScript",
