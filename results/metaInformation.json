@@ -8,12 +8,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "02e835ea9c9952f4abab4c446f00115a122eb7e5",
+        "revisionId": "7823b418f728084798db285f01289435a81b6e25",
         "branch": "feature/shared-configurations"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4206125209",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4206136036",
     "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
