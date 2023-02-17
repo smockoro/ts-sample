@@ -13,6 +13,8 @@
     "@middy/core": "^4.0.0",
     "@middy/http-json-body-parser": "^4.0.0",
     "@serverless/typescript": "^3.0.0",
+    "@ts-sample/eslint-config": "workspace:^",
+    "@ts-sample/tsconfig": "workspace:^",
     "@types/aws-lambda": "^8.10.71",
     "@types/jest": "^29.2.5",
     "@types/node": "^18.0.0",
@@ -32,13 +34,16 @@
     "ts-jest": "^29.0.5",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^4.0.0",
+    "typedoc": "^0.23.25",
     "typescript": "^4.1.3"
   },
   "workspaces": [
     "src/functions/createUserApi",
     "src/functions/debugDynamoDBStreamEvent",
     "src/functions/debugS3Event",
-    "src/functions/debugSqsEvent"
+    "src/functions/debugSqsEvent",
+    "packages/tsconfig",
+    "packages/eslint-config"
   ],
   "author": "smockoro",
   "license": "MIT",
