@@ -130,6 +130,68 @@
     "JavaScript"
   ],
   "severity": "High",
+  "comment": "Unused constant sft",
+  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
+      "language": "JavaScript",
+      "line": 70,
+      "offset": 11,
+      "length": 3,
+      "code": {
+        "startLine": 68,
+        "length": 3,
+        "offset": 19,
+        "surroundingCode": "    });\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnusedLocalSymbols"
+  },
+  "hash": "16536c68fe88d144a565c2bb8916cb054965122399b49b8feeb3f7fea7b422ae"
+},{
+  "tool": "Code Inspection",
+  "category": "Unused symbols",
+  "type": "Unused local symbol",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "High",
+  "comment": "Unused constant rule",
+  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
+      "language": "JavaScript",
+      "line": 99,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 97,
+        "length": 4,
+        "offset": 19,
+        "surroundingCode": "    });\n\n    const rule = new Rule(this, 'ecs-sample-scheduled-event-bridge-task', {\n      ruleName: 'RULE-EVENT-BRIDGE-EX-TASK',\n      schedule: Schedule.rate(Duration.minutes(1)),"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnusedLocalSymbols"
+  },
+  "hash": "312756206ad79ff57f100f196ba6a2b79295bfbee3c7202b7caf6bd902d2354e"
+},{
+  "tool": "Code Inspection",
+  "category": "Unused symbols",
+  "type": "Unused local symbol",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "High",
   "comment": "Unused parameter request",
   "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
   "sources": [
@@ -217,66 +279,35 @@
   "hash": "63b16e43de0d2c3230c95d787433c22c1860a742f4b129eab3173bc519aaa032"
 },{
   "tool": "Code Inspection",
-  "category": "Unused symbols",
-  "type": "Unused local symbol",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
   "tags": [
     "JavaScript"
   ],
-  "severity": "High",
-  "comment": "Unused constant sft",
-  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
   "sources": [
     {
       "type": "file",
-      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
+      "path": "aws-serverless/app/packages/eslint-config/index.js",
       "language": "JavaScript",
-      "line": 70,
-      "offset": 11,
-      "length": 3,
+      "line": 1,
+      "offset": 1,
+      "length": 6,
       "code": {
-        "startLine": 68,
-        "length": 3,
-        "offset": 19,
-        "surroundingCode": "    });\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
+        "startLine": 1,
+        "length": 6,
+        "offset": 0,
+        "surroundingCode": "module.exports = {\n  extends: [\n    \"eslint:recommended\","
       }
     }
   ],
   "attributes": {
     "module": "project",
-    "inspectionName": "JSUnusedLocalSymbols"
+    "inspectionName": "JSUnresolvedVariable"
   },
-  "hash": "16536c68fe88d144a565c2bb8916cb054965122399b49b8feeb3f7fea7b422ae"
-},{
-  "tool": "Code Inspection",
-  "category": "Unused symbols",
-  "type": "Unused local symbol",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "High",
-  "comment": "Unused constant rule",
-  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
-      "language": "JavaScript",
-      "line": 99,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 97,
-        "length": 4,
-        "offset": 19,
-        "surroundingCode": "    });\n\n    const rule = new Rule(this, 'ecs-sample-scheduled-event-bridge-task', {\n      ruleName: 'RULE-EVENT-BRIDGE-EX-TASK',\n      schedule: Schedule.rate(Duration.minutes(1)),"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnusedLocalSymbols"
-  },
-  "hash": "312756206ad79ff57f100f196ba6a2b79295bfbee3c7202b7caf6bd902d2354e"
+  "hash": "ad806b0cb99fd4b6872503ab6018cde8c4a2ede1b146f0e6bf9233b849535769"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -321,6 +352,37 @@
   "sources": [
     {
       "type": "file",
+      "path": "aws-serverless/infra/jest.config.js",
+      "language": "JavaScript",
+      "line": 1,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 0,
+        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "c5b4e791ec109ed04f02d582bbadceb0125da7f703ce2ea90ba7d0f15711b669"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
       "path": "fastify-docker/jest.config.js",
       "language": "JavaScript",
       "line": 2,
@@ -339,37 +401,6 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "8d1dcdaf0df91a9c60821a64e9793089d5649566b0d45dcd71cfc7561ca24fc9"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "aws-serverless/app/packages/eslint-config/index.js",
-      "language": "JavaScript",
-      "line": 1,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 0,
-        "surroundingCode": "module.exports = {\n  extends: [\n    \"eslint:recommended\","
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
-  },
-  "hash": "ad806b0cb99fd4b6872503ab6018cde8c4a2ede1b146f0e6bf9233b849535769"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -432,37 +463,6 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Unresolved JavaScript variable",
-  "tags": [
-    "JavaScript"
-  ],
-  "severity": "Moderate",
-  "comment": "Unresolved variable or type module",
-  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "aws-serverless/infra/jest.config.js",
-      "language": "JavaScript",
-      "line": 1,
-      "offset": 1,
-      "length": 6,
-      "code": {
-        "startLine": 1,
-        "length": 6,
-        "offset": 0,
-        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project",
-    "inspectionName": "JSUnresolvedVariable"
-  },
-  "hash": "c5b4e791ec109ed04f02d582bbadceb0125da7f703ce2ea90ba7d0f15711b669"
 },{
   "tool": "Code Inspection",
   "category": "General",
