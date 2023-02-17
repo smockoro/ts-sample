@@ -31,35 +31,97 @@
   "hash": "a9438cccedd2d3625842ed22a5711d59f5c529938df64516c52e47d3cdefe560"
 },{
   "tool": "Code Inspection",
-  "category": "Unused symbols",
-  "type": "Unused local symbol",
+  "category": "TypeScript",
+  "type": "Inconsistent tsconfig.json properties",
   "tags": [
-    "JavaScript"
+    "JSON"
   ],
   "severity": "High",
-  "comment": "Unused constant sft",
-  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "comment": "Cannot resolve directory '@ts-sample'",
+  "detailsInfo": "Reports inconsistency of a `paths`, `checkJs`, or `extends` property in a tsconfig.json file.   \nThe `checkJs` property requires `allowJs`.   \nThe `extends` property should be a valid file reference.",
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/lib/fargate-sample-scheduled-task-stack.ts",
-      "language": "JavaScript",
-      "line": 26,
-      "offset": 11,
-      "length": 3,
+      "path": "aws-serverless/app/src/functions/createUserApi/tsconfig.json",
+      "language": "JSON",
+      "line": 2,
+      "offset": 15,
+      "length": 10,
       "code": {
-        "startLine": 24,
-        "length": 3,
-        "offset": 18,
-        "surroundingCode": "    );\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
+        "startLine": 1,
+        "length": 10,
+        "offset": 16,
+        "surroundingCode": "{\n  \"extends\": \"@ts-sample/tsconfig/bases\",\n  \"compilerOptions\": {\n    \"baseUrl\": \".\","
       }
     }
   ],
   "attributes": {
     "module": "project",
-    "inspectionName": "JSUnusedLocalSymbols"
+    "inspectionName": "TypeScriptConfig"
   },
-  "hash": "ca2fc36732bf17d2614f05993bba96f6ebd218d3b5c10ab9f0bab864df2dd070"
+  "hash": "56f437fd32c7548290ea648a17ae6a51ea5b49fa3e8d4663755f2e656d168bc3"
+},{
+  "tool": "Code Inspection",
+  "category": "TypeScript",
+  "type": "Inconsistent tsconfig.json properties",
+  "tags": [
+    "JSON"
+  ],
+  "severity": "High",
+  "comment": "Cannot resolve directory 'tsconfig'",
+  "detailsInfo": "Reports inconsistency of a `paths`, `checkJs`, or `extends` property in a tsconfig.json file.   \nThe `checkJs` property requires `allowJs`.   \nThe `extends` property should be a valid file reference.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/app/src/functions/createUserApi/tsconfig.json",
+      "language": "JSON",
+      "line": 2,
+      "offset": 26,
+      "length": 8,
+      "code": {
+        "startLine": 1,
+        "length": 8,
+        "offset": 27,
+        "surroundingCode": "{\n  \"extends\": \"@ts-sample/tsconfig/bases\",\n  \"compilerOptions\": {\n    \"baseUrl\": \".\","
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "TypeScriptConfig"
+  },
+  "hash": "53ca9e5826b8f042d6b68659d2fdc3fe9ecf9796069e0e435cddebf0b0982d4c"
+},{
+  "tool": "Code Inspection",
+  "category": "TypeScript",
+  "type": "Inconsistent tsconfig.json properties",
+  "tags": [
+    "JSON"
+  ],
+  "severity": "High",
+  "comment": "Cannot resolve file 'bases'",
+  "detailsInfo": "Reports inconsistency of a `paths`, `checkJs`, or `extends` property in a tsconfig.json file.   \nThe `checkJs` property requires `allowJs`.   \nThe `extends` property should be a valid file reference.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/app/src/functions/createUserApi/tsconfig.json",
+      "language": "JSON",
+      "line": 2,
+      "offset": 35,
+      "length": 5,
+      "code": {
+        "startLine": 1,
+        "length": 5,
+        "offset": 36,
+        "surroundingCode": "{\n  \"extends\": \"@ts-sample/tsconfig/bases\",\n  \"compilerOptions\": {\n    \"baseUrl\": \".\","
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "TypeScriptConfig"
+  },
+  "hash": "fdfa0848f7cecd5f9619d64fa8db8e297e634c7a0b3d41615142e2313c3fe0e2"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -73,7 +135,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
+      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
       "language": "JavaScript",
       "line": 70,
       "offset": 11,
@@ -90,7 +152,7 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "a271ab02772fd71a28d9e7f08b94242f5a3334ec5ebf6d8ec331f21510bcc598"
+  "hash": "16536c68fe88d144a565c2bb8916cb054965122399b49b8feeb3f7fea7b422ae"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -104,7 +166,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/lib/fargate-sample-stack.ts",
+      "path": "aws-serverless/infra/lib/fargate-sample-stack.ts",
       "language": "JavaScript",
       "line": 99,
       "offset": 11,
@@ -121,7 +183,7 @@
     "module": "project",
     "inspectionName": "JSUnusedLocalSymbols"
   },
-  "hash": "195a84257068283aa31ecc73d75be1e2edaec14070e49a76d61a3e6641fd0563"
+  "hash": "312756206ad79ff57f100f196ba6a2b79295bfbee3c7202b7caf6bd902d2354e"
 },{
   "tool": "Code Inspection",
   "category": "Unused symbols",
@@ -186,6 +248,37 @@
   "hash": "de1732ade8745c8238e7df3d5c8442ae789bbcafb56a41b777b7291f397f5ab5"
 },{
   "tool": "Code Inspection",
+  "category": "Unused symbols",
+  "type": "Unused local symbol",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "High",
+  "comment": "Unused constant sft",
+  "detailsInfo": "Reports an unused locally accessible parameter, local variable, function, class, or private member declaration.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/infra/lib/fargate-sample-scheduled-task-stack.ts",
+      "language": "JavaScript",
+      "line": 26,
+      "offset": 11,
+      "length": 3,
+      "code": {
+        "startLine": 24,
+        "length": 3,
+        "offset": 18,
+        "surroundingCode": "    );\n\n    const sft = new ScheduledFargateTask(this, 'amazon-ecs-sample-scheduled-task', {\n      schedule: Schedule.cron({\n        minute: '1',"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnusedLocalSymbols"
+  },
+  "hash": "63b16e43de0d2c3230c95d787433c22c1860a742f4b129eab3173bc519aaa032"
+},{
+  "tool": "Code Inspection",
   "category": "General",
   "type": "Unresolved JavaScript variable",
   "tags": [
@@ -197,7 +290,7 @@
   "sources": [
     {
       "type": "file",
-      "path": "aws-lambda/infra/jest.config.js",
+      "path": "aws-serverless/app/packages/eslint-config/index.js",
       "language": "JavaScript",
       "line": 1,
       "offset": 1,
@@ -206,7 +299,7 @@
         "startLine": 1,
         "length": 6,
         "offset": 0,
-        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
+        "surroundingCode": "module.exports = {\n  extends: [\n    \"eslint:recommended\","
       }
     }
   ],
@@ -214,7 +307,7 @@
     "module": "project",
     "inspectionName": "JSUnresolvedVariable"
   },
-  "hash": "6645b90091aafbc48b1d259cc61453a71cdc3ec5e258cdcaa9c2283d96afaeb9"
+  "hash": "ad806b0cb99fd4b6872503ab6018cde8c4a2ede1b146f0e6bf9233b849535769"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -246,6 +339,37 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "e558f9801302bffc8c6a8188868d7adcaa0403a912e7e18aa118ebe9d2308fe7"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/infra/jest.config.js",
+      "language": "JavaScript",
+      "line": 1,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 0,
+        "surroundingCode": "module.exports = {\n  testEnvironment: 'node',\n  roots: ['<rootDir>/test'],"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "c5b4e791ec109ed04f02d582bbadceb0125da7f703ce2ea90ba7d0f15711b669"
 },{
   "tool": "Code Inspection",
   "category": "General",
@@ -339,4 +463,66 @@
     "inspectionName": "JSUnresolvedVariable"
   },
   "hash": "3c2b2c069b71f9ac89f0c91755b8c4158f03d66897f47daca601da2f92b7bb16"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type module",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/app/src/functions/createUserApi/.eslintrc.js",
+      "language": "JavaScript",
+      "line": 1,
+      "offset": 1,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 0,
+        "surroundingCode": "module.exports = {\n  extends: [\n    \"@ts-sample/eslint-config\","
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "b6f66eacb8254e8d33ddc69d3850ce58aef466831d27ceb971880930eec861aa"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Unresolved JavaScript variable",
+  "tags": [
+    "JavaScript"
+  ],
+  "severity": "Moderate",
+  "comment": "Unresolved variable or type __dirname",
+  "detailsInfo": "Reports an unresolved referenced variable or field.\n\nTypeScript code is ignored.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "aws-serverless/app/src/functions/createUserApi/.eslintrc.js",
+      "language": "JavaScript",
+      "line": 9,
+      "offset": 22,
+      "length": 9,
+      "code": {
+        "startLine": 7,
+        "length": 9,
+        "offset": 86,
+        "surroundingCode": "    sourceType: \"module\",\n    project: \"./tsconfig.eslint.json\",\n    tsconfigRootDir: __dirname,\n  }\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project",
+    "inspectionName": "JSUnresolvedVariable"
+  },
+  "hash": "e18953b429eb9fcb54a488e1447f2ff4ffc82b0f32557bccbd614a26008063fd"
 }]}
