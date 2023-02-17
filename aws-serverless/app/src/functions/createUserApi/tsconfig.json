@@ -1,0 +1,9 @@
+{
+  "extends": "@ts-sample/tsconfig/bases",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@libs/*": ["../../libs/*"]
+    }
+  }
+}
