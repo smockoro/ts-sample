@@ -1,19 +1,19 @@
 {
-  "total": 17,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 17
+    "Code Inspection": 0
   },
   "linter": "QDJS",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-        "revisionId": "b6d6fdf96e002ffc501525618cfd898d737f0ce8",
-        "branch": "renovate/aws-serverless"
+        "revisionId": "46ba38c7f9f9268c5e79fef2e8292c6e2335fbf3",
+        "branch": "renovate/express-docker"
       }
     },
     "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f",
-    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4254065103",
+    "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4254067809",
     "repoUrl": "https://github.com/smockoro/ts-sample.git"
   }
 }
