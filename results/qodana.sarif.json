@@ -1076,37 +1076,6 @@
                 ]
               },
               {
-                "id": "JSClosureCompilerSyntax",
-                "shortDescription": {
-                  "text": "Incorrect usage of JSDoc tags"
-                },
-                "fullDescription": {
-                  "text": "Reports warnings implied by Google Closure Compiler annotations including correct use of '@abstract', '@interface', and '@implements' tags.",
-                  "markdown": "Reports warnings implied by *Google Closure Compiler* annotations including correct use of `@abstract`, `@interface`, and `@implements` tags."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "UnnecessaryContinueJS",
                 "shortDescription": {
                   "text": "Unnecessary 'continue' statement"
@@ -1127,6 +1096,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 1,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSClosureCompilerSyntax",
+                "shortDescription": {
+                  "text": "Incorrect usage of JSDoc tags"
+                },
+                "fullDescription": {
+                  "text": "Reports warnings implied by Google Closure Compiler annotations including correct use of '@abstract', '@interface', and '@implements' tags.",
+                  "markdown": "Reports warnings implied by *Google Closure Compiler* annotations including correct use of `@abstract`, `@interface`, and `@implements` tags."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1479,37 +1479,6 @@
                 ]
               },
               {
-                "id": "JSObjectNullOrUndefined",
-                "shortDescription": {
-                  "text": "Object is 'null' or 'undefined'"
-                },
-                "fullDescription": {
-                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
-                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TypeScriptMissingConfigOption",
                 "shortDescription": {
                   "text": "Missing tsconfig.json option "
@@ -1530,6 +1499,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/TypeScript",
                       "index": 3,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSObjectNullOrUndefined",
+                "shortDescription": {
+                  "text": "Object is 'null' or 'undefined'"
+                },
+                "fullDescription": {
+                  "text": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is 'undefined' or 'null'.",
+                  "markdown": "Reports an error caused by invoking a method, accessing a property, or calling a function on an object that is `undefined` or `null`."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -1572,37 +1572,6 @@
                 ]
               },
               {
-                "id": "UnnecessaryLabelOnBreakStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary label on 'break' statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
-                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Control flow issues",
-                      "index": 1,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ES6ShorthandObjectProperty",
                 "shortDescription": {
                   "text": "Property can be replaced with shorthand"
@@ -1623,6 +1592,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/General",
                       "index": 8,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnnecessaryLabelOnBreakStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary label on 'break' statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a labeled 'break' statement whose labels may be removed without changing the flow of control.",
+                  "markdown": "Reports a labeled `break` statement whose labels may be removed without changing the flow of control."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Control flow issues",
+                      "index": 1,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2471,37 +2471,6 @@
                 ]
               },
               {
-                "id": "UnusedCatchParameterJS",
-                "shortDescription": {
-                  "text": "Unused 'catch' parameter"
-                },
-                "fullDescription": {
-                  "text": "Reports a 'catch' parameter that is not used in the corresponding block. The 'catch' parameters named 'ignore' or 'ignored' are ignored. Use the checkbox below to disable this inspection for 'catch' blocks with comments.",
-                  "markdown": "Reports a `catch` parameter that is not used in the corresponding block. The `catch` parameters named `ignore` or `ignored` are ignored.\n\n\nUse the checkbox below to disable this inspection for `catch`\nblocks with comments."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Try statement issues",
-                      "index": 26,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "NpmUsedModulesInstalled",
                 "shortDescription": {
                   "text": "Missing module dependency"
@@ -2522,6 +2491,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Imports and dependencies",
                       "index": 39,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "UnusedCatchParameterJS",
+                "shortDescription": {
+                  "text": "Unused 'catch' parameter"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'catch' parameter that is not used in the corresponding block. The 'catch' parameters named 'ignore' or 'ignored' are ignored. Use the checkbox below to disable this inspection for 'catch' blocks with comments.",
+                  "markdown": "Reports a `catch` parameter that is not used in the corresponding block. The `catch` parameters named `ignore` or `ignored` are ignored.\n\n\nUse the checkbox below to disable this inspection for `catch`\nblocks with comments."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Try statement issues",
+                      "index": 26,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -2936,37 +2936,6 @@
                 ]
               },
               {
-                "id": "BlockStatementJS",
-                "shortDescription": {
-                  "text": "Unnecessary block statement"
-                },
-                "fullDescription": {
-                  "text": "Reports a block statement that is not used as the body of 'if', 'for', 'while', 'do', 'with', or 'try' statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for 'let' and 'const' variables, but still free-standing block statements may be confusing and result in subtle bugs when used with 'var' variables.",
-                  "markdown": "Reports a block statement that is not used as the body of `if`, `for`, `while`, `do`, `with`, or `try` statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for `let` and `const` variables, but still free-standing block statements may be confusing and result in subtle bugs when used with `var` variables."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
-                      "index": 22,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "AnonymousFunctionJS",
                 "shortDescription": {
                   "text": "Anonymous function"
@@ -2987,6 +2956,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Potentially undesirable code constructs",
                       "index": 10,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "BlockStatementJS",
+                "shortDescription": {
+                  "text": "Unnecessary block statement"
+                },
+                "fullDescription": {
+                  "text": "Reports a block statement that is not used as the body of 'if', 'for', 'while', 'do', 'with', or 'try' statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for 'let' and 'const' variables, but still free-standing block statements may be confusing and result in subtle bugs when used with 'var' variables.",
+                  "markdown": "Reports a block statement that is not used as the body of `if`, `for`, `while`, `do`, `with`, or `try` statements, or as the body of a function declaration. Starting from ECMAScript 6, JavaScript blocks introduce new scopes for `let` and `const` variables, but still free-standing block statements may be confusing and result in subtle bugs when used with `var` variables."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
+                      "index": 22,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3060,37 +3060,6 @@
                 ]
               },
               {
-                "id": "NestedConditionalExpressionJS",
-                "shortDescription": {
-                  "text": "Nested conditional expression"
-                },
-                "fullDescription": {
-                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
-                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
-                      "index": 22,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "JSTypeOfValues",
                 "shortDescription": {
                   "text": "'typeof' comparison with non-standard value"
@@ -3111,6 +3080,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Probable bugs",
                       "index": 12,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "NestedConditionalExpressionJS",
+                "shortDescription": {
+                  "text": "Nested conditional expression"
+                },
+                "fullDescription": {
+                  "text": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic.",
+                  "markdown": "Reports a ternary conditional expression within another ternary condition. Such nested conditionals may be extremely confusing, and best replaced by more explicit conditional logic."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Potentially confusing code constructs",
+                      "index": 22,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -3153,37 +3153,6 @@
                 ]
               },
               {
-                "id": "ES6PossiblyAsyncFunction",
-                "shortDescription": {
-                  "text": "'await' in non-async function"
-                },
-                "fullDescription": {
-                  "text": "Reports a usage of 'await' in a function that was possibly intended to be async but is actually missing the 'async' modifier. Although 'await' can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made 'async'.",
-                  "markdown": "Reports a usage of `await` in a function that was possibly intended to be async but is actually missing the `async` modifier. Although `await` can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made `async`."
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Async code and promises",
-                      "index": 45,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "TextLabelInSwitchStatementJS",
                 "shortDescription": {
                   "text": "Text label in 'switch' statement"
@@ -3204,6 +3173,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Switch statement issues",
                       "index": 43,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ES6PossiblyAsyncFunction",
+                "shortDescription": {
+                  "text": "'await' in non-async function"
+                },
+                "fullDescription": {
+                  "text": "Reports a usage of 'await' in a function that was possibly intended to be async but is actually missing the 'async' modifier. Although 'await' can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made 'async'.",
+                  "markdown": "Reports a usage of `await` in a function that was possibly intended to be async but is actually missing the `async` modifier. Although `await` can be used as an identifier, it is likely that it was intended to be used as an operator, so the containing function should be made `async`."
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Async code and promises",
+                      "index": 45,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4641,26 +4641,26 @@
                 ]
               },
               {
-                "id": "JSIncompatibleTypesComparison",
+                "id": "JSUnfilteredForInLoop",
                 "shortDescription": {
-                  "text": "Comparison of expressions having incompatible types"
+                  "text": "Unfiltered for..in loop"
                 },
                 "fullDescription": {
-                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
-                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
+                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
+                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
                 },
                 "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
+                  "enabled": false,
+                  "level": "warning",
                   "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
+                    "ideaSeverity": "WARNING"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/Probable bugs",
-                      "index": 12,
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -4703,26 +4703,26 @@
                 ]
               },
               {
-                "id": "JSUnfilteredForInLoop",
+                "id": "JSIncompatibleTypesComparison",
                 "shortDescription": {
-                  "text": "Unfiltered for..in loop"
+                  "text": "Comparison of expressions having incompatible types"
                 },
                 "fullDescription": {
-                  "text": "Reports unfiltered 'for-in' loops. The use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when 'Object''s prototype may be incorrectly modified. For example, the following code will print 42 and myMethod: 'Object.prototype.myMethod = function myMethod() {};\nlet a = { foo: 42 };\nfor (let i in a) {\n  console.log(a[i]);\n}' Suggests replacing the whole loop with a 'Object.keys()' method or adding a 'hasOwnProperty()' check. After applying the quick-fix the code looks as follows: 'for (let i in a) {\n  if (a.hasOwnProperty(i)) {\n    console.log(a[i]);\n  }\n}'",
-                  "markdown": "Reports unfiltered `for-in` loops.   \n\nThe use of this construct results in processing not only own properties of an object but properties from its prototype as well. It may be unexpected in some specific cases, for example, in utility methods that copy or modify all properties or when `Object`'s prototype may be incorrectly modified. For example, the following code will print **42** and **myMethod** :   \n\n\n    Object.prototype.myMethod = function myMethod() {};\n    let a = { foo: 42 };\n    for (let i in a) {\n      console.log(a[i]);\n    }\n\nSuggests replacing the whole loop with a `Object.keys()` method or adding a `hasOwnProperty()` check. After applying the quick-fix the code looks as follows:\n\n\n    for (let i in a) {\n      if (a.hasOwnProperty(i)) {\n        console.log(a[i]);\n      }\n    }\n"
+                  "text": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values.",
+                  "markdown": "Reports a comparison with operands of incompatible types or an operand with a type without possible common values."
                 },
                 "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
+                  "enabled": true,
+                  "level": "note",
                   "parameters": {
-                    "ideaSeverity": "WARNING"
+                    "ideaSeverity": "WEAK WARNING"
                   }
                 },
                 "relationships": [
                   {
                     "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
+                      "id": "JavaScript and TypeScript/Probable bugs",
+                      "index": 12,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6036,37 +6036,6 @@
                 ]
               },
               {
-                "id": "JSCheckFunctionSignatures",
-                "shortDescription": {
-                  "text": "Signature mismatch"
-                },
-                "fullDescription": {
-                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
-                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "WEAK WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/General",
-                      "index": 8,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "ConstantOnLHSOfComparisonJS",
                 "shortDescription": {
                   "text": "Constant on left side of comparison"
@@ -6087,6 +6056,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Code style issues",
                       "index": 9,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSCheckFunctionSignatures",
+                "shortDescription": {
+                  "text": "Signature mismatch"
+                },
+                "fullDescription": {
+                  "text": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types. TypeScript code is ignored.",
+                  "markdown": "Reports a JavaScript call expression where the arguments do not match the signature of the referenced function, including the types of arguments and their number. Also, reports if the overloading function doesn't match the overloaded one in terms of parameters and return types.\n\nTypeScript code is ignored."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "WEAK WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/General",
+                      "index": 8,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6501,37 +6501,6 @@
                 ]
               },
               {
-                "id": "PlatformDetectionJS",
-                "shortDescription": {
-                  "text": "Inaccurate platform detection"
-                },
-                "fullDescription": {
-                  "text": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform. Patterns detected include: 'document.all' 'document.layers' 'navigator.userAgent' 'navigator.oscpu' 'navigator.appName' 'navigator.appCodeName' 'navigator.platform'",
-                  "markdown": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform.\n\nPatterns detected include:\n\n* `document.all`\n* `document.layers`\n* `navigator.userAgent`\n* `navigator.oscpu`\n* `navigator.appName`\n* `navigator.appCodeName`\n* `navigator.platform`"
-                },
-                "defaultConfiguration": {
-                  "enabled": false,
-                  "level": "warning",
-                  "parameters": {
-                    "ideaSeverity": "WARNING"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/DOM issues",
-                      "index": 44,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "IfStatementWithIdenticalBranchesJS",
                 "shortDescription": {
                   "text": "'if' statement with identical branches"
@@ -6552,6 +6521,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/Control flow issues",
                       "index": 1,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "PlatformDetectionJS",
+                "shortDescription": {
+                  "text": "Inaccurate platform detection"
+                },
+                "fullDescription": {
+                  "text": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform. Patterns detected include: 'document.all' 'document.layers' 'navigator.userAgent' 'navigator.oscpu' 'navigator.appName' 'navigator.appCodeName' 'navigator.platform'",
+                  "markdown": "Reports a common JavaScript pattern for detecting the browser or operating system in which the script is run. In addition to pointing out non-portable constructs, these platform detection patterns are often incomplete and easily fooled. For most cases, detection of individual environment features is preferable to attempting to detect the entire platform.\n\nPatterns detected include:\n\n* `document.all`\n* `document.layers`\n* `navigator.userAgent`\n* `navigator.oscpu`\n* `navigator.appName`\n* `navigator.appCodeName`\n* `navigator.platform`"
+                },
+                "defaultConfiguration": {
+                  "enabled": false,
+                  "level": "warning",
+                  "parameters": {
+                    "ideaSeverity": "WARNING"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/DOM issues",
+                      "index": 44,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -6842,37 +6842,6 @@
                 ]
               },
               {
-                "id": "JSMissingSwitchBranches",
-                "shortDescription": {
-                  "text": "'switch' statement has missing branches"
-                },
-                "fullDescription": {
-                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
-                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
-                },
-                "defaultConfiguration": {
-                  "enabled": true,
-                  "level": "note",
-                  "parameters": {
-                    "ideaSeverity": "INFORMATION"
-                  }
-                },
-                "relationships": [
-                  {
-                    "target": {
-                      "id": "JavaScript and TypeScript/Switch statement issues",
-                      "index": 43,
-                      "toolComponent": {
-                        "name": "QDJS"
-                      }
-                    },
-                    "kinds": [
-                      "superset"
-                    ]
-                  }
-                ]
-              },
-              {
                 "id": "InnerHTMLJS",
                 "shortDescription": {
                   "text": "Use of 'innerHTML' property"
@@ -6893,6 +6862,37 @@
                     "target": {
                       "id": "JavaScript and TypeScript/DOM issues",
                       "index": 44,
+                      "toolComponent": {
+                        "name": "QDJS"
+                      }
+                    },
+                    "kinds": [
+                      "superset"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "JSMissingSwitchBranches",
+                "shortDescription": {
+                  "text": "'switch' statement has missing branches"
+                },
+                "fullDescription": {
+                  "text": "Reports a 'switch' statement on a variable of the type 'enum' or 'union' when the statement doesn't cover some value options from the type.",
+                  "markdown": "Reports a `switch` statement on a variable of the type `enum` or `union` when the statement doesn't cover some value options from the type."
+                },
+                "defaultConfiguration": {
+                  "enabled": true,
+                  "level": "note",
+                  "parameters": {
+                    "ideaSeverity": "INFORMATION"
+                  }
+                },
+                "relationships": [
+                  {
+                    "target": {
+                      "id": "JavaScript and TypeScript/Switch statement issues",
+                      "index": 43,
                       "toolComponent": {
                         "name": "QDJS"
                       }
@@ -13562,8 +13562,8 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/smockoro/ts-sample.git",
-          "revisionId": "2fbbe74bdc6df7ae73628963ddce7d2119d4f81b",
-          "branch": "renovate/aws-serverless",
+          "revisionId": "511223945fd08c49f36c9e6ba3d2dea1deef05d8",
+          "branch": "renovate/express-docker",
           "properties": {
             "repoUrl": "https://github.com/smockoro/ts-sample.git",
             "lastAuthorName": "renovate[bot]",
@@ -14477,9 +14477,9 @@
       ],
       "automationDetails": {
         "id": "project/qodana/2023-02-24",
-        "guid": "b1215bfd-eee6-471b-b016-050b41249f9a",
+        "guid": "85bb8548-c3ef-4897-8d9c-3fa4269e5a09",
         "properties": {
-          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4258832240"
+          "jobUrl": "https://github.com/smockoro/ts-sample/actions/runs/4258834887"
         }
       },
       "newlineSequences": [
@@ -14487,108 +14487,6 @@
         "\n"
       ],
       "properties": {
-        "qodana.promo.results": [
-          {
-            "ruleId": "HtmlWrongAttributeValue",
-            "kind": "fail",
-            "level": "warning",
-            "message": {
-              "text": "Wrong attribute value",
-              "markdown": "Wrong attribute value"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "aws-serverless/infra/doc/classes/lib_fargate_sample_stack.FargateSampleStack.html",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 36,
-                    "startColumn": 47,
-                    "charOffset": 3587,
-                    "charLength": 6,
-                    "snippet": {
-                      "text": "button"
-                    },
-                    "sourceLanguage": "HTML"
-                  },
-                  "contextRegion": {
-                    "startLine": 34,
-                    "startColumn": 1,
-                    "charOffset": 3379,
-                    "charLength": 541,
-                    "snippet": {
-                      "text": "<section class=\"tsd-panel tsd-index-panel\">\n<details class=\"tsd-index-content tsd-index-accordion\" open><summary class=\"tsd-accordion-summary tsd-index-summary\">\n<h5 class=\"tsd-index-heading uppercase\" role=\"button\" aria-expanded=\"false\" tabIndex=0><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z\" fill=\"var(--color-text)\"></path></svg> Index</h5></summary>\n<div class=\"tsd-accordion-details\">\n<section class=\"tsd-index-section\">"
-                    }
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "project",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "782dade7fcde2aebcdb8107af8089a7d521099752527db73bedc046833d43dc6"
-            },
-            "properties": {
-              "ideaSeverity": "WARNING"
-            }
-          },
-          {
-            "ruleId": "HtmlWrongAttributeValue",
-            "kind": "fail",
-            "level": "warning",
-            "message": {
-              "text": "Wrong attribute value",
-              "markdown": "Wrong attribute value"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "aws-serverless/infra/doc/classes/lib_create_user_api_lambda_stack.CreateUserApiLambdaStack.html",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 30,
-                    "startColumn": 47,
-                    "charOffset": 3578,
-                    "charLength": 6,
-                    "snippet": {
-                      "text": "button"
-                    },
-                    "sourceLanguage": "HTML"
-                  },
-                  "contextRegion": {
-                    "startLine": 28,
-                    "startColumn": 1,
-                    "charOffset": 3370,
-                    "charLength": 541,
-                    "snippet": {
-                      "text": "<section class=\"tsd-panel tsd-index-panel\">\n<details class=\"tsd-index-content tsd-index-accordion\" open><summary class=\"tsd-accordion-summary tsd-index-summary\">\n<h5 class=\"tsd-index-heading uppercase\" role=\"button\" aria-expanded=\"false\" tabIndex=0><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z\" fill=\"var(--color-text)\"></path></svg> Index</h5></summary>\n<div class=\"tsd-accordion-details\">\n<section class=\"tsd-index-section\">"
-                    }
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "project",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "8b4ea804b09c679c6ebf5474615546289170724fdb5fb55d64b51f07e46eb2b3"
-            },
-            "properties": {
-              "ideaSeverity": "WARNING"
-            }
-          }
-        ],
         "configProfile": "absent",
         "deviceId": "200820300000000-a2e4-ac03-11f5-d5edf282343f"
       }
