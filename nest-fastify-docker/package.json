@@ -22,11 +22,13 @@
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
-    "@nestjs/platform-express": "^9.0.0",
     "@nestjs/platform-fastify": "^9.4.0",
+    "async_hooks": "^1.0.0",
+    "fastify": "^4.15.0",
     "nest-winston": "^1.9.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
+    "uuid": "^9.0.0",
     "winston": "^3.8.2"
   },
   "devDependencies": {

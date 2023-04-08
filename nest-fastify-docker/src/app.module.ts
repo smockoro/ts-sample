@@ -1,12 +1,19 @@
-import { Module } from '@nestjs/common';
+import {
+  MiddlewareConsumer,
+  Module,
+  NestModule,
+  RequestMethod,
+} from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {
-  WinstonModule,
   utilities as nestWinstonModuleUtilities,
+  WinstonModule,
 } from 'nest-winston';
 import * as winston from 'winston';
 import * as process from 'process';
+import { AccessLoggingMiddleware } from './middleware/http/log.access';
+import { RequestContextMiddleware } from './middleware/http/request.context';
 
 @Module({
   imports: [
@@ -30,4 +37,12 @@ import * as process from 'process';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(RequestContextMiddleware)
+      .forRoutes({ path: '*', method: RequestMethod.ALL })
+      .apply(AccessLoggingMiddleware)
+      .forRoutes({ path: '*', method: RequestMethod.ALL });
+  }
+}
