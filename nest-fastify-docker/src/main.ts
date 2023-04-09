@@ -8,6 +8,7 @@ import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
 import { fastifyCsrfProtection } from '@fastify/csrf-protection';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as process from 'process';
+import { CatModule } from './cat.module';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
@@ -25,7 +26,9 @@ async function bootstrap() {
       .addServer('http://localhost:3000')
       .addServer('https://localhost:3000')
       .build();
-    const doc = SwaggerModule.createDocument(app, openapiConfig);
+    const doc = SwaggerModule.createDocument(app, openapiConfig, {
+      include: [CatModule],
+    });
     SwaggerModule.setup('api', app, doc);
   }
 

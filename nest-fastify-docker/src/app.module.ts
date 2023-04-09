@@ -14,9 +14,8 @@ import * as winston from 'winston';
 import * as process from 'process';
 import { AccessLoggingMiddleware } from './middleware/http/log.access';
 import { RequestContextMiddleware } from './middleware/http/request.context';
-import { CatController } from './controller/cat.controller';
-import { DefaultCatsUsecase } from './domain/usecase/cat.usecase';
 import { PrometheusModule } from '@willsoto/nestjs-prometheus';
+import { CatModule } from './cat.module';
 
 @Module({
   imports: [
@@ -37,15 +36,10 @@ import { PrometheusModule } from '@willsoto/nestjs-prometheus';
       ],
     }),
     PrometheusModule.register(),
+    CatModule,
   ],
-  controllers: [AppController, CatController],
-  providers: [
-    AppService,
-    {
-      provide: 'CAT_USECASE',
-      useClass: DefaultCatsUsecase,
-    },
-  ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
