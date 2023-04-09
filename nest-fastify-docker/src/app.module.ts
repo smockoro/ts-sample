@@ -14,6 +14,8 @@ import * as winston from 'winston';
 import * as process from 'process';
 import { AccessLoggingMiddleware } from './middleware/http/log.access';
 import { RequestContextMiddleware } from './middleware/http/request.context';
+import { CatController } from './controller/cat.controller';
+import { DefaultCatsUsecase } from './domain/usecase/cat.usecase';
 
 @Module({
   imports: [
@@ -34,8 +36,14 @@ import { RequestContextMiddleware } from './middleware/http/request.context';
       ],
     }),
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController, CatController],
+  providers: [
+    AppService,
+    {
+      provide: 'CAT_USECASE',
+      useClass: DefaultCatsUsecase,
+    },
+  ],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
