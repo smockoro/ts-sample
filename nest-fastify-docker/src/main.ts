@@ -22,6 +22,8 @@ async function bootstrap() {
     const openapiConfig = new DocumentBuilder()
       .setTitle('Cats example')
       .setVersion('1.0')
+      .addServer('http://localhost:3000')
+      .addServer('https://localhost:3000')
       .build();
     const doc = SwaggerModule.createDocument(app, openapiConfig);
     SwaggerModule.setup('api', app, doc);

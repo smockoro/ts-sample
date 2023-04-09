@@ -16,6 +16,7 @@ import { AccessLoggingMiddleware } from './middleware/http/log.access';
 import { RequestContextMiddleware } from './middleware/http/request.context';
 import { CatController } from './controller/cat.controller';
 import { DefaultCatsUsecase } from './domain/usecase/cat.usecase';
+import { PrometheusModule } from '@willsoto/nestjs-prometheus';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { DefaultCatsUsecase } from './domain/usecase/cat.usecase';
         }),
       ],
     }),
+    PrometheusModule.register(),
   ],
   controllers: [AppController, CatController],
   providers: [
@@ -49,8 +51,11 @@ export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(RequestContextMiddleware)
-      .forRoutes({ path: '*', method: RequestMethod.ALL })
+      .forRoutes({ path: '/v1/*', method: RequestMethod.ALL })
       .apply(AccessLoggingMiddleware)
-      .forRoutes({ path: '*', method: RequestMethod.ALL });
+      .forRoutes({
+        path: '/v1/*',
+        method: RequestMethod.ALL,
+      });
   }
 }

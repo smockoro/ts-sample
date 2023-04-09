@@ -1,9 +1,17 @@
-import { Body, Controller, Get, Inject, Param, Post, Put } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Get,
+  Inject,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { CatResponse, CatsResponse } from './response/cat.response';
 import { CatUsecase } from '../domain/usecase/cat.usecase';
 import { CatsRequest } from './request/cat.request';
 
-@Controller('cats')
+@Controller('v1/cats')
 export class CatController {
   constructor(@Inject('CAT_USECASE') private readonly usecase: CatUsecase) {}
 
