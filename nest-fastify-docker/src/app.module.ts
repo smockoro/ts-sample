@@ -16,6 +16,7 @@ import { AccessLoggingMiddleware } from './middleware/http/log.access';
 import { RequestContextMiddleware } from './middleware/http/request.context';
 import { PrometheusModule } from '@willsoto/nestjs-prometheus';
 import { CatModule } from './cat.module';
+import { TimerMiddleware } from "./middleware/http/timer";
 
 @Module({
   imports: [
@@ -50,6 +51,8 @@ export class AppModule implements NestModule {
       .forRoutes({
         path: '/v1/*',
         method: RequestMethod.ALL,
-      });
+      })
+      .apply(TimerMiddleware)
+      .forRoutes({ path: '/v1/*', method: RequestMethod.ALL });
   }
 }
