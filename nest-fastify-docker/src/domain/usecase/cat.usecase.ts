@@ -1,15 +1,17 @@
 import { Cats } from '../entity/cat';
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
+import { CatRepository } from '../repository/cat.repository';
 
 export interface CatUsecase {
-  findAll(): Cats;
+  findAll(): Promise<Cats>;
 }
 
 @Injectable()
 export class DefaultCatsUsecase implements CatUsecase {
   private readonly cats: Cats = [];
+  constructor(@Inject('CAT_REPOSITORY') private readonly repo: CatRepository) {}
 
-  findAll(): Cats {
-    return this.cats;
+  findAll(): Promise<Cats> {
+    return this.repo.findAll();
   }
 }
