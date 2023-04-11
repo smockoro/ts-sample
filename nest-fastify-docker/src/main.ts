@@ -9,6 +9,7 @@ import { fastifyCsrfProtection } from '@fastify/csrf-protection';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as process from 'process';
 import { CatModule } from './cat.module';
+import { ValidationPipe } from "@nestjs/common";
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
@@ -31,6 +32,8 @@ async function bootstrap() {
     });
     SwaggerModule.setup('api', app, doc);
   }
+
+  app.useGlobalPipes(new ValidationPipe());
 
   await app.listen(process.env.PORT || 3000, '0.0.0.0');
 }

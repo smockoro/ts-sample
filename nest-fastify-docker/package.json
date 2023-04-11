@@ -28,6 +28,8 @@
     "@nestjs/swagger": "^6.3.0",
     "@willsoto/nestjs-prometheus": "^5.1.1",
     "async_hooks": "^1.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
     "fastify": "^4.15.0",
     "nest-winston": "^1.9.1",
     "prom-client": "^14.2.0",
