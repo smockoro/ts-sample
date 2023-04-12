@@ -2,21 +2,31 @@ import {
   Body,
   Controller,
   Get,
-  Inject,
+  Inject, LoggerService,
   Param,
   Post,
-  Put,
-} from '@nestjs/common';
+  Put
+} from "@nestjs/common";
 import { CatResponse, CatsResponse } from './response/cat.response';
 import { CatUsecase } from '../domain/usecase/cat.usecase';
 import { CatsRequest } from './request/cat.request';
+import { WINSTON_MODULE_NEST_PROVIDER } from "nest-winston";
+import { RequestContextStorage } from "../context/request.context";
 
 @Controller('v1/cats')
 export class CatController {
-  constructor(@Inject('CAT_USECASE') private readonly usecase: CatUsecase) {}
+  constructor(
+    @Inject('CAT_USECASE') private readonly usecase: CatUsecase,
+    @Inject(WINSTON_MODULE_NEST_PROVIDER)
+    private readonly logger: LoggerService,
+  ) {}
 
   @Get()
   async listCats(): Promise<CatsResponse> {
+    this.logger.log({
+      message: 'sample',
+      requestId: RequestContextStorage.currentContext?.requestId,
+    });
     return this.usecase.findAll();
   }
 

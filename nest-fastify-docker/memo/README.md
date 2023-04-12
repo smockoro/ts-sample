@@ -14,3 +14,16 @@
   - https://qiita.com/SuyamaDaichi/items/cf06b4cdc7e94c2acea2
 - FastifyもExpressも使わず、ただのバッチアプリみたいに動かす。
   - https://docs.nestjs.com/standalone-applications
+- Prisma系
+  - Transaction
+    - https://www.prisma.io/docs/guides/performance-and-optimization/prisma-client-transactions-guide
+  - RowQuery
+    - https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access
+  - コネクションプールとコネクションタイムアウト
+    - https://www.prisma.io/docs/guides/performance-and-optimization/connection-management#increasing-the-pool-size
+  - クエリログ
+    - https://www.prisma.io/docs/concepts/components/prisma-client/working-with-prismaclient/logging
+    - https://zenn.dev/waddy/books/graphql-nestjs-nextjs-bootcamp/viewer/nestjs_configration#prisma
+  - メトリクス
+    - https://www.prisma.io/docs/concepts/components/prisma-client/metrics#retrieve-metrics-in-prometheus-format
+    - https://github.com/willsoto/nestjs-prometheus#providing-a-custom-controller
