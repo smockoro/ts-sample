@@ -4,8 +4,6 @@ import {
   NestModule,
   RequestMethod,
 } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import {
   utilities as nestWinstonModuleUtilities,
   WinstonModule,
@@ -14,9 +12,9 @@ import * as winston from 'winston';
 import * as process from 'process';
 import { AccessLoggingMiddleware } from './middleware/http/log.access';
 import { RequestContextMiddleware } from './middleware/http/request.context';
-import { PrometheusModule } from '@willsoto/nestjs-prometheus';
 import { CatModule } from './cat.module';
-import { TimerMiddleware } from "./middleware/http/timer";
+import { TimerMiddleware } from './middleware/http/timer';
+import { OpenTelemetryModule } from 'nestjs-otel';
 
 @Module({
   imports: [
@@ -36,11 +34,17 @@ import { TimerMiddleware } from "./middleware/http/timer";
         }),
       ],
     }),
-    PrometheusModule.register(),
+    OpenTelemetryModule.forRoot({
+      metrics: {
+        hostMetrics: true,
+        apiMetrics: {
+          enable: true,
+        },
+      },
+    }),
     CatModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  providers: [],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

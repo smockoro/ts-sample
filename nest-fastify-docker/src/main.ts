@@ -11,7 +11,8 @@ import * as process from 'process';
 import { CatModule } from './cat.module';
 import { ValidationPipe } from '@nestjs/common';
 import { PrismaService } from './repository/prisma/prisma.service';
-import { sampleMiddleware } from "./middleware/prisma/sample";
+import { sampleMiddleware } from './middleware/prisma/sample';
+import otelSDK from "./telemetry/telemetry";
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(
@@ -41,6 +42,8 @@ async function bootstrap() {
   await prismaService.enableShutdownHooks(app);
   await prismaService.enableLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   await prismaService.enableMiddleware(sampleMiddleware);
+
+  await otelSDK.start();
 
   await app.listen(process.env.PORT || 3000, '0.0.0.0');
 }
