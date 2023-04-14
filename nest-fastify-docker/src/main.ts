@@ -12,9 +12,16 @@ import { CatModule } from './cat.module';
 import { ValidationPipe } from '@nestjs/common';
 import { PrismaService } from './repository/prisma/prisma.service';
 import { sampleMiddleware } from './middleware/prisma/sample';
-import otelSDK from "./telemetry/telemetry";
+import otelSDK from './telemetry/telemetry';
 
 async function bootstrap() {
+  /*
+  const httpsOptions = {
+    key: fsReadFile(__dirname + '../devtools/certfile/localhost.key'),
+    cert: fsReadFile(__dirname + '../devtools/certfile/localhost.crt'),
+  };
+   */
+
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
     new FastifyAdapter(),
