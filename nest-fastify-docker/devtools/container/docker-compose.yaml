@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+  postgresql:
+    container_name: "cat_postgres"
+    image: postgres:13.0
+    environment:
+      # Use root/example as user/password credentials
+      POSTGRES_PASSWORD: "P@ssw0rd"
+    ports:
+      - "5432:5432"
+    command:
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+
+  rabbitmq:
+    container_name: "fish_rabbitmq"
+    image: rabbitmq:3.11-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    # default user/password is guest/guest.
+    #environment:
+    # - RABBITMQ_DEFAULT_USER=root
+    # - RABBITMQ_DEFAULT_PASS=password

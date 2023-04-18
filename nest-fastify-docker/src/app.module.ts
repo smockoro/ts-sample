@@ -15,6 +15,7 @@ import { RequestContextMiddleware } from './middleware/http/request.context';
 import { CatModule } from './cat.module';
 import { TimerMiddleware } from './middleware/http/timer';
 import { OpenTelemetryModule } from 'nestjs-otel';
+import { FishModule } from './fish.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { OpenTelemetryModule } from 'nestjs-otel';
       },
     }),
     CatModule,
+    FishModule,
   ],
   providers: [],
 })

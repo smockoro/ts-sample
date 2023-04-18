@@ -2,16 +2,17 @@ import {
   Body,
   Controller,
   Get,
-  Inject, LoggerService,
+  Inject,
+  LoggerService,
   Param,
   Post,
-  Put
-} from "@nestjs/common";
+  Put,
+} from '@nestjs/common';
 import { CatResponse, CatsResponse } from './response/cat.response';
 import { CatUsecase } from '../domain/usecase/cat.usecase';
 import { CatsRequest } from './request/cat.request';
-import { WINSTON_MODULE_NEST_PROVIDER } from "nest-winston";
-import { RequestContextStorage } from "../context/request.context";
+import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
+import { RequestContextStorage } from '../context/request.context';
 
 @Controller('v1/cats')
 export class CatController {

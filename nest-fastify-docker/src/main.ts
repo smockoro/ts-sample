@@ -13,6 +13,10 @@ import { ValidationPipe } from '@nestjs/common';
 import { PrismaService } from './repository/prisma/prisma.service';
 import { sampleMiddleware } from './middleware/prisma/sample';
 import otelSDK from './telemetry/telemetry';
+import { FishModule } from './fish.module';
+import { MessageInterceptorChain } from './producer/interceptor/message.interceptor';
+import { RabbitmqProducer } from './producer/rabbitmq/rabbitmq.producer';
+import { LoggingInterceptor } from './interceptor/producer/logging.interceptor';
 
 async function bootstrap() {
   /*
@@ -31,16 +35,27 @@ async function bootstrap() {
   await app.register(fastifyCsrfProtection);
 
   if (process.env.NODE_ENV !== 'production') {
-    const openapiConfig = new DocumentBuilder()
+    const catOpenapiConfig = new DocumentBuilder()
       .setTitle('Cats example')
       .setVersion('1.0')
       .addServer('http://localhost:3000')
       .addServer('https://localhost:3000')
       .build();
-    const doc = SwaggerModule.createDocument(app, openapiConfig, {
+    const catDoc = SwaggerModule.createDocument(app, catOpenapiConfig, {
       include: [CatModule],
     });
-    SwaggerModule.setup('api', app, doc);
+    SwaggerModule.setup('api/cats', app, catDoc);
+
+    const fishOpenapiConfig = new DocumentBuilder()
+      .setTitle('Fish example')
+      .setVersion('1.0')
+      .addServer('http://localhost:3000')
+      .addServer('https://localhost:3000')
+      .build();
+    const fishDoc = SwaggerModule.createDocument(app, fishOpenapiConfig, {
+      include: [FishModule],
+    });
+    SwaggerModule.setup('api/fish', app, fishDoc);
   }
 
   app.useGlobalPipes(new ValidationPipe());
