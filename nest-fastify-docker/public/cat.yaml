@@ -1,0 +1,55 @@
+openapi: 3.0.0
+paths:
+  /v1/cats:
+    get:
+      operationId: CatController_listCats
+      parameters: []
+      responses:
+        '200':
+          description: ''
+    post:
+      operationId: CatController_createCats
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+      responses:
+        '201':
+          description: ''
+    put:
+      operationId: CatController_updateCats
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+      responses:
+        '200':
+          description: ''
+  /v1/cats/{id}:
+    get:
+      operationId: CatController_getCatById
+      parameters: []
+      responses:
+        '200':
+          description: ''
+info:
+  title: Cats example
+  description: ''
+  version: '1.0'
+  contact: {}
+tags: []
+servers:
+  - url: http://localhost:3000
+  - url: https://localhost:3000
+components:
+  schemas: {}

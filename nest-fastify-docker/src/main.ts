@@ -14,9 +14,9 @@ import { PrismaService } from './repository/prisma/prisma.service';
 import { sampleMiddleware } from './middleware/prisma/sample';
 import otelSDK from './telemetry/telemetry';
 import { FishModule } from './fish.module';
-import { MessageInterceptorChain } from './producer/interceptor/message.interceptor';
-import { RabbitmqProducer } from './producer/rabbitmq/rabbitmq.producer';
-import { LoggingInterceptor } from './interceptor/producer/logging.interceptor';
+import { writeFileSync } from 'fs';
+import { dump } from 'js-yaml';
+import { join } from 'path';
 
 async function bootstrap() {
   /*
@@ -45,6 +45,11 @@ async function bootstrap() {
       include: [CatModule],
     });
     SwaggerModule.setup('api/cats', app, catDoc);
+    writeFileSync(join(__dirname, '../public', 'cat.yaml'), dump(catDoc, {}));
+    writeFileSync(
+      join(__dirname, '../public', 'cat.json'),
+      JSON.stringify(catDoc, undefined, 2),
+    );
 
     const fishOpenapiConfig = new DocumentBuilder()
       .setTitle('Fish example')
@@ -56,6 +61,11 @@ async function bootstrap() {
       include: [FishModule],
     });
     SwaggerModule.setup('api/fish', app, fishDoc);
+    writeFileSync(join(__dirname, '../public', 'fish.yaml'), dump(fishDoc, {}));
+    writeFileSync(
+      join(__dirname, '../public', 'fish.json'),
+      JSON.stringify(fishDoc, undefined, 2),
+    );
   }
 
   app.useGlobalPipes(new ValidationPipe());

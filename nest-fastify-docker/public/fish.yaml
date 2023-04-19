@@ -1,0 +1,50 @@
+openapi: 3.0.0
+paths:
+  /v1/fish:
+    post:
+      operationId: FishController_createFish
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FishRequest'
+      responses:
+        '201':
+          description: created
+        '400':
+          description: bad request
+        '403':
+          description: forbidden
+        '500':
+          description: internal server error
+      tags:
+        - fish
+info:
+  title: Fish example
+  description: ''
+  version: '1.0'
+  contact: {}
+tags: []
+servers:
+  - url: http://localhost:3000
+  - url: https://localhost:3000
+components:
+  schemas:
+    FishRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        image:
+          type: string
+      required:
+        - name
+        - description
+        - price
+        - image

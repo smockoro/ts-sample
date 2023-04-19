@@ -16,6 +16,8 @@ import { CatModule } from './cat.module';
 import { TimerMiddleware } from './middleware/http/timer';
 import { OpenTelemetryModule } from 'nestjs-otel';
 import { FishModule } from './fish.module';
+import { join } from 'path';
+import { ServeStaticModule } from '@nestjs/serve-static';
 
 @Module({
   imports: [
@@ -41,6 +43,13 @@ import { FishModule } from './fish.module';
         apiMetrics: {
           enable: true,
         },
+      },
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'public'),
+      serveRoot: '/public',
+      serveStaticOptions: {
+        redirect: false,
       },
     }),
     CatModule,
