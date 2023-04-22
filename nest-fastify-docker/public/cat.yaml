@@ -6,7 +6,21 @@ paths:
       parameters: []
       responses:
         '200':
-          description: ''
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CatResponse'
+        '400':
+          description: bad request
+        '403':
+          description: forbidden
+        '500':
+          description: internal server error
+      tags: &ref_0
+        - cats
     post:
       operationId: CatController_createCats
       parameters: []
@@ -17,10 +31,17 @@ paths:
             schema:
               type: array
               items:
-                type: string
+                $ref: '#/components/schemas/CatRequest'
       responses:
         '201':
-          description: ''
+          description: created
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CatResponse'
+      tags: *ref_0
     put:
       operationId: CatController_updateCats
       parameters: []
@@ -31,17 +52,34 @@ paths:
             schema:
               type: array
               items:
-                type: string
+                $ref: '#/components/schemas/CatRequest'
       responses:
         '200':
-          description: ''
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CatResponse'
+      tags: *ref_0
   /v1/cats/{id}:
     get:
       operationId: CatController_getCatById
-      parameters: []
+      parameters:
+        - name: id
+          required: true
+          in: path
+          schema:
+            type: string
       responses:
         '200':
-          description: ''
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatResponse'
+      tags: *ref_0
 info:
   title: Cats example
   description: ''
@@ -52,4 +90,20 @@ servers:
   - url: http://localhost:3000
   - url: https://localhost:3000
 components:
-  schemas: {}
+  schemas:
+    CatResponse:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: number
+        birthday:
+          type: string
+      required:
+        - name
+        - age
+        - birthday
+    CatRequest:
+      type: object
+      properties: {}

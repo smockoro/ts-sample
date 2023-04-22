@@ -7,9 +7,31 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": ""
+            "description": "success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatResponse"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "bad request"
+          },
+          "403": {
+            "description": "forbidden"
+          },
+          "500": {
+            "description": "internal server error"
           }
-        }
+        },
+        "tags": [
+          "cats"
+        ]
       },
       "post": {
         "operationId": "CatController_createCats",
@@ -21,7 +43,7 @@
               "schema": {
                 "type": "array",
                 "items": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/CatRequest"
                 }
               }
             }
@@ -29,9 +51,22 @@
         },
         "responses": {
           "201": {
-            "description": ""
+            "description": "created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatResponse"
+                  }
+                }
+              }
+            }
           }
-        }
+        },
+        "tags": [
+          "cats"
+        ]
       },
       "put": {
         "operationId": "CatController_updateCats",
@@ -43,7 +78,7 @@
               "schema": {
                 "type": "array",
                 "items": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/CatRequest"
                 }
               }
             }
@@ -51,20 +86,52 @@
         },
         "responses": {
           "200": {
-            "description": ""
+            "description": "success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatResponse"
+                  }
+                }
+              }
+            }
           }
-        }
+        },
+        "tags": [
+          "cats"
+        ]
       }
     },
     "/v1/cats/{id}": {
       "get": {
         "operationId": "CatController_getCatById",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatResponse"
+                }
+              }
+            }
           }
-        }
+        },
+        "tags": [
+          "cats"
+        ]
       }
     }
   },
@@ -84,6 +151,30 @@
     }
   ],
   "components": {
-    "schemas": {}
+    "schemas": {
+      "CatResponse": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "birthday": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "age",
+          "birthday"
+        ]
+      },
+      "CatRequest": {
+        "type": "object",
+        "properties": {}
+      }
+    }
   }
 }
