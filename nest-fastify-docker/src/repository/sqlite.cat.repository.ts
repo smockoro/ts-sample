@@ -17,4 +17,11 @@ export class SqliteCatRepository implements CatRepository {
       data,
     });
   }
+
+  async createCats(data: Cats): Promise<Cats> {
+    this.prisma.cat.createMany({
+      data,
+    });
+    return data;
+  }
 }

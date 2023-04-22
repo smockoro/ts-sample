@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Inject,
   LoggerService,
@@ -13,7 +14,13 @@ import { CatUsecase } from '../domain/usecase/cat.usecase';
 import { CatRequest, CatsRequest } from './request/cat.request';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
 import { RequestContextStorage } from '../context/request.context';
-import { ApiBody, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
+import {
+  ApiBody,
+  ApiParam,
+  ApiQuery,
+  ApiResponse,
+  ApiTags,
+} from '@nestjs/swagger';
 
 @ApiTags('cats')
 @Controller('v1/cats')
@@ -56,5 +63,11 @@ export class CatController {
   @ApiResponse({ status: 200, description: 'success', type: [CatResponse] })
   async updateCats(@Body() body: CatsRequest): Promise<CatsResponse> {
     return this.usecase.findAll();
+  }
+
+  @Delete()
+  async deleteCats(@Param() params): Promise<void> {
+    this.usecase.findAll();
+    return;
   }
 }

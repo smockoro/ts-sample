@@ -7,7 +7,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  //provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -16,4 +17,7 @@ model Cat {
   name String
   age Int
   birthday String
+  createAt DateTime @default(now())
+  updateAt DateTime @default(now()) @updatedAt
+  deleted Boolean @default(false)
 }
