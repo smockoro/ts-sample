@@ -17,9 +17,16 @@ services:
     container_name: "fish_rabbitmq"
     image: rabbitmq:3.11-management
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      - "15672:15672"
     # default user/password is guest/guest.
     #environment:
     # - RABBITMQ_DEFAULT_USER=root
     # - RABBITMQ_DEFAULT_PASS=password
+
+  redis:
+    container_name: "dog_redis"
+    image: redis/redis-stack:6.2.6-v7
+    ports:
+      - "6379:6379"
+      - "8001:8001"
