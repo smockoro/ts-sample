@@ -35,7 +35,7 @@
     "compression": "1.7.5",
     "express": "4.21.2",
     "pino": "8.21.0",
-    "pino-http": "8.5.1",
+    "pino-http": "8.6.1",
     "prom-client": "15.0.0"
   }
 }
