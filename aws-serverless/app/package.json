@@ -23,7 +23,7 @@
     "aws-lambda-mock-context": "^3.2.1",
     "aws-sdk": "^2.1295.0",
     "depcheck": "^1.4.3",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.0",
     "esbuild-node-tsc": "^2.0.5",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^10.0.0",
