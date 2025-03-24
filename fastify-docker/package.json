@@ -16,7 +16,7 @@
     "@swc/core": "1.11.12",
     "@swc/jest": "0.2.37",
     "@types/jest": "29.5.14",
-    "@types/node": "22.13.11",
+    "@types/node": "22.13.13",
     "@types/supertest": "6.0.2",
     "@typescript-eslint/eslint-plugin": "8.27.0",
     "@typescript-eslint/parser": "8.27.0",
