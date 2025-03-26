@@ -20,7 +20,7 @@
     "@aws-lambda-powertools/tracer": "^1.5.1",
     "@middy/core": "^4.1.0",
     "@middy/http-json-body-parser": "^4.1.0",
-    "ulid": "^3.0.0"
+    "ulid": "^2.3.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.0.0",
