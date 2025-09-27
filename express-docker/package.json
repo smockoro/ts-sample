@@ -34,7 +34,7 @@
   "dependencies": {
     "compression": "1.8.0",
     "express": "4.21.2",
-    "pino": "9.6.0",
+    "pino": "9.11.0",
     "pino-http": "10.4.0",
     "prom-client": "15.1.3"
   }
