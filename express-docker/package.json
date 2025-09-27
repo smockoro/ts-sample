@@ -13,7 +13,7 @@
     "@swc/core": "1.11.16",
     "@swc/jest": "0.2.37",
     "@types/compression": "1.7.5",
-    "@types/express": "5.0.1",
+    "@types/express": "5.0.3",
     "@types/jest": "29.5.14",
     "@types/node": "22.13.17",
     "@types/supertest": "6.0.3",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "compression": "1.8.0",
-    "express": "4.21.2",
+    "express": "5.1.0",
     "pino": "9.6.0",
     "pino-http": "10.4.0",
     "prom-client": "15.1.3"
