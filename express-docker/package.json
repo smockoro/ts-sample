@@ -19,7 +19,7 @@
     "@types/supertest": "6.0.3",
     "@typescript-eslint/eslint-plugin": "8.29.0",
     "@typescript-eslint/parser": "8.29.0",
-    "eslint": "8.57.1",
+    "eslint": "9.36.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jest": "28.11.0",
     "eslint-plugin-jsdoc": "50.6.9",
