@@ -35,6 +35,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^4.9.2"
+    "fastify": "^5.0.0"
   }
 }
