@@ -13,7 +13,7 @@
     "test:coverage": "npm run test -- --coverage --silent --testLocationInResults --ci --json --outputFile=\"report.json\""
   },
   "devDependencies": {
-    "@swc/core": "1.15.24",
+    "@swc/core": "1.15.32",
     "@swc/jest": "0.2.39",
     "@types/jest": "29.5.14",
     "@types/node": "24.12.2",
