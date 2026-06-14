@@ -44,7 +44,7 @@ jobs:
         working-directory: 'fastify-docker'
         output: report-markdown
         test-script: npm run test:coverage
-    - uses: marocchino/sticky-pull-request-comment@v2
+    - uses: marocchino/sticky-pull-request-comment@v3.0.4
       with:
         number: ${{ steps.finder.outputs.pr }}
         message: ${{ steps.coverage.outputs.report }}
