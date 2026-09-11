@@ -32,7 +32,7 @@
     "typescript": "6.0.3"
   },
   "dependencies": {
-    "compression": "1.8.1",
+    "compression": "1.8.2",
     "express": "4.22.2",
     "pino": "9.14.0",
     "pino-http": "10.5.0",
